@@ -4926,7 +4926,7 @@ a.ag {
           width: 400px;
 
         @include bp768 {
-          margin: 0 25px 0 0;
+          margin: 30px 25px 0 0;
           width: 100%;
         };
         }
@@ -4934,6 +4934,11 @@ a.ag {
         &.brand_creativite--no01{
           margin: 22px 40px 60px 0;
           width: 350px;
+
+        @include bp768 {
+          margin: 0 25px 0 0;
+          width: 100%;
+        };
         }
 
         &.brand_creativite--no02{
@@ -5018,6 +5023,13 @@ a.ag {
         .brand_creativite--pic01{
           width: 710px;
           margin-top: 22px;
+
+        @include bp768 {
+          width: 100vw;
+          margin-left: -10px;
+          margin: 20px 0 30px;
+          display: block;
+        };
         }
         .brand_creativite--pic02{
           width: 675px;
@@ -5192,7 +5204,7 @@ a.ag {
 
             @include bp768 {
               margin-right: 20px;
-              width: 6%;
+              width: 15%;
               text-align: right;
             };
             }
@@ -5203,8 +5215,8 @@ a.ag {
               width: 777px;
 
             @include bp768 {
-              width: 94%;
-              margin-right: 23px;
+              width: 85%;
+              margin-right: 20px;
             };
             }
           }
