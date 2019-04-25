@@ -10970,6 +10970,81 @@ button.slick-prev, button.slick-next {
           display: none;
         }
       }
+
+      &--bottom{
+        background: #F6F6F6;
+        padding: 20px 0 40px 40px;
+
+      @include bp768 {
+        padding: 30px 10px 40px;
+      };
+
+        dt{
+          font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
+          font-size: 13px;
+          color: #333;
+          margin-bottom: 10px;
+          font-weight: bold;
+        }
+
+        dd{
+          font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
+          font-size: 12px;
+          color: #333;
+          margin-bottom: 30px;
+
+        @include bp768 {
+          margin-bottom: 15px;
+        };
+
+          &.last{
+            margin-bottom: 0;
+          }
+
+          input[type="text"]:focus {
+            outline: 0;
+            border-color: #081D5C;
+            background: #FCFADE;
+            box-shadow: 0px 2px 10px -5px #000000;
+          }
+
+          select{
+            width: 250px;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 13px;
+            color: #333;
+            font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
+            border: #888 1px solid;
+            border-radius: 0;
+            appearance: none;
+            background: #fff;
+
+          @include bp768 {
+            width: 100%;
+            font-size: 16px;
+          };
+          }
+
+          .input_widthE{
+            width: 397px;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 13px;
+            color: #333;
+            font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
+            border: #888 1px solid;
+            border-radius: 0;
+            appearance: none;
+            background: #fff;
+
+          @include bp768 {
+            width: 93.75%;
+            font-size: 16px;
+          };
+          }
+        }
+      }
     }
 
     &--inner{
