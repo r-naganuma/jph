@@ -9504,6 +9504,29 @@ button.slick-prev, button.slick-next {
   text-align: center;
 }
 
+#signIn #dvLogin .dvLoginNotice h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#signIn #dvLogin .dvLoginNotice p {
+  text-align: center;
+  color: #FF4040;
+  margin-bottom: 20px;
+}
+
+#signIn #dvLogin .dvLoginNotice_btn a {
+  width: 300px;
+  margin: 0 auto;
+  background: #FF4040;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+}
+
 #signIn #dvLogin #dvLoginWrap {
   width: 300px;
   background: #F7F7F7;

@@ -8632,12 +8632,18 @@ button.slick-prev, button.slick-next {
   };
 
     h4{
+      font-size:20px;
+      font-weight: bold;
+      margin-bottom: 15px;
 
       @include bp768{
 
       };
     }
     p{
+      text-align: center;
+      color:#FF4040;
+      margin-bottom: 20px;
 
       @include bp768{
 
@@ -8649,6 +8655,22 @@ button.slick-prev, button.slick-next {
       @include bp768{
 
       };
+        a{
+          width: 300px;
+          margin: 0 auto;
+          background: #FF4040;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          color:#fff;
+          font-size: 13px;
+
+          @include bp768{
+
+          };
+        }
+      
+
     }
 
   }
