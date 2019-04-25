@@ -3337,7 +3337,8 @@ a.ag {
               /*margin-bottom: 38px;*/
 
             @include bp768 {
-              margin-bottom: 20px;
+              /*margin-bottom: 20px;*/
+				display: block;
             };
 
               li{

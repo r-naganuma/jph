@@ -3676,7 +3676,8 @@ a.ag:active {
 
 @media (max-width: 768px) {
   #primary #divTopArea .boutiques_detailBox--menu--right ul {
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
+    display: block;
   }
 }
 
