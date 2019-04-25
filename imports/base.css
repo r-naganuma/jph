@@ -11509,6 +11509,7 @@ button.slick-prev, button.slick-next {
 @media (max-width: 768px) {
   #OrderShippingSelectBox .OrderShippingSelectBox_box--left--order.confirmOrder .btn_change {
     width: 60px;
+    margin-right: 10px;
   }
 }
 
@@ -11579,6 +11580,7 @@ button.slick-prev, button.slick-next {
 @media (max-width: 768px) {
   #OrderShippingSelectBox .OrderShippingSelectBox_box--left--order.confirmOrder .confirmOrder_pay {
     display: block;
+    border-top: 1px solid #ccc;
   }
 }
 
@@ -11612,8 +11614,28 @@ button.slick-prev, button.slick-next {
   }
 }
 
+@media (max-width: 768px) {
+  #OrderShippingSelectBox .OrderShippingSelectBox_box--left--order.confirmOrder .confirmOrder_pay--right dl {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #OrderShippingSelectBox .OrderShippingSelectBox_box--left--order.confirmOrder .confirmOrder_pay--right dl .mrgB30 {
+    margin-bottom: 0;
+  }
+}
+
 #OrderShippingSelectBox .OrderShippingSelectBox_box--left--order.confirmOrder .confirmOrder_pay--right dt {
   margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  #OrderShippingSelectBox .OrderShippingSelectBox_box--left--order.confirmOrder .confirmOrder_pay--right dd {
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 }
 
 #OrderShippingSelectBox .OrderShippingSelectBox_box--left--order.confirmOrder .confirmOrder_receipt {
@@ -11623,11 +11645,24 @@ button.slick-prev, button.slick-next {
   margin-top: 20px;
 }
 
+@media (max-width: 768px) {
+  #OrderShippingSelectBox .OrderShippingSelectBox_box--left--order.confirmOrder .confirmOrder_receipt {
+    display: block;
+    margin-top: 0;
+  }
+}
+
 #OrderShippingSelectBox .OrderShippingSelectBox_box--left--order.confirmOrder .confirmOrder_receipt--left {
   width: 160px;
   background: #081D5C;
   border: 1px solid #ccc;
   padding-top: 30px;
+}
+
+@media (max-width: 768px) {
+  #OrderShippingSelectBox .OrderShippingSelectBox_box--left--order.confirmOrder .confirmOrder_receipt--left {
+    display: none;
+  }
 }
 
 #OrderShippingSelectBox .OrderShippingSelectBox_box--left--order.confirmOrder .confirmOrder_receipt--left p {
@@ -11646,12 +11681,31 @@ button.slick-prev, button.slick-next {
   padding: 30px 40px 0;
 }
 
+@media (max-width: 768px) {
+  #OrderShippingSelectBox .OrderShippingSelectBox_box--left--order.confirmOrder .confirmOrder_receipt--right {
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 30px 0;
+    background: #F6F6F6;
+  }
+}
+
 #OrderShippingSelectBox .OrderShippingSelectBox_box--left--order.confirmOrder .confirmOrder_receipt--right dt {
   margin-bottom: 10px;
 }
 
 #OrderShippingSelectBox .OrderShippingSelectBox_box--left--order.confirmOrder .confirmOrder_receipt--right dd {
   margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  #OrderShippingSelectBox .OrderShippingSelectBox_box--left--order.confirmOrder .confirmOrder_receipt--right dd {
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 }
 
 #OrderShippingSelectBox .OrderShippingSelectBox_box--left .orderColumn {

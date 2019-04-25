@@ -10458,6 +10458,7 @@ button.slick-prev, button.slick-next {
 
           @include bp768 {
             width: 60px;
+            margin-right: 10px;
           };
 
             a{
@@ -10514,6 +10515,7 @@ button.slick-prev, button.slick-next {
 
           @include bp768 {
             display: block;
+            border-top: 1px solid #ccc;
           };
 
             &--left{
@@ -10541,8 +10543,27 @@ button.slick-prev, button.slick-next {
               padding: 0;
             };
 
+              dl{
+                @include bp768 {
+                  margin-top: 20px;
+                };
+
+                .mrgB30{
+                @include bp768 {
+                  margin-bottom: 0;
+                };
+                }
+              }
+
               dt{
                 margin-bottom: 10px;
+              }
+
+              dd{
+                @include bp768 {
+                  padding: 0 10px;
+                  box-sizing: border-box;
+                };
               }
             }
           }
@@ -10551,11 +10572,20 @@ button.slick-prev, button.slick-next {
             display: flex;
             margin-top: 20px;
 
+          @include bp768 {
+            display: block;
+            margin-top: 0;
+          };
+
             &--left{
               width: 160px;
               background: #081D5C;
               border: 1px solid #ccc;
               padding-top: 30px;
+
+            @include bp768 {
+              display: none;
+            };
 
               p{
                 font-size: 14px;
@@ -10573,12 +10603,26 @@ button.slick-prev, button.slick-next {
               border-bottom: 1px solid #ccc;
               padding: 30px 40px 0;
 
+            @include bp768 {
+              width: 100%;
+              border-top: none;
+              border-right: none;
+              border-bottom: none;
+              padding: 30px 0;
+              background: #F6F6F6;
+            };
+
               dt{
                 margin-bottom: 10px;
               }
 
               dd{
                 margin-bottom: 20px;
+                
+              @include bp768 {
+                padding: 0 10px;
+                box-sizing: border-box;
+              };
               }
             }
           }
