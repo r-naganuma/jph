@@ -9589,6 +9589,7 @@ button.slick-prev, button.slick-next {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 15px;
+  letter-spacing: 1px;
 }
 
 @media (max-width: 768px) {
@@ -9620,6 +9621,7 @@ button.slick-prev, button.slick-next {
   color: #fff;
   font-size: 13px;
   display: block;
+  letter-spacing: 1px;
 }
 
 #signIn #dvLogin #dvLoginWrap {
