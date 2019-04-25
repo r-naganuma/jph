@@ -5590,9 +5590,23 @@ a.ag:active {
   width: 350px;
 }
 
+@media (max-width: 768px) {
+  .brandWrap_inner--box--txt.brand_fabrication--no01 {
+    margin: 0 25px 0 0;
+    width: 100%;
+  }
+}
+
 .brandWrap_inner--box--txt.brand_fabrication--no02 {
   margin: 0 0 0 30px;
   width: 390px;
+}
+
+@media (max-width: 768px) {
+  .brandWrap_inner--box--txt.brand_fabrication--no02 {
+    margin: 0 25px 0 0;
+    width: 100%;
+  }
 }
 
 .brandWrap_inner--box--txt.brand_patisserie--no01 {
@@ -5676,8 +5690,7 @@ a.ag:active {
 @media (max-width: 768px) {
   .brandWrap_inner--box--pic .brand_creativite--pic01 {
     width: 100vw;
-    margin-left: -10px;
-    margin: 20px 0 30px;
+    margin: 20px 0 30px -10px;
     display: block;
   }
 }
@@ -5691,9 +5704,25 @@ a.ag:active {
   margin: -78px 0 140px;
 }
 
+@media (max-width: 768px) {
+  .brandWrap_inner--box--pic .brand_fabrication--pic01 {
+    width: 100vw;
+    margin: 30px 0 30px -10px;
+    display: block;
+  }
+}
+
 .brandWrap_inner--box--pic .brand_fabrication--pic02 {
   width: 675px;
   margin-top: -30px;
+}
+
+@media (max-width: 768px) {
+  .brandWrap_inner--box--pic .brand_fabrication--pic02 {
+    width: 80%;
+    margin: 0 0 30px -10px;
+    display: block;
+  }
 }
 
 .brandWrap_inner--box--pic .brand_patisserie--pic01 {
