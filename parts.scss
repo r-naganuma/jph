@@ -1,0 +1,1212 @@
+@charset "UTF-8";
+
+$bp768: 768px;  // スマホ
+
+@mixin bp768 {
+  @media (max-width: ($bp768)) {
+    @content;
+  }
+}
+
+/*========================================
+ お勧め商品
+=========================================*/
+/* Topページ用（お勧め商品） */
+/*
+#divBottomArea #dvRecommend{margin-top:10px;width:337px;float:left;}
+#divBottomArea #dvRecommend dd{margin-top:5px;}
+#divBottomArea #dvRecommend dd ul li.thumnail{
+	width:80px;
+	margin-right:5px;
+	padding:10px 0px;
+	text-align:center;
+	border:solid 1px #ccc;
+	float:left;
+}
+#divBottomArea #dvRecommend dd ul li.productInfo{line-height:1.5;}
+.soldout {color:#FF0000;word-wrap:normal;}
+*/
+
+/* 商品詳細ページ用（お勧め商品） */
+
+.tblLayout_ProductDetail #dvRecommend dl dd, .tblLayout_ProductList #dvRecommend dl dd {
+  margin-right: 5px;
+  &.productInfoList ul li {
+    margin: 1px 0px;
+    line-height: 1.4;
+    &.thumnail {
+      text-align: center;
+      width: 39px;
+      border: solid 1px #ccc;
+      float: left;
+      margin-right: 3px;
+      padding: 2px 0px;
+      img {}
+    }
+    &.productInfo {
+      width: 113px;
+      float: right;
+    }
+  }
+  &.toList {
+    text-align: right;
+  }
+}
+
+/* 商品一覧ページ用（お勧め商品） */
+
+/*========================================
+ 商品ランキング
+=========================================*/
+/* Topページ、商品一覧ページ、商品詳細ページ */
+
+#dvSalesRanking {
+  width: 164px;
+  dl dd {
+    margin-right: 5px;
+    &.productInfo ul li {
+      margin: 1px 0px;
+      ul li {
+        &.thumnail {
+          text-align: center;
+          width: 39px;
+          border: solid 1px #ccc;
+          float: left;
+          margin-right: 3px;
+          padding: 2px 0px;
+          img {}
+        }
+        &.productName {
+          width: 113px;
+          float: right;
+        }
+      }
+    }
+    &.toList {
+      text-align: right;
+    }
+  }
+}
+
+/*========================================
+ 商品検索ボックス
+=========================================*/
+/* Topページ、商品一覧ページ、商品詳細ページ */
+
+#dvProductSearch {
+  background: url(../../Contents/ImagesPkg/searchbox_bg.jpg) left top repeat-y;
+  margin-bottom: 10px;
+  padding: 0;
+  dl {
+    background: url(../../Contents/ImagesPkg/searchbox_btm.jpg) left bottom no-repeat;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+    dd {
+      padding: 0;
+      margin: 3px 5px;
+    }
+  }
+  select {
+    width: 150px;
+  }
+  input.text {
+    width: 100px;
+  }
+}
+
+/*========================================
+ 商品詳細検索ボックス
+=========================================*/
+/* Topページ、商品一覧ページ、商品詳細ページ */
+
+.dvProductAdvancedSearch {
+  margin-bottom: 20px;
+
+@include bp768 {
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+};
+
+  .searchBox{
+    display: flex;
+
+    &_list{
+      cursor: pointer;
+      width: 180px;
+      padding: 0 0 10px 20px;
+      border-bottom: 2px solid #C7C7C7;
+      position: relative;
+      margin-right: 20px;
+
+    @include bp768 {
+      width: 26vw;
+      padding: 0 0 10px 5px;
+      margin-right: 10px;
+    };
+      
+      h3 {
+        font-size: 12px;
+        font-weight: bold;
+        color: #000;
+
+        img{
+          width: 16px;
+          margin-left: 10px;
+          vertical-align: text-top;
+        }
+      }
+
+      &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 10px;
+        margin: auto;
+        z-index: 1;
+        display: block;
+        width: 12px;
+        height: 12px;
+        transform: rotate(135deg);
+        border-top: 1px solid #000;
+        border-right: 1px solid #000;
+
+      @include bp768 {
+        display: none;
+      };
+      }
+
+      &:first-child{
+        img{
+          width: 25px;
+        }
+      }
+
+      &.on{
+        position: relative;
+
+        &::before{
+          content: "";
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          width: 0px;
+          animation: borderSearch .5s ease 0s forwards;
+          border-bottom: 2px solid #081D5C;
+        }
+
+        &::after{
+          transform: rotate(135deg);
+          animation: arrowRotate .5s ease 0s forwards;
+          top: 7px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes borderSearch {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 200px;
+    }
+}
+
+@include bp768 {
+  @keyframes borderSearch {
+      0%{
+          width: 0%;
+      }
+      100%{
+          width: 28vw;
+      }
+  }
+};
+@keyframes arrowRotate {
+    0%{
+        transform: rotate(135deg);
+    }
+    100%{
+        transform: rotate(-45deg);
+    }
+}
+.pageAdvancedSearch .dvProductAdvancedSearch h3 {
+  cursor: default;
+}
+
+.dvProductAdvancedSearch .toogle {
+  background-color: #fff;
+  display: none;
+  margin-top: 10px;
+  padding: 40px 0 50px;
+
+@include bp768 {
+  padding: 19px 10px 10px;
+  box-sizing: border-box;
+};
+
+  &Box{
+    width: 900px;
+    margin: 0 auto;
+
+  @include bp768 {
+    width: 100%;
+  };
+
+    h4{
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1;
+      padding-bottom: 10px;
+      width: 100%;
+      border-bottom: 2px solid #081D5C;
+      margin-bottom: 25px;
+
+    @include bp768 {
+      font-size: 12px;
+      margin-bottom: 20px;
+    };
+    }
+
+    &_word{
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+
+    @include bp768 {
+      display: block;
+    };
+
+      &--list{
+        margin-right: 20px;
+
+      @include bp768 {
+        margin-right: 0;
+      };
+
+        p{
+          font-size: 14px;
+          line-height: 1;
+          font-weight: bold;
+        }
+      }
+
+      .sort-word{
+        input{
+          width: 600px;
+          height: 40px;
+          border: 1px solid #707070;
+          padding: 14px 10px;
+          border-radius: 0;
+
+        @include bp768 {
+          width: 100%;
+          height: 42px;
+          padding: 15px 10px;
+          -webkit-appearance: none;
+          font-size: 16px;
+        };
+        }
+      }
+    }
+
+    &_category{/*
+      .sort-category{
+        height: 360px;
+        position: relative;
+
+      @include bp768 {
+        height: 630px;
+      };
+
+        p{
+          font-size: 12px;
+          line-height: 1;
+          letter-spacing: 0.01em;
+          cursor: pointer;
+
+          span{
+            display: block;
+            margin-top: 5px;
+            font-size: 12px;
+            line-height: 1;
+            letter-spacing: 0;
+          }
+
+          &:nth-child(2){
+            position: absolute;
+            top: 23px;
+            left: 91px;
+          }
+
+          &:nth-child(3){
+            position: absolute;
+            top: 23px;
+            left: 322px;
+          }
+        }
+      }
+
+      select{
+        width: 100%;
+        height: 100%;
+        border: none;
+        display: none;
+        outline: none;
+
+        option{
+          width: 210px;
+          height: 90px;
+          border-bottom: 1px solid #C7C7C7;
+          cursor: pointer;
+          display: inline-block;
+
+        @include bp768 {
+          width: 48%;
+          height: 75px;
+        };
+
+          ul{
+            display: flex;
+            align-items: center;
+
+            li{
+              &:first-child{
+                width: 80px;
+                margin-right: 10px;
+
+                img{
+                  width: 100%;
+                }
+              }
+            }
+          }
+
+          &:nth-child(1){
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url(../../Contents/ImagesPkg/user/category01.jpg) no-repeat;
+            background-size: 210.5px;
+
+          @include bp768 {
+            background-size: 48vw;
+          };
+          }
+
+          &:nth-child(2){
+            position: absolute;
+            top: 0;
+            left: 230px;
+            background: url(../../Contents/ImagesPkg/user/category01.jpg) no-repeat;
+            background-size: 210.5px;
+
+          @include bp768 {
+            left: inherit;
+            right: 0;
+            background-size: 48vw;
+          };
+          }
+
+          &:nth-child(3){
+            position: absolute;
+            top: 0;
+            right: 230px;
+            background: url(../../Contents/ImagesPkg/user/category02.jpg) no-repeat;
+            background-size: 210.5px;
+
+          @include bp768 {
+            top: 95px;
+            left: 0;
+            background-size: 48vw;
+          };
+          }
+
+          &:nth-child(4){
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: url(../../Contents/ImagesPkg/user/category03.jpg) no-repeat;
+            background-size: 210.5px;
+
+          @include bp768 {
+            top: 95px;
+            background-size: 48vw;
+          };
+          }
+
+          &:nth-child(5){
+            position: absolute;
+            top: 117px;
+            left: 0;
+            background: url(../../Contents/ImagesPkg/user/category04.jpg) no-repeat;
+            background-size: 210.5px;
+
+          @include bp768 {
+            top: 190px;
+            background-size: 48vw;
+          };
+          }
+
+          &:nth-child(6){
+            position: absolute;
+            top: 117px;
+            left: 230px;
+            background: url(../../Contents/ImagesPkg/user/category05.jpg) no-repeat;
+            background-size: 210.5px;
+
+          @include bp768 {
+            top: 190px;
+            left: inherit;
+            right: 0;
+            background-size: 48vw;
+          };
+          }
+
+          &:nth-child(7){
+            position: absolute;
+            top: 117px;
+            right: 230px;
+            background: url(../../Contents/ImagesPkg/user/category06.jpg) no-repeat;
+            background-size: 210.5px;
+
+          @include bp768 {
+            top: 285px;
+            left: 0;
+            right: inherit;
+            background-size: 48vw;
+          };
+          }
+
+          &:nth-child(8){
+            position: absolute;
+            top: 117px;
+            right: 0;
+            background: url(../../Contents/ImagesPkg/user/category07.jpg) no-repeat;
+            background-size: 210.5px;
+
+          @include bp768 {
+            top: 285px;
+            background-size: 48vw;
+          };
+          }
+
+          &:nth-child(9){
+            position: absolute;
+            top: 234px;
+            left: 0;
+            background: url(../../Contents/ImagesPkg/user/category08.jpg) no-repeat;
+            background-size: 210.5px;
+
+          @include bp768 {
+            top: 380px;
+            background-size: 48vw;
+          };
+          }
+
+          &.checked {
+            opacity: .7;
+          }
+        }
+      }*/
+
+      select{
+        display: none;
+      }
+
+      &--box{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+
+        &--list{
+          width: 210px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #C7C7C7;
+          cursor: pointer;
+          margin-bottom: 26px;
+
+        @include bp768 {
+          width: 48%;
+          padding-bottom: 5px;
+          margin-bottom: 20px;
+        };
+
+          ul{
+            display: flex;
+            align-items: center;
+
+            li{
+              &:first-child{
+                width: 80px;
+                margin-right: 10px;
+
+              @include bp768 {
+                width: 70px;
+              };
+
+                img{
+                  width: 100%;
+                }
+              }
+
+              p{
+                font-size: 12px;
+                line-height: 1;
+                letter-spacing: 0.01em;
+
+              @include bp768 {
+                line-height: 1.5;
+              };
+
+                span{
+                  display: block;
+                  margin-top: 5px;
+                  font-size: 12px;
+                  line-height: 1;
+                  letter-spacing: 0;
+
+                @include bp768 {
+                  font-size: 10px;
+                };
+                }
+              }
+            }
+          }
+
+          &:last-child{
+            margin-bottom: 0;
+          }
+
+          &.on{
+            background: #E5DAD4;
+          }
+        }
+      }
+    }
+
+    &_column{
+      display: flex;
+      justify-content: space-between;
+
+    @include bp768 {
+      display: block;
+    };
+
+      &--price{
+        width: 210px;
+
+      @include bp768 {
+        width: 100%;
+        margin-bottom: 45px;
+      };
+
+        ul{
+          li{
+            margin-bottom: 20px;
+
+          @include bp768 {
+            margin-bottom: 23px;
+          };
+
+            input{
+              display: none;
+            }
+            input + label{
+              padding-left: 30px;
+              font-size: 12px;
+              color: #333;
+              font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
+              vertical-align: middle;
+              position: relative;
+              padding-top: 4px;
+
+            @include bp768 {
+              padding-left: 35px;
+              font-size: 13px;
+            };
+
+              &::before{
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 20px;
+                height: 20px;
+                border: 1px solid #707070;
+                border-radius: 50%;
+
+              @include bp768 {
+                width: 25px;
+                height: 25px;
+              };
+              }
+            }
+            input:checked + label::after{
+              content: "";
+              display: block;
+              position: absolute;
+              top: 3px;
+              left: 3px;
+              width: 14px;
+              height: 14px;
+              background: #081D5C;
+              border: 1px solid #707070;
+              border-radius: 50%;
+
+            @include bp768 {
+              top: 4px;
+              left: 4px;
+              width: 17px;
+              height: 17px;
+            };
+            }
+            input:checked + label.on::after{
+              content: "";
+            }
+          }
+        }
+      }
+
+      &--temp{
+        width: 210px;
+
+      @include bp768 {
+        width: 100%;
+      };
+
+        ul{
+          li{
+            margin-bottom: 20px;
+
+          @include bp768 {
+            display: inline-block;
+            width: 49%;
+          };
+
+            input{
+              display: none;
+            }
+            input + label{
+              padding-left: 30px;
+              font-size: 12px;
+              color: #333;
+              font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
+              vertical-align: middle;
+              position: relative;
+              padding-top: 4px;
+
+            @include bp768 {
+              padding-left: 40px;
+              padding-top: 5px;
+            };
+
+              &::before{
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 20px;
+                height: 20px;
+                border: 1px solid #707070;
+                border-radius: 50%;
+
+              @include bp768 {
+                width: 25px;
+                height: 25px;
+              };
+              }
+            }
+            input:checked + label::after{
+              content: "";
+              display: block;
+              position: absolute;
+              top: 3px;
+              left: 3px;
+              width: 14px;
+              height: 14px;
+              background: #081D5C;
+              border: 1px solid #707070;
+              border-radius: 50%;
+
+            @include bp768 {
+              top: 4px;
+              left: 4px;
+              width: 17px;
+              height: 17px;
+            };
+            }
+          }
+        }
+      }
+
+      &--keyword{
+        width: 440px;
+
+      @include bp768 {
+        width: 100%;
+        margin-top: 10px;
+      };
+
+        ul{
+          display: flex;
+          flex-wrap: wrap;
+
+          li{
+
+            input{
+              display: none;
+            }
+            input + label{
+              margin: 0 10px 15px 0;
+              padding: 9px 40px 9px 28px;
+              background: #F5F5F5;
+              position: relative;
+              display: block;
+              font-size: 12px;
+              color: #333;
+              font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
+
+            @include bp768 {
+              margin: 0 5px 10px 0;
+              padding: 15px 40px 15px 18px;
+            };
+
+              &::before{
+                content: "#";
+                position: absolute;
+                top: 7px;
+                left: 18px;
+                font-size: 14px;
+
+              @include bp768 {
+                top: 13px;
+                left: 9px;
+              };
+              }
+            }
+            input:checked + label{
+              background: #081D5C;
+              color: #fff;
+            }
+            input:checked + label::after{
+              content: "×";
+              position: absolute;
+              top: 6px;
+              right: 10px;
+              background: #fff;
+              border: 1px #707070 solid;
+              text-align: center;
+              width: 18px;
+              height: 18px;
+              line-height: 18px;
+              border-radius: 50%;
+              color: #333;
+              font-size: 17px;
+
+            @include bp768 {
+              top: 10px;
+            };
+            }
+          }
+        }
+      }
+    }
+
+  .buttonBox{
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+    margin: 80px auto 0;
+
+  @include bp768 {
+    width: 100%;
+    margin: 56px auto 0;
+  };
+
+    &_clear{
+      width: 200px;
+
+    @include bp768 {
+      width: 49%;
+    };
+
+      a{
+        display: block;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background: #EFF1F8;
+        font-size: 14px;
+        color: #555555;
+        letter-spacing: 0.01em;
+
+      @include bp768 {
+        height: 45px;
+        line-height: 45px;
+        font-size: 13px;
+      };
+      }
+    }
+
+    &_search{
+      width: 200px;
+      padding: 0;
+
+    @include bp768 {
+      width: 49%;
+    };
+
+      a{
+        display: block;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background: #081D5C;
+        font-size: 14px;
+        color: #fff;
+        letter-spacing: 0.01em;
+
+      @include bp768 {
+        height: 45px;
+        line-height: 45px;
+        font-size: 13px;
+      };
+      }
+    }
+  }
+  }
+}
+
+::placeholder{
+  color:#888888;
+  font-size: 12px;
+}
+
+.pageAdvancedSearch .dvProductAdvancedSearch .toogle {
+  display: block;
+}
+
+.dvProductAdvancedSearch {
+  .button {
+    text-align: center;
+    padding: 5px 0;
+  }
+  input[radio] {
+    vertical-align: top;
+  }
+}
+
+/*========================================
+ カテゴリ検索ボックス
+=========================================*/
+/* Topページ、商品一覧ページ、商品詳細ページ */
+
+#dvCategorySearch {
+  background: url(../../Contents/ImagesPkg/searchbox_bg.jpg) left top repeat-y;
+  margin-bottom: 10px;
+  width: 164px;
+  dl {
+    background: url(../../Contents/ImagesPkg/searchbox_btm.jpg) left bottom no-repeat;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+  }
+  ul {
+    padding: 0;
+    margin: 5px 0 2px 3px;
+    text-align: left;
+    li {
+      list-style: none;
+      background: url(../../Contents/ImagesPkg/mark_top.jpg) left top no-repeat;
+      margin: 3px 0 0 2px;
+      padding: 0 0 0 17px;
+    }
+    ul {
+      margin: 5px 0 0 -17px;
+      padding: 0 3px 0 0;
+      li {
+        background: url(../../Contents/ImagesPkg/mark_circle.gif) left top no-repeat;
+        padding: 0 0 0 9px;
+        margin: 3px 0 0 9px;
+      }
+      ul {
+        margin: 5px 0 0 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+/*========================================
+ 商品表示履歴（最近チェックした商品）
+=========================================*/
+
+#dvCheckList {
+  margin: 80px 0;
+      
+@include bp768 {
+  margin: 50px 0;
+};
+  h3 {
+    font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    line-height: 1;
+    text-align: left;
+    color: #081D5C;
+    margin-bottom: 30px;
+      
+  @include bp768 {
+    font-size: 17px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+  };
+
+  span {
+    font-size: 12px;
+    display: block;
+    margin-top: 10px;
+    letter-spacing: 0;
+    color: #333;
+      
+  @include bp768 {
+    font-size: 11px;
+  };
+    }
+  }
+  .productCheckBox{
+    display: flex;
+    flex-wrap: wrap;
+      
+  @include bp768 {
+    padding: 10px 10px 30px 10px;
+    box-sizing: border-box;
+    border-top: 1px solid #C7C7C7;
+    border-bottom: 1px solid #C7C7C7;
+    margin-top: 20px;
+  };
+    .productCheckList {
+      width: 160px;
+      margin-right: 24px;
+      margin-bottom: 20px;
+      
+    @include bp768 {
+      width: 31%;
+      margin-right: 12px;
+    };
+      ul {
+        li {
+          p {
+            font-size: 12px;
+      
+          @include bp768 {
+            font-size: 11px;
+          };
+            strike {
+              color: #f00;
+            }
+          }
+          &.thumnail {
+            position: relative;
+            text-align: center;
+            img {
+              width: 160px;
+              height: 160px;
+              margin-bottom: 10px;
+      
+            @include bp768 {
+              width: 100%;
+              height: 100%;
+              margin-bottom: 5px;
+            };
+            }
+            .soldout {
+              color: #fff;
+              word-wrap: normal;
+              position: absolute;
+              top: 45%;
+              left: 0%;
+              text-align: center;
+              width: 100%;
+              height: 26px;
+              line-height: 26px;
+              background-color: #000;
+              filter: alpha(opacity = 50);
+              -moz-opacity: 0.5;
+              opacity: 0.5;
+            }
+          }
+
+          &.productName{
+            a{
+              font-size: 12px;
+              text-align: center;
+              color: #333;
+      
+            @include bp768 {
+              font-size: 11px;
+            };
+            }
+          }
+        }
+      }
+
+      &:nth-child(6n){
+        margin-right: 0;
+      }
+
+      &:nth-child(3n){
+        @include bp768 {
+          margin-right: 0;
+        };
+      }
+
+      &:nth-last-child(-n + 3){
+        @include bp768 {
+          margin-bottom: 0;
+        };
+      }
+    }
+  }
+}
+
+/*========================================
+ ミニカート
+=========================================*/
+/* Topページ、商品一覧ページ、商品詳細ページ */
+/*
+.dvMiniCart *{color:#333;margin:0px;padding:0px;}
+.dvMiniCart{background:url(../../Contents/ImagesPkg/minicart_bg.jpg) top left repeat-y;padding:0px;margin-bottom:10px;}
+.dvMiniCart h3{margin-top:0px;padding-top:0px;margin-bottom:10px;}
+.dvMiniCart ul{background:url(../../Contents/ImagesPkg/minicart_bg_btm.jpg) bottom left no-repeat;padding-bottom:3px;margin:0px;}
+.dvMiniCart li{margin:0px 8px 12px 8px;}
+.dvMiniCart li span{color:#000000!important;}
+.dvMiniCart li.productInfo span.productName{margin-bottom:5px;display:block!important;}
+.dvMiniCart li.productInfo span.productPrice{margin-bottom:10px;display:block!important;}
+.dvMiniCart li.productInfo{border-bottom:1px #ccc solid;display:block;margin:0px 8px 12px 8px;}
+.dvMiniCart li.priceTotal{margin:0px 8px 12px 8px;text-align:right;}
+.dvMiniCart li.vacant{margin:0px 8px 12px 8px;}
+.dvMiniCart li.viewCartLink{margin:0px 8px 12px 8px;text-align:right;margin-bottom:5px;}
+.dvMiniCart li span span{display:inline;padding:0px 3px;margin:0px;color:#ff0000!important;}
+*/
+
+.wrapMiniCart {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 48px;
+  z-index: 999;
+}
+
+.dvMiniCart {
+  background-color: #fff;
+  width: 300px;
+  z-index: 102;
+  text-align: left;
+  h3 {
+    font-size: 116%;
+    padding: 5px 10px 0;
+  }
+  .inner {
+    padding: 5px 10px;
+  }
+  ul {
+    border-top: 1px solid #333;
+    li {
+      padding: 5px 0;
+      line-height: 1.5;
+      font-size: 12px;
+      &.productInfo {
+        border-bottom: 1px dotted #333;
+        a {
+          text-decoration: underline;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+        .pimg {
+          float: left;
+        }
+        .productName, .productPrice {
+          float: right;
+          width: 215px;
+        }
+      }
+      &.priceTotal {
+        text-align: right;
+      }
+      &.viewCartLink a {
+        width: 100%;
+        padding: 5px 0;
+      }
+    }
+  }
+}
+
+/*========================================
+ 新着情報
+=========================================*/
+/* Topページ、商品一覧ページ、商品詳細ページ */
+
+#dvInformationArea {
+  margin: 10px auto;
+  width: 96%;
+}
+
+#InformationList #dvInformationArea {}
+
+#dvInformationArea dl dt {
+  font-size: 15px;
+  padding: 5px;
+}
+
+#InformationList #dvInformationArea dl {
+  dt {}
+  dd {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 3px 0;
+  }
+}
+
+#dvInformationArea dl dd ul li {
+  line-height: 1.4;
+}
+
+#InformationList #dvInformationArea dl dd ul li {
+  line-height: 1.4;
+  span.infoDate {
+    float: left;
+    width: 90px;
+    display: block;
+    text-align: left;
+    padding: 3px;
+    font-weight: bold;
+  }
+}
+
+#dvInformationArea dl dd ul li span.infoContent {
+  float: right;
+  width: 545px;
+  display: block;
+  text-align: left;
+  padding: 3px;
+  a {
+    text-decoration: underline;
+  }
+}
+
+#InformationList #dvInformationArea .InformationFooter {
+  text-align: center;
+  padding: 10px 0;
+}
