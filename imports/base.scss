@@ -4373,7 +4373,9 @@ a.ag {
     &.partsLeft{
       h3{
         text-align: left;
-        font-size: 24px;
+        font-size: 22px;
+        letter-spacing: inherit;
+		  
 
       @include bp768 {
         font-size: 17px;
@@ -10330,12 +10332,23 @@ button.slick-prev, button.slick-next {
             font-weight: bold;
             margin-bottom: 30px;
             line-height: 1;
+
+          @include bp768 {
+            font-size: 14px;
+            margin-bottom: 20px;
+            padding: 0 10px;
+            box-sizing: border-box;
+          };
           }
 
           .OrderShippingSelectBox_box--inner--right{
             padding-bottom: 0;
             padding-right: 40px;
             border-bottom: none;
+
+          @include bp768 {
+            padding: 0;
+          };
           }
 
           .OrderShippingSelectBox_box--inner{
@@ -10351,9 +10364,20 @@ button.slick-prev, button.slick-next {
             padding: 0;
             width: inherit;
 
+          @include bp768 {
+            padding: 0 10px;
+            box-sizing: border-box;
+          };
+
             &:nth-child(5){
               background: none;
             }
+          }
+
+          dd{
+          @include bp768 {
+            border-bottom: none;
+          };
           }
 
           p{
@@ -10363,6 +10387,10 @@ button.slick-prev, button.slick-next {
           .orderInfo_column{
             border-bottom: 1px solid #ccc;
             margin: 0 0 20px 0;
+
+          @include bp768 {
+            margin: 0 0 15px 0;
+          };
           }
 
           .btn_change{
@@ -10370,11 +10398,19 @@ button.slick-prev, button.slick-next {
             height: 30px;
             margin-left: auto;
 
+          @include bp768 {
+            width: 60px;
+          };
+
             a{
               line-height: 30px;
               text-align: center;
               background: #CCC;
               display: block;
+
+            @include bp768 {
+              font-size: 10px;
+            };
             }
           }
 
@@ -10383,6 +10419,10 @@ button.slick-prev, button.slick-next {
             padding-bottom: 20px;
             display: flex;
             align-items: center;
+
+          @include bp768 {
+            display: block;
+          };
 
             .orderInfo_product--pic{
               width: 90px;
@@ -10397,6 +10437,12 @@ button.slick-prev, button.slick-next {
               width: 310px;
               margin-right: 20px;
               font-size: 11px;
+
+            @include bp768 {
+              width: 100%;
+              margin-right: 0;
+              margin-bottom: 10px;
+            };
             }
             
             .orderInfo_product--num{
@@ -10408,10 +10454,18 @@ button.slick-prev, button.slick-next {
           .confirmOrder_pay{
             display: flex;
 
+          @include bp768 {
+            display: block;
+          };
+
             &--left{
               width: 160px;
               background: #081D5C;
               border: 1px solid #ccc;
+
+            @include bp768 {
+              display: none;
+            };
             }
 
             &--right{
@@ -10420,6 +10474,14 @@ button.slick-prev, button.slick-next {
               border-right: 1px solid #ccc;
               border-bottom: 1px solid #ccc;
               padding: 30px 40px 0 40px;
+
+            @include bp768 {
+              width: 100%;
+              border-top: none;
+              border-right: none;
+              border-bottom: 1px solid #ccc;
+              padding: 0;
+            };
 
               dt{
                 margin-bottom: 10px;
@@ -10988,6 +11050,7 @@ button.slick-prev, button.slick-next {
             @include bp768 {
               width: 100%;
               font-size: 16px;
+              background: #fff;
             };
             }
 
