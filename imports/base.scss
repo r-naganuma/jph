@@ -4987,9 +4987,17 @@ a.ag {
           width: 555px;
 
         @include bp768 {
-          margin: 0 0 90px 0;
-          width: 48%;
+          margin: 0 25px 0 0;
+          width: 100%;
         };
+
+          .chocolat_no01--sp{
+          @include bp768 {
+            display: block;
+            width: 48%;
+            margin-bottom: 50px;
+          };
+          }
         }
 
         &.brand_chocolat--no02{
@@ -4997,7 +5005,7 @@ a.ag {
           width: 390px;
 
         @include bp768 {
-          margin: 0 25px 0 0;
+          margin: 30px 25px 0 0;
           width: 100%;
         };
         }
@@ -5037,9 +5045,9 @@ a.ag {
         &.chocolat_no01Pic{
         @include bp768 {
           position: absolute;
-          top: 35px;
-          right: -100px;
-          width: 127%;
+          top: 0;
+          right: -85px;
+          width: 72%;
         };
         }
 
@@ -5130,6 +5138,7 @@ a.ag {
         @include bp768 {
           width: 100%;
           padding-right: 55px;
+          box-sizing: border-box;
         };
         }
         .brand_japon--pic01{
