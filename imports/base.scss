@@ -11460,8 +11460,9 @@ button.slick-prev, button.slick-next {
 
       @include bp768 {
         background: url(../../Contents/ImagesPkg/user/order_complete_bg_sp.png) no-repeat;
+        background-size: cover;
         display: block;
-        width: 410px;
+        width: 75%;
         padding: 45px 0;
       };
 
@@ -11480,6 +11481,7 @@ button.slick-prev, button.slick-next {
 
           @include bp768 {
             margin-right: 0;
+            display: block;
           };
           }
 
@@ -11504,7 +11506,7 @@ button.slick-prev, button.slick-next {
         line-height: 50px;
 
       @include bp768 {
-        width: 75%;
+        width: 73%;
       };
       }
     }

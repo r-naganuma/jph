@@ -12683,8 +12683,9 @@ button.slick-prev, button.slick-next {
 @media (max-width: 768px) {
   .completeBox .complete_cts--detail--inner {
     background: url(../../Contents/ImagesPkg/user/order_complete_bg_sp.png) no-repeat;
+    background-size: cover;
     display: block;
-    width: 410px;
+    width: 75%;
     padding: 45px 0;
   }
 }
@@ -12709,6 +12710,7 @@ button.slick-prev, button.slick-next {
 @media (max-width: 768px) {
   .completeBox .complete_cts--detail--inner p span {
     margin-right: 0;
+    display: block;
   }
 }
 
@@ -12733,7 +12735,7 @@ button.slick-prev, button.slick-next {
 
 @media (max-width: 768px) {
   .completeBox .complete_cts--detail a {
-    width: 75%;
+    width: 73%;
   }
 }
 
