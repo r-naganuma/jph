@@ -5528,6 +5528,20 @@ a.ag:active {
   width: 490px;
 }
 
+@media (max-width: 768px) {
+  .brandWrap_inner--box--txt.brand_jph--no01 {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .brandWrap_inner--box--txt.brand_jph--no01 .jph_no01--sp {
+    display: block;
+    width: 48%;
+  }
+}
+
 .brandWrap_inner--box--txt.brand_jph--no02 {
   margin: 70px 0 0 70px;
   width: 395px;
@@ -5587,8 +5601,22 @@ a.ag:active {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .brandWrap_inner--box--pic .jph_no1Pic {
+    position: absolute;
+    top: 0;
+    right: -10px;
+  }
+}
+
 .brandWrap_inner--box--pic .brand_jph--pic01 {
   width: 530px;
+}
+
+@media (max-width: 768px) {
+  .brandWrap_inner--box--pic .brand_jph--pic01 {
+    width: 150%;
+  }
 }
 
 .brandWrap_inner--box--pic .brand_jph--pic02 {
