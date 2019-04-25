@@ -5606,6 +5606,7 @@ a.ag:active {
     position: absolute;
     top: 0;
     right: -10px;
+    width: 50%;
   }
 }
 
