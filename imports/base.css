@@ -9518,6 +9518,8 @@ button.slick-prev, button.slick-next {
   justify-content: space-between;
   width: 810px;
   margin: 0 auto;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
@@ -9528,6 +9530,38 @@ button.slick-prev, button.slick-next {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
+}
+
+#signIn #dvLogin .dvLoginNotice {
+  color: #FF4040;
+  background: #FFECEE;
+  margin: 0 auto 30px;
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+}
+
+#signIn #dvLogin .dvLoginNotice h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#signIn #dvLogin .dvLoginNotice p {
+  text-align: center;
+  color: #FF4040;
+  margin-bottom: 20px;
+}
+
+#signIn #dvLogin .dvLoginNotice_btn a {
+  width: 300px;
+  margin: 0 auto;
+  background: #FF4040;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
 }
 
 #signIn #dvLogin #dvLoginWrap {
