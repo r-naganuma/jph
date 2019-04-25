@@ -3666,7 +3666,7 @@ a.ag:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 38px;
+  /*margin-bottom: 38px;*/
   /*
               &:last-child{
                 margin-bottom: 0;
@@ -3768,11 +3768,12 @@ a.ag:active {
   line-height: 38px;
   font-size: 14px;
   letter-spacing: 0.05em;
-  margin: 3px auto 0;
+  /*margin: 3px auto 0;*/
   border: 1px solid #081D5C;
   display: block;
   position: relative;
   z-index: 1;
+  margin-right: 40px;
 }
 
 @media (max-width: 768px) {
@@ -3820,10 +3821,6 @@ a.ag:active {
 #primary #divTopArea .boutiques_detailBox--menu--right ul li a:hover {
   opacity: 1;
   color: #fff;
-}
-
-#primary #divTopArea .boutiques_detailBox--menu--right ul li + li {
-  margin-left: 40px;
 }
 
 #primary #divTopArea .boutiques_popularity {

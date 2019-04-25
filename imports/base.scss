@@ -3333,7 +3333,7 @@ a.ag {
           &--right{
             ul{
               display: flex;
-              margin-bottom: 38px;
+              /*margin-bottom: 38px;*/
 
             @include bp768 {
               margin-bottom: 20px;
@@ -3347,11 +3347,12 @@ a.ag {
                     line-height: 38px;
                     font-size: 14px;
                     letter-spacing: 0.05em;
-                    margin: 3px auto 0;
+                    /*margin: 3px auto 0;*/
                     border: 1px solid #081D5C;
                     display: block;
                     position: relative;
                     z-index: 1;
+					margin-right: 40px;
 
                   @include bp768 {
                     width: 34vw;
@@ -3467,10 +3468,6 @@ a.ag {
                   }
                 }*/
               }
-				
-              li+li {
-				margin-left: 40px;
-               }
 				
 				/*
               &:last-child{
