@@ -5450,6 +5450,8 @@ a.ag:active {
 @media (max-width: 768px) {
   .brandWrap_inner--box {
     position: relative;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 
@@ -5530,7 +5532,7 @@ a.ag:active {
 
 @media (max-width: 768px) {
   .brandWrap_inner--box--txt.brand_jph--no01 {
-    margin: 0;
+    margin: 0 25px 0 0;
     width: 100%;
   }
 }
@@ -5547,9 +5549,23 @@ a.ag:active {
   width: 395px;
 }
 
+@media (max-width: 768px) {
+  .brandWrap_inner--box--txt.brand_jph--no02 {
+    margin: 30px 25px 0 0;
+    width: 100%;
+  }
+}
+
 .brandWrap_inner--box--txt.brand_jph--no03 {
   margin: 100px 40px 0 0;
   width: 400px;
+}
+
+@media (max-width: 768px) {
+  .brandWrap_inner--box--txt.brand_jph--no03 {
+    margin: 0 25px 0 0;
+    width: 100%;
+  }
 }
 
 .brandWrap_inner--box--txt.brand_creativite--no01 {
@@ -5625,9 +5641,24 @@ a.ag:active {
   margin-top: -12px;
 }
 
+@media (max-width: 768px) {
+  .brandWrap_inner--box--pic .brand_jph--pic02 {
+    width: 61%;
+    margin-top: 30px;
+  }
+}
+
 .brandWrap_inner--box--pic .brand_jph--pic03 {
   width: 660px;
   margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+  .brandWrap_inner--box--pic .brand_jph--pic03 {
+    width: 100vw;
+    margin-left: -10px;
+    margin-top: 30px;
+  }
 }
 
 .brandWrap_inner--box--pic .brand_creativite--pic01 {
@@ -5739,6 +5770,12 @@ a.ag:active {
   margin-bottom: 100px;
 }
 
+@media (max-width: 768px) {
+  .brandWrap2 {
+    margin-bottom: 50px;
+  }
+}
+
 .brandWrap2::after {
   content: none;
 }
@@ -5758,8 +5795,24 @@ a.ag:active {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .brandWrap2 .brandWrap_inner h3 {
+    font-size: 25px;
+    margin: 15px 0 20px;
+  }
+}
+
 .brandWrap2 dl {
   width: 900px;
+}
+
+@media (max-width: 768px) {
+  .brandWrap2 dl {
+    width: 100%;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 }
 
 .brandWrap2 dl dt {
@@ -5772,10 +5825,25 @@ a.ag:active {
   padding-bottom: 5px;
 }
 
+@media (max-width: 768px) {
+  .brandWrap2 dl dt {
+    font-size: 22px;
+    margin: 25px 0 15px;
+    padding-bottom: 0;
+  }
+}
+
 .brandWrap2 dl dd {
   padding-bottom: 30px;
   margin: 0 0 30px;
   border-bottom: 1px solid #707070;
+}
+
+@media (max-width: 768px) {
+  .brandWrap2 dl dd {
+    padding-bottom: 15px;
+    margin: 0 0 25px;
+  }
 }
 
 .brandWrap2 dl dd ul {
@@ -5798,15 +5866,39 @@ a.ag:active {
   text-align: right;
 }
 
+@media (max-width: 768px) {
+  .brandWrap2 dl dd ul li:first-child {
+    margin-right: 20px;
+    width: 6%;
+    text-align: right;
+  }
+}
+
 .brandWrap2 dl dd ul li:last-child {
   font-size: 14px;
   color: #333;
   width: 777px;
 }
 
+@media (max-width: 768px) {
+  .brandWrap2 dl dd ul li:last-child {
+    width: 94%;
+    margin-right: 23px;
+  }
+}
+
 .brandArchive {
   width: 1100px;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .brandArchive {
+    width: 100%;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 }
 
 .brandArchive ul {
@@ -5823,6 +5915,13 @@ a.ag:active {
 .brandArchive ul li {
   width: 360px;
   margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .brandArchive ul li {
+    width: 49%;
+    margin-bottom: 10px;
+  }
 }
 
 .brandArchive ul li a {
@@ -5844,11 +5943,27 @@ a.ag:active {
   z-index: 2;
 }
 
+@media (max-width: 768px) {
+  .brandArchive ul li a .archiveList {
+    width: 100%;
+    padding: 9px 10px 15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+  }
+}
+
 .brandArchive ul li a .archiveList p {
   font-size: 16px;
   font-weight: bold;
   line-height: 1;
   letter-spacing: 0.01em;
+}
+
+@media (max-width: 768px) {
+  .brandArchive ul li a .archiveList p {
+    font-size: 11px;
+  }
 }
 
 .brandArchive ul li a .archiveList p span {
@@ -5862,8 +5977,27 @@ a.ag:active {
   font-weight: normal;
 }
 
+@media (max-width: 768px) {
+  .brandArchive ul li a .archiveList p span {
+    margin-bottom: 5px;
+    font-size: 11px;
+  }
+}
+
 .brandArchive ul li:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .brandArchive ul li:nth-last-child(-n + 3) {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brandArchive ul li:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
 }
 
 .brandArchive ul li:nth-child(2).on {

@@ -4825,6 +4825,7 @@ a.ag {
 
     @include bp768 {
       position: relative;
+      flex-wrap: wrap;
     };
 
       &--txt{
@@ -4898,7 +4899,7 @@ a.ag {
           width: 490px;
 
         @include bp768 {
-          margin: 0;
+          margin: 0 25px 0 0;
           width: 100%;
         };
 
@@ -4913,11 +4914,21 @@ a.ag {
         &.brand_jph--no02{
           margin: 70px 0 0 70px;
           width: 395px;
+
+        @include bp768 {
+          margin: 30px 25px 0 0;
+          width: 100%;
+        };
         }
 
         &.brand_jph--no03{
           margin: 100px 40px 0 0;
           width: 400px;
+
+        @include bp768 {
+          margin: 0 25px 0 0;
+          width: 100%;
+        };
         }
 
         &.brand_creativite--no01{
@@ -4988,10 +4999,21 @@ a.ag {
         .brand_jph--pic02{
           width: 440px;
           margin-top: -12px;
+
+        @include bp768 {
+          width: 61%;
+          margin-top: 30px;
+        };
         }
         .brand_jph--pic03{
           width: 660px;
           margin-top: 100px;
+
+        @include bp768 {
+          width: 100vw;
+          margin-left: -10px;
+          margin-top: 30px;
+        };
         }
         .brand_creativite--pic01{
           width: 710px;
@@ -5090,6 +5112,10 @@ a.ag {
     display: none;
     margin-bottom: 100px;
 
+  @include bp768 {
+    margin-bottom: 50px;
+  };
+
     &::after{
       content: none;
     }
@@ -5106,11 +5132,22 @@ a.ag {
         line-height: 1;
         color: #333;
         text-align: center;
+
+      @include bp768 {
+        font-size: 25px;
+        margin: 15px 0 20px;
+      };
       }
     }
 
     dl{
       width: 900px;
+
+    @include bp768 {
+      width: 100%;
+      padding: 0 10px;
+      box-sizing: border-box;
+    };
 
       dt{
         font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
@@ -5120,12 +5157,23 @@ a.ag {
         line-height: 1;
         color: #081D5C;
         padding-bottom: 5px;
+
+      @include bp768 {
+        font-size: 22px;
+        margin: 25px 0 15px;
+        padding-bottom: 0;
+      };
       }
 
       dd{
         padding-bottom: 30px;
         margin: 0 0 30px;
         border-bottom: 1px solid #707070;
+
+      @include bp768 {
+        padding-bottom: 15px;
+        margin: 0 0 25px;
+      };
 
         ul{
           display: flex;
@@ -5141,12 +5189,23 @@ a.ag {
               margin-right: 70px;
               width: 53px;
               text-align: right;
+
+            @include bp768 {
+              margin-right: 20px;
+              width: 6%;
+              text-align: right;
+            };
             }
 
             &:last-child{
               font-size: 14px;
               color: #333;
               width: 777px;
+
+            @include bp768 {
+              width: 94%;
+              margin-right: 23px;
+            };
             }
           }
         }
@@ -5159,6 +5218,12 @@ a.ag {
   width: 1100px;
   margin: 0 auto;
 
+@include bp768 {
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+};
+
   ul{
     display: flex;
     justify-content: space-between;
@@ -5167,6 +5232,11 @@ a.ag {
     li{
       width: 360px;
       margin-bottom: 30px;
+
+    @include bp768 {
+      width: 49%;
+      margin-bottom: 10px;
+    };
 
       a{
         display: block;
@@ -5185,11 +5255,22 @@ a.ag {
           position: relative;
           z-index: 2;
 
+        @include bp768 {
+          width: 100%;
+          padding: 9px 10px 15px;
+          box-sizing: border-box;
+          margin: 0;
+        };
+
           p{
             font-size: 16px;
             font-weight: bold;
             line-height: 1;
             letter-spacing: 0.01em;
+
+          @include bp768 {
+            font-size: 11px;
+          };
 
             span{
               font-family: 'Lora', dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
@@ -5200,6 +5281,11 @@ a.ag {
               letter-spacing: 0.01em;
               color: #081D5C;
               font-weight: normal;
+
+            @include bp768 {
+              margin-bottom: 5px;
+              font-size: 11px;
+            };
             }
           }
         }
@@ -5207,6 +5293,16 @@ a.ag {
 
       &:nth-last-child(-n + 3){
         margin-bottom: 0;
+
+      @include bp768 {
+        margin-bottom: 10px;
+      };
+      }
+
+      &:nth-last-child(-n + 2){
+      @include bp768 {
+        margin-bottom: 0;
+      };
       }
 
       &:nth-child(2){
