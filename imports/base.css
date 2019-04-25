@@ -5634,8 +5634,16 @@ a.ag:active {
 
 @media (max-width: 768px) {
   .brandWrap_inner--box--txt.brand_chocolat--no01 {
-    margin: 0 0 90px 0;
+    margin: 0 25px 0 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .brandWrap_inner--box--txt.brand_chocolat--no01 .chocolat_no01--sp {
+    display: block;
     width: 48%;
+    margin-bottom: 50px;
   }
 }
 
@@ -5646,7 +5654,7 @@ a.ag:active {
 
 @media (max-width: 768px) {
   .brandWrap_inner--box--txt.brand_chocolat--no02 {
-    margin: 0 25px 0 0;
+    margin: 30px 25px 0 0;
     width: 100%;
   }
 }
@@ -5686,9 +5694,9 @@ a.ag:active {
 @media (max-width: 768px) {
   .brandWrap_inner--box--pic.chocolat_no01Pic {
     position: absolute;
-    top: 35px;
-    right: -100px;
-    width: 127%;
+    top: 0;
+    right: -85px;
+    width: 72%;
   }
 }
 
@@ -5806,6 +5814,8 @@ a.ag:active {
   .brandWrap_inner--box--pic .brand_chocolat--pic02 {
     width: 100%;
     padding-right: 55px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
 }
 
