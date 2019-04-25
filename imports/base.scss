@@ -8628,6 +8628,7 @@ button.slick-prev, button.slick-next {
 
     
   @include bp768{
+    padding: 30px 0;
 
   };
 
@@ -8637,7 +8638,7 @@ button.slick-prev, button.slick-next {
       margin-bottom: 15px;
 
       @include bp768{
-
+        font-size:18px;
       };
     }
     p{
@@ -8646,7 +8647,8 @@ button.slick-prev, button.slick-next {
       margin-bottom: 20px;
 
       @include bp768{
-
+        font-size: 12px;
+        margin-bottom:30px;
       };
 
     }
@@ -8664,6 +8666,7 @@ button.slick-prev, button.slick-next {
           text-align: center;
           color:#fff;
           font-size: 13px;
+          display: block;
 
           @include bp768{
 

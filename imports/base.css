@@ -9504,16 +9504,35 @@ button.slick-prev, button.slick-next {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  #signIn #dvLogin .dvLoginNotice {
+    padding: 30px 0;
+  }
+}
+
 #signIn #dvLogin .dvLoginNotice h4 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 15px;
 }
 
+@media (max-width: 768px) {
+  #signIn #dvLogin .dvLoginNotice h4 {
+    font-size: 18px;
+  }
+}
+
 #signIn #dvLogin .dvLoginNotice p {
   text-align: center;
   color: #FF4040;
   margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  #signIn #dvLogin .dvLoginNotice p {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
 }
 
 #signIn #dvLogin .dvLoginNotice_btn a {
@@ -9525,6 +9544,7 @@ button.slick-prev, button.slick-next {
   text-align: center;
   color: #fff;
   font-size: 13px;
+  display: block;
 }
 
 #signIn #dvLogin #dvLoginWrap {
