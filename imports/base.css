@@ -11572,6 +11572,11 @@ button.slick-prev, button.slick-next {
 @media (max-width: 768px) {
   #OrderShippingSelectBox .OrderShippingSelectBox_box--left--order.confirmOrder .confirmOrder_pay {
     display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  #OrderShippingSelectBox .OrderShippingSelectBox_box--left--order.confirmOrder .confirmOrder_pay.paycts {
     border-top: 1px solid #ccc;
   }
 }
@@ -12588,15 +12593,38 @@ button.slick-prev, button.slick-next {
   right: 0;
 }
 
+@media (max-width: 768px) {
+  .completeBox .complete_main {
+    width: 80%;
+    top: 170px;
+    left: 0;
+    margin: 0 auto;
+  }
+}
+
 .completeBox .complete_txt {
   margin-bottom: 25px;
   padding-top: 110px;
+}
+
+@media (max-width: 768px) {
+  .completeBox .complete_txt {
+    width: 100%;
+    margin-bottom: 120px;
+    padding: 40px 0 0 0;
+  }
 }
 
 .completeBox .complete_txt p {
   text-align: center;
   font-size: 13px;
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .completeBox .complete_txt p {
+    font-size: 12px;
+  }
 }
 
 .completeBox .complete_txt p span {
@@ -12607,8 +12635,21 @@ button.slick-prev, button.slick-next {
   display: block;
 }
 
+@media (max-width: 768px) {
+  .completeBox .complete_txt p span {
+    font-size: 19px;
+    margin-bottom: 15px;
+  }
+}
+
 .completeBox .complete_cts--detail {
   margin-bottom: 153px;
+}
+
+@media (max-width: 768px) {
+  .completeBox .complete_cts--detail {
+    margin-bottom: 0;
+  }
 }
 
 .completeBox .complete_cts--detail--inner {
@@ -12625,14 +12666,42 @@ button.slick-prev, button.slick-next {
   margin: 0 auto 25px;
 }
 
+@media (max-width: 768px) {
+  .completeBox .complete_cts--detail--inner {
+    background: url(../../Contents/ImagesPkg/user/order_complete_bg_sp.png) no-repeat;
+    display: block;
+    width: 410px;
+    padding: 45px 0;
+  }
+}
+
 .completeBox .complete_cts--detail--inner p {
   font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .completeBox .complete_cts--detail--inner p {
+    font-size: 14px;
+    text-align: center;
+  }
 }
 
 .completeBox .complete_cts--detail--inner p span {
   font-weight: bold;
   margin-right: 10px;
   font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .completeBox .complete_cts--detail--inner p span {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .completeBox .complete_cts--detail--inner p:first-child {
+    margin-bottom: 35px;
+  }
 }
 
 .completeBox .complete_cts--detail a {
@@ -12646,6 +12715,12 @@ button.slick-prev, button.slick-next {
   background: #081D5C;
   margin: 0 auto;
   line-height: 50px;
+}
+
+@media (max-width: 768px) {
+  .completeBox .complete_cts--detail a {
+    width: 75%;
+  }
 }
 
 div.cartstep h2 {

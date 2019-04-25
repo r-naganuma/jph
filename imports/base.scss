@@ -10508,8 +10508,13 @@ button.slick-prev, button.slick-next {
 
           @include bp768 {
             display: block;
+          };
+
+          &.paycts{
+          @include bp768 {
             border-top: 1px solid #ccc;
           };
+          }
 
             &--left{
               width: 160px;
@@ -11379,16 +11384,33 @@ button.slick-prev, button.slick-next {
     position: absolute;
     top: 0;
     right: 0;
+
+  @include bp768 {
+    width: 80%;
+    top: 170px;
+    left: 0;
+    margin: 0 auto;
+  };
   }
 
   .complete_txt{
     margin-bottom: 25px;
     padding-top: 110px;
 
+  @include bp768 {
+    width: 100%;
+    margin-bottom: 120px;
+    padding: 40px 0 0 0;
+  };
+
     p{
       text-align: center;
       font-size: 13px;
       font-weight: bold;
+
+    @include bp768 {
+      font-size: 12px;
+    };
 
       span{
         font-size: 24px;
@@ -11396,6 +11418,11 @@ button.slick-prev, button.slick-next {
         line-height: 1;
         margin-bottom: 20px;
         display: block;
+
+      @include bp768 {
+        font-size: 19px;
+        margin-bottom: 15px;
+      };
       }
     }
   }
@@ -11404,6 +11431,10 @@ button.slick-prev, button.slick-next {
 
     &--detail{
       margin-bottom: 153px;
+
+    @include bp768 {
+      margin-bottom: 0;
+    };
 
       &--inner{
         background: url(../../Contents/ImagesPkg/user/order_complete_bg.png) no-repeat;
@@ -11414,13 +11445,35 @@ button.slick-prev, button.slick-next {
         justify-content: space-between;
         margin: 0 auto 25px;
 
+      @include bp768 {
+        background: url(../../Contents/ImagesPkg/user/order_complete_bg_sp.png) no-repeat;
+        display: block;
+        width: 410px;
+        padding: 45px 0;
+      };
+
         p{
           font-size: 13px;
+
+        @include bp768 {
+          font-size: 14px;
+          text-align: center;
+        };
 
           span{
             font-weight: bold;
             margin-right: 10px;
             font-size: 13px;
+
+          @include bp768 {
+            margin-right: 0;
+          };
+          }
+
+          &:first-child{
+          @include bp768 {
+            margin-bottom: 35px;
+          };
           }
         }
       }
@@ -11436,6 +11489,10 @@ button.slick-prev, button.slick-next {
         background: #081D5C;
         margin: 0 auto;
         line-height: 50px;
+
+      @include bp768 {
+        width: 75%;
+      };
       }
     }
   }
