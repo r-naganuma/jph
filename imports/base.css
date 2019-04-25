@@ -11572,6 +11572,7 @@ button.slick-prev, button.slick-next {
 @media (max-width: 768px) {
   #OrderShippingSelectBox .OrderShippingSelectBox_box--left--order.confirmOrder .confirmOrder_pay {
     display: block;
+    border-top: 1px solid #ccc;
   }
 }
 

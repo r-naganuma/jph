@@ -10508,6 +10508,7 @@ button.slick-prev, button.slick-next {
 
           @include bp768 {
             display: block;
+            border-top: 1px solid #ccc;
           };
 
             &--left{
