@@ -3617,7 +3617,7 @@ a.ag:active {
 }
 
 #primary #divTopArea .boutiques_detailBox--menu--left {
-  width: 470px;
+  width: 215px;
   margin-left: 50px;
 }
 
@@ -3667,6 +3667,10 @@ a.ag:active {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 38px;
+  /*
+              &:last-child{
+                margin-bottom: 0;
+              }*/
 }
 
 @media (max-width: 768px) {
@@ -3675,42 +3679,91 @@ a.ag:active {
   }
 }
 
-#primary #divTopArea .boutiques_detailBox--menu--right ul li:first-child {
-  width: 170px;
-  margin-right: 17px;
+#primary #divTopArea .boutiques_detailBox--menu--right ul li {
+  /*
+                &:first-child{
+					
+                  width: 170px;
+                  margin-right: 17px;
+
+                @include bp768 {
+                  width: 60%;
+                  margin-right: 10px;
+                };
+
+                  p{
+                    font-size: 16px;
+                    line-height: 1;
+                    letter-spacing: 0.01em;
+                    font-weight: 500;
+
+                    span{
+                      display: block;
+                      margin-top: 10px;
+                      font-size: 12px;
+                      letter-spacing: 0.01em;
+                      font-weight: normal;
+
+                    @include bp768 {
+                      margin-top: 5px;
+                    };
+                    }
+                  }
+                }*/
+  /*
+                &:last-child{
+                  a{
+                    text-align: center;
+                    width: 218px;
+                    height: 38px;
+                    line-height: 38px;
+                    font-size: 14px;
+                    letter-spacing: 0.05em;
+                    margin: 3px auto 0;
+                    border: 1px solid #081D5C;
+                    display: block;
+                    position: relative;
+                    z-index: 1;
+
+                  @include bp768 {
+                    width: 34vw;
+                    height: 35px;
+                    line-height: 35px;
+                    font-size: 12px;
+                    letter-spacing: 0.01em;
+                    margin: 2.5px auto 0;
+                  };
+
+                    &::after{
+                      position: absolute;
+                      top: 0;
+                      right: 0;
+                      bottom: 0;
+                      left: 0;
+                      z-index: -1;
+                      content: '';
+                      background: #081D5C;
+                      transform-origin: right top;
+                      transform: scale(0, 1);
+                      transition: transform .3s;
+                    }
+
+                    &:hover::after {
+                      transform-origin: left top;
+                      transform: scale(1, 1);
+                    }
+
+                    &:hover{
+                      opacity: 1;
+                      color: #fff;
+                    }
+                  }
+                }*/
 }
 
-@media (max-width: 768px) {
-  #primary #divTopArea .boutiques_detailBox--menu--right ul li:first-child {
-    width: 60%;
-    margin-right: 10px;
-  }
-}
-
-#primary #divTopArea .boutiques_detailBox--menu--right ul li:first-child p {
-  font-size: 16px;
-  line-height: 1;
-  letter-spacing: 0.01em;
-  font-weight: 500;
-}
-
-#primary #divTopArea .boutiques_detailBox--menu--right ul li:first-child p span {
-  display: block;
-  margin-top: 10px;
-  font-size: 12px;
-  letter-spacing: 0.01em;
-  font-weight: normal;
-}
-
-@media (max-width: 768px) {
-  #primary #divTopArea .boutiques_detailBox--menu--right ul li:first-child p span {
-    margin-top: 5px;
-  }
-}
-
-#primary #divTopArea .boutiques_detailBox--menu--right ul li:last-child a {
+#primary #divTopArea .boutiques_detailBox--menu--right ul li a {
   text-align: center;
-  width: 218px;
+  padding: 0 25px;
   height: 38px;
   line-height: 38px;
   font-size: 14px;
@@ -3723,7 +3776,7 @@ a.ag:active {
 }
 
 @media (max-width: 768px) {
-  #primary #divTopArea .boutiques_detailBox--menu--right ul li:last-child a {
+  #primary #divTopArea .boutiques_detailBox--menu--right ul li a {
     width: 34vw;
     height: 35px;
     line-height: 35px;
@@ -3733,7 +3786,7 @@ a.ag:active {
   }
 }
 
-#primary #divTopArea .boutiques_detailBox--menu--right ul li:last-child a::after {
+#primary #divTopArea .boutiques_detailBox--menu--right ul li a::after {
   position: absolute;
   top: 0;
   right: 0;
@@ -3755,7 +3808,7 @@ a.ag:active {
   transition: transform .3s, -webkit-transform .3s;
 }
 
-#primary #divTopArea .boutiques_detailBox--menu--right ul li:last-child a:hover::after {
+#primary #divTopArea .boutiques_detailBox--menu--right ul li a:hover::after {
   -webkit-transform-origin: left top;
   -ms-transform-origin: left top;
   transform-origin: left top;
@@ -3764,13 +3817,13 @@ a.ag:active {
   transform: scale(1, 1);
 }
 
-#primary #divTopArea .boutiques_detailBox--menu--right ul li:last-child a:hover {
+#primary #divTopArea .boutiques_detailBox--menu--right ul li a:hover {
   opacity: 1;
   color: #fff;
 }
 
-#primary #divTopArea .boutiques_detailBox--menu--right ul:last-child {
-  margin-bottom: 0;
+#primary #divTopArea .boutiques_detailBox--menu--right ul li + li {
+  margin-left: 40px;
 }
 
 #primary #divTopArea .boutiques_popularity {

@@ -3291,7 +3291,7 @@ a.ag {
         };
 
           &--left{
-            width: 470px;
+            width: 215px;
             margin-left: 50px;
 
           @include bp768 {
@@ -3340,7 +3340,55 @@ a.ag {
             };
 
               li{
+				  a{
+                    text-align: center;
+					padding: 0 25px;
+                    height: 38px;
+                    line-height: 38px;
+                    font-size: 14px;
+                    letter-spacing: 0.05em;
+                    margin: 3px auto 0;
+                    border: 1px solid #081D5C;
+                    display: block;
+                    position: relative;
+                    z-index: 1;
+
+                  @include bp768 {
+                    width: 34vw;
+                    height: 35px;
+                    line-height: 35px;
+                    font-size: 12px;
+                    letter-spacing: 0.01em;
+                    margin: 2.5px auto 0;
+                  };
+                    &::after{
+                      position: absolute;
+                      top: 0;
+                      right: 0;
+                      bottom: 0;
+                      left: 0;
+                      z-index: -1;
+                      content: '';
+                      background: #081D5C;
+                      transform-origin: right top;
+                      transform: scale(0, 1);
+                      transition: transform .3s;
+                    }
+
+                    &:hover::after {
+                      transform-origin: left top;
+                      transform: scale(1, 1);
+                    }
+
+                    &:hover{
+                      opacity: 1;
+                      color: #fff;
+                    }
+				  }
+					  
+				  /*
                 &:first-child{
+					
                   width: 170px;
                   margin-right: 17px;
 
@@ -3367,8 +3415,9 @@ a.ag {
                     };
                     }
                   }
-                }
-
+                }*/
+				  
+				/*
                 &:last-child{
                   a{
                     text-align: center;
@@ -3416,12 +3465,17 @@ a.ag {
                       color: #fff;
                     }
                   }
-                }
+                }*/
               }
-
+				
+              li+li {
+				margin-left: 40px;
+               }
+				
+				/*
               &:last-child{
                 margin-bottom: 0;
-              }
+              }*/
             }
           }
         }
