@@ -4987,7 +4987,7 @@ a.ag {
           width: 555px;
 
         @include bp768 {
-          margin: 0 25px 0 0;
+          margin: 0 25px 25px 0;
           width: 100%;
         };
 
@@ -4995,7 +4995,7 @@ a.ag {
           @include bp768 {
             display: block;
             width: 48%;
-            margin-bottom: 50px;
+            margin-bottom: 25px;
           };
           }
         }
@@ -5013,11 +5013,21 @@ a.ag {
         &.brand_japon--no01{
           margin: -18px 40px 0 0;
           width: 350px;
+
+        @include bp768 {
+          margin: 0 25px 0 0;
+          width: 100%;
+        };
         }
 
         &.brand_japon--no02{
           margin: 100px 0 0 30px;
           width: 390px;
+
+        @include bp768 {
+          margin: 0 25px 0 0;
+          width: 100%;
+        };
         }
       }
 
@@ -5144,10 +5154,20 @@ a.ag {
         .brand_japon--pic01{
           width: 710px;
           margin: -78px 0 0;
+
+        @include bp768 {
+          width: 100vw;
+          margin: 20px 0 30px -10px;
+        };
         }
         .brand_japon--pic02{
           width: 675px;
           margin: 100px 0 0;
+
+        @include bp768 {
+          width: 100vw;
+          margin: 50px 0 0 -10px;
+        };
         }
       }
 
