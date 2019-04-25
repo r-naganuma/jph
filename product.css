@@ -825,6 +825,7 @@ h3 {
 }
 #detailOne .productPrice span.productPrice_tax {
   font-size: 12px;
+  margin-left: 5px;
 }
 @media (max-width: 768px) {
   #detailOne .productPrice span.productPrice_tax {

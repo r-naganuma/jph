@@ -883,6 +883,7 @@ h3 {
 
       &.productPrice_tax{
         font-size: 12px;
+        margin-left: 5px;
       
       @include bp768 {
         font-size: 10px;
