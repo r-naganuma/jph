@@ -5634,7 +5634,7 @@ a.ag:active {
 
 @media (max-width: 768px) {
   .brandWrap_inner--box--txt.brand_chocolat--no01 {
-    margin: 0 25px 0 0;
+    margin: 0 25px 25px 0;
     width: 100%;
   }
 }
@@ -5643,7 +5643,7 @@ a.ag:active {
   .brandWrap_inner--box--txt.brand_chocolat--no01 .chocolat_no01--sp {
     display: block;
     width: 48%;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
 }
 
@@ -5664,9 +5664,23 @@ a.ag:active {
   width: 350px;
 }
 
+@media (max-width: 768px) {
+  .brandWrap_inner--box--txt.brand_japon--no01 {
+    margin: 0 25px 0 0;
+    width: 100%;
+  }
+}
+
 .brandWrap_inner--box--txt.brand_japon--no02 {
   margin: 100px 0 0 30px;
   width: 390px;
+}
+
+@media (max-width: 768px) {
+  .brandWrap_inner--box--txt.brand_japon--no02 {
+    margin: 0 25px 0 0;
+    width: 100%;
+  }
 }
 
 .brandWrap_inner--box--pic {
@@ -5824,9 +5838,23 @@ a.ag:active {
   margin: -78px 0 0;
 }
 
+@media (max-width: 768px) {
+  .brandWrap_inner--box--pic .brand_japon--pic01 {
+    width: 100vw;
+    margin: 20px 0 30px -10px;
+  }
+}
+
 .brandWrap_inner--box--pic .brand_japon--pic02 {
   width: 675px;
   margin: 100px 0 0;
+}
+
+@media (max-width: 768px) {
+  .brandWrap_inner--box--pic .brand_japon--pic02 {
+    width: 100vw;
+    margin: 50px 0 0 -10px;
+  }
 }
 
 .brandWrap_inner--box.flexOrder .brandWrap_inner--box--txt {
