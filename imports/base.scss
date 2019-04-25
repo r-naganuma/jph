@@ -7999,6 +7999,7 @@ button.slick-prev, button.slick-next {
 @include bp768 {
   width: 100vw;
   margin: 15px 15px 0 0;
+  text-align: center;
 };
 
   .pagination_counts{
@@ -8013,6 +8014,8 @@ button.slick-prev, button.slick-next {
     margin-left: 10px;
     border: 1px solid #081D5C;
     vertical-align: top;
+	border-radius: 50%;
+	font-size: 14px;
   }
 
   a{
@@ -8024,6 +8027,8 @@ button.slick-prev, button.slick-next {
     line-height: 35px;
     margin-left: 10px;
     border: 1px solid #888888;
+	border-radius: 50%;
+	font-size: 14px;
   }
   p {
     padding: 5px 0 !important;
