@@ -4985,11 +4985,21 @@ a.ag {
         &.brand_chocolat--no01{
           margin: 22px 60px 0 0;
           width: 555px;
+
+        @include bp768 {
+          margin: 0 0 90px 0;
+          width: 48%;
+        };
         }
 
         &.brand_chocolat--no02{
           margin: 0 0 0 30px;
           width: 390px;
+
+        @include bp768 {
+          margin: 0 25px 0 0;
+          width: 100%;
+        };
         }
 
         &.brand_japon--no01{
@@ -5018,9 +5028,18 @@ a.ag {
         &.patisserie_no01Pic{
         @include bp768 {
           position: absolute;
-          top: 133px;
+          top: 35px;
           right: -280px;
-          width: 130%;
+          width: 127%;
+        };
+        }
+
+        &.chocolat_no01Pic{
+        @include bp768 {
+          position: absolute;
+          top: 35px;
+          right: -100px;
+          width: 127%;
         };
         }
 
@@ -5099,9 +5118,19 @@ a.ag {
         .brand_chocolat--pic01{
           width: 340px;
           margin: 22px 0 100px;
+
+        @include bp768 {
+          width: 100%;
+          margin: 0;
+        };
         }
         .brand_chocolat--pic02{
           width: 675px;
+
+        @include bp768 {
+          width: 100%;
+          padding-right: 55px;
+        };
         }
         .brand_japon--pic01{
           width: 710px;
