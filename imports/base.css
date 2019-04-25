@@ -3604,14 +3604,14 @@ a.ag:active {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 60px;
+  padding-top: 45px;
   margin-top: 52px;
 }
 
 @media (max-width: 768px) {
   #primary #divTopArea .boutiques_detailBox--menu {
     display: block;
-    padding: 15px 20px 0;
+    padding: 20px 20px 0;
     margin-top: 25px;
   }
 }
@@ -3625,7 +3625,7 @@ a.ag:active {
   #primary #divTopArea .boutiques_detailBox--menu--left {
     width: 100%;
     margin-left: 0;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 }
 
@@ -3643,6 +3643,7 @@ a.ag:active {
   #primary #divTopArea .boutiques_detailBox--menu--left h5 {
     font-size: 19px;
     letter-spacing: 0.01em;
+    text-align: center;
   }
 }
 
@@ -3657,7 +3658,7 @@ a.ag:active {
 @media (max-width: 768px) {
   #primary #divTopArea .boutiques_detailBox--menu--left h5 span {
     font-size: 11px;
-    margin-top: 5px;
+    margin-top: 8px;
     letter-spacing: 0.01em;
   }
 }
@@ -3675,7 +3676,8 @@ a.ag:active {
 
 @media (max-width: 768px) {
   #primary #divTopArea .boutiques_detailBox--menu--right ul {
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
+    display: block;
   }
 }
 
@@ -3774,6 +3776,7 @@ a.ag:active {
   position: relative;
   z-index: 1;
   margin-right: 40px;
+  color: #081D5C;
 }
 
 @media (max-width: 768px) {
@@ -3821,6 +3824,12 @@ a.ag:active {
 #primary #divTopArea .boutiques_detailBox--menu--right ul li a:hover {
   opacity: 1;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  #primary #divTopArea .boutiques_detailBox--menu--right ul li + li {
+    margin-top: 14px;
+  }
 }
 
 #primary #divTopArea .boutiques_popularity {
@@ -8747,6 +8756,7 @@ button.slick-prev, button.slick-next {
   #pagination {
     width: 100vw;
     margin: 15px 15px 0 0;
+    text-align: center;
   }
 }
 
@@ -8762,6 +8772,8 @@ button.slick-prev, button.slick-next {
   margin-left: 10px;
   border: 1px solid #081D5C;
   vertical-align: top;
+  border-radius: 50%;
+  font-size: 14px;
 }
 
 #pagination a {
@@ -8773,6 +8785,8 @@ button.slick-prev, button.slick-next {
   line-height: 35px;
   margin-left: 10px;
   border: 1px solid #888888;
+  border-radius: 50%;
+  font-size: 14px;
 }
 
 #pagination p {

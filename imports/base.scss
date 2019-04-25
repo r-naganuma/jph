@@ -3281,12 +3281,12 @@ a.ag {
           border-top: 1px solid #ccc;
           display: flex;
           align-items: center;
-          padding-top: 60px;
+          padding-top: 45px;
           margin-top: 52px;
 
         @include bp768 {
           display: block;
-          padding: 15px 20px 0;
+          padding: 20px 20px 0;
           margin-top: 25px;
         };
 
@@ -3297,7 +3297,7 @@ a.ag {
           @include bp768 {
             width: 100%;
             margin-left: 0;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
           };
 
             h5{
@@ -3312,6 +3312,7 @@ a.ag {
             @include bp768 {
               font-size: 19px;
               letter-spacing: 0.01em;
+				text-align: center;
             };
 
               span{
@@ -3323,7 +3324,7 @@ a.ag {
 
               @include bp768 {
                 font-size: 11px;
-                margin-top: 5px;
+                margin-top: 8px;
                 letter-spacing: 0.01em;
               };
               }
@@ -3336,7 +3337,8 @@ a.ag {
               /*margin-bottom: 38px;*/
 
             @include bp768 {
-              margin-bottom: 20px;
+              /*margin-bottom: 20px;*/
+				display: block;
             };
 
               li{
@@ -3353,6 +3355,7 @@ a.ag {
                     position: relative;
                     z-index: 1;
 					margin-right: 40px;
+					color: #081D5C;
 
                   @include bp768 {
                     width: 34vw;
@@ -3468,6 +3471,11 @@ a.ag {
                   }
                 }*/
               }
+				li +li{
+					@include bp768 {
+						margin-top: 14px;
+					}
+				}
 				
 				/*
               &:last-child{
@@ -7991,6 +7999,7 @@ button.slick-prev, button.slick-next {
 @include bp768 {
   width: 100vw;
   margin: 15px 15px 0 0;
+  text-align: center;
 };
 
   .pagination_counts{
@@ -8005,6 +8014,8 @@ button.slick-prev, button.slick-next {
     margin-left: 10px;
     border: 1px solid #081D5C;
     vertical-align: top;
+	border-radius: 50%;
+	font-size: 14px;
   }
 
   a{
@@ -8016,6 +8027,8 @@ button.slick-prev, button.slick-next {
     line-height: 35px;
     margin-left: 10px;
     border: 1px solid #888888;
+	border-radius: 50%;
+	font-size: 14px;
   }
   p {
     padding: 5px 0 !important;
