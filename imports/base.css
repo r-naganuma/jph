@@ -5632,9 +5632,23 @@ a.ag:active {
   width: 555px;
 }
 
+@media (max-width: 768px) {
+  .brandWrap_inner--box--txt.brand_chocolat--no01 {
+    margin: 0 0 90px 0;
+    width: 48%;
+  }
+}
+
 .brandWrap_inner--box--txt.brand_chocolat--no02 {
   margin: 0 0 0 30px;
   width: 390px;
+}
+
+@media (max-width: 768px) {
+  .brandWrap_inner--box--txt.brand_chocolat--no02 {
+    margin: 0 25px 0 0;
+    width: 100%;
+  }
 }
 
 .brandWrap_inner--box--txt.brand_japon--no01 {
@@ -5663,9 +5677,18 @@ a.ag:active {
 @media (max-width: 768px) {
   .brandWrap_inner--box--pic.patisserie_no01Pic {
     position: absolute;
-    top: 133px;
+    top: 35px;
     right: -280px;
-    width: 130%;
+    width: 127%;
+  }
+}
+
+@media (max-width: 768px) {
+  .brandWrap_inner--box--pic.chocolat_no01Pic {
+    position: absolute;
+    top: 35px;
+    right: -100px;
+    width: 127%;
   }
 }
 
@@ -5768,8 +5791,22 @@ a.ag:active {
   margin: 22px 0 100px;
 }
 
+@media (max-width: 768px) {
+  .brandWrap_inner--box--pic .brand_chocolat--pic01 {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 .brandWrap_inner--box--pic .brand_chocolat--pic02 {
   width: 675px;
+}
+
+@media (max-width: 768px) {
+  .brandWrap_inner--box--pic .brand_chocolat--pic02 {
+    width: 100%;
+    padding-right: 55px;
+  }
 }
 
 .brandWrap_inner--box--pic .brand_japon--pic01 {
