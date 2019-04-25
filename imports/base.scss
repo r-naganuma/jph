@@ -11392,6 +11392,10 @@ button.slick-prev, button.slick-next {
 .completeBox{
   position: relative;
 
+@include bp768 {
+  position: inherit;
+};
+
   .complete_main{
     width: 380.5px;
     position: absolute;
@@ -11400,7 +11404,7 @@ button.slick-prev, button.slick-next {
 
   @include bp768 {
     width: 80%;
-    top: 170px;
+    top: 300px;
     left: 0;
     margin: 0 auto;
   };
