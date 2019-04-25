@@ -5614,6 +5614,19 @@ a.ag:active {
   width: 350px;
 }
 
+@media (max-width: 768px) {
+  .brandWrap_inner--box--txt.brand_patisserie--no01 {
+    margin: 0 0 40px 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .brandWrap_inner--box--txt.brand_patisserie--no01 .brandCts {
+    width: 48%;
+  }
+}
+
 .brandWrap_inner--box--txt.brand_chocolat--no01 {
   margin: 22px 60px 0 0;
   width: 555px;
@@ -5644,6 +5657,15 @@ a.ag:active {
     top: 0;
     right: -10px;
     width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .brandWrap_inner--box--pic.patisserie_no01Pic {
+    position: absolute;
+    top: 133px;
+    right: -280px;
+    width: 130%;
   }
 }
 
@@ -5720,7 +5742,7 @@ a.ag:active {
 @media (max-width: 768px) {
   .brandWrap_inner--box--pic .brand_fabrication--pic02 {
     width: 80%;
-    margin: 0 0 30px -10px;
+    margin: 0 auto 30px;
     display: block;
   }
 }
@@ -5730,6 +5752,15 @@ a.ag:active {
   position: absolute;
   top: 62px;
   left: 0;
+}
+
+@media (max-width: 768px) {
+  .brandWrap_inner--box--pic .brand_patisserie--pic01 {
+    width: 100%;
+    position: inherit;
+    top: inherit;
+    left: inherit;
+  }
 }
 
 .brandWrap_inner--box--pic .brand_chocolat--pic01 {
@@ -5770,6 +5801,13 @@ a.ag:active {
   line-height: 1;
 }
 
+@media (max-width: 768px) {
+  .brandWrap_inner .brandSubttl {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+}
+
 .brandWrap_inner .brandFs12 {
   font-size: 12px;
 }
@@ -5780,9 +5818,22 @@ a.ag:active {
   display: flex;
 }
 
+@media (max-width: 768px) {
+  .brandWrap_inner--flex {
+    display: block;
+  }
+}
+
 .brandWrap_inner--flex li:nth-child(1) {
   width: 210px;
   margin-right: 100px;
+}
+
+@media (max-width: 768px) {
+  .brandWrap_inner--flex li:nth-child(1) {
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
 }
 
 .brandWrap_inner--flex li:nth-child(2) {
@@ -5790,8 +5841,22 @@ a.ag:active {
   margin-right: 100px;
 }
 
+@media (max-width: 768px) {
+  .brandWrap_inner--flex li:nth-child(2) {
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+}
+
 .brandWrap_inner--flex li:nth-child(3) {
   width: 320px;
+}
+
+@media (max-width: 768px) {
+  .brandWrap_inner--flex li:nth-child(3) {
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
 }
 
 .brandWrap_inner--flex li p {
@@ -5806,8 +5871,20 @@ a.ag:active {
   margin-bottom: 10px;
 }
 
+@media (max-width: 768px) {
+  .brandWrap_inner--flex li p span {
+    font-size: 13px;
+  }
+}
+
 .brandWrap_inner--flex li p.mrgB60 {
   margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .brandWrap_inner--flex li p.mrgB60 {
+    margin-bottom: 30px;
+  }
 }
 
 .brandWrap2 {
