@@ -10472,7 +10472,7 @@ button.slick-prev, button.slick-next {
         margin-bottom: 50px;
       };
 
-        &:nth-child(n + 2){
+        &.orderColumn_payment:nth-child(n + 2){
           display: none;
         }
       }
