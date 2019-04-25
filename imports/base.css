@@ -5563,7 +5563,7 @@ a.ag:active {
 
 @media (max-width: 768px) {
   .brandWrap_inner--box--txt.brand_jph--no03 {
-    margin: 0 25px 0 0;
+    margin: 30px 25px 0 0;
     width: 100%;
   }
 }
@@ -5571,6 +5571,13 @@ a.ag:active {
 .brandWrap_inner--box--txt.brand_creativite--no01 {
   margin: 22px 40px 60px 0;
   width: 350px;
+}
+
+@media (max-width: 768px) {
+  .brandWrap_inner--box--txt.brand_creativite--no01 {
+    margin: 0 25px 0 0;
+    width: 100%;
+  }
 }
 
 .brandWrap_inner--box--txt.brand_creativite--no02 {
@@ -5664,6 +5671,15 @@ a.ag:active {
 .brandWrap_inner--box--pic .brand_creativite--pic01 {
   width: 710px;
   margin-top: 22px;
+}
+
+@media (max-width: 768px) {
+  .brandWrap_inner--box--pic .brand_creativite--pic01 {
+    width: 100vw;
+    margin-left: -10px;
+    margin: 20px 0 30px;
+    display: block;
+  }
 }
 
 .brandWrap_inner--box--pic .brand_creativite--pic02 {
@@ -5869,7 +5885,7 @@ a.ag:active {
 @media (max-width: 768px) {
   .brandWrap2 dl dd ul li:first-child {
     margin-right: 20px;
-    width: 6%;
+    width: 15%;
     text-align: right;
   }
 }
@@ -5882,8 +5898,8 @@ a.ag:active {
 
 @media (max-width: 768px) {
   .brandWrap2 dl dd ul li:last-child {
-    width: 94%;
-    margin-right: 23px;
+    width: 85%;
+    margin-right: 20px;
   }
 }
 
