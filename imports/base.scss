@@ -4896,6 +4896,18 @@ a.ag {
         &.brand_jph--no01{
           margin: 0 80px 0 0;
           width: 490px;
+
+        @include bp768 {
+          margin: 0;
+          width: 100%;
+        };
+
+          .jph_no01--sp{
+          @include bp768 {
+            display: block;
+            width: 48%;
+          };
+          }
         }
 
         &.brand_jph--no02{
@@ -4957,8 +4969,20 @@ a.ag {
       &--pic{
         position: relative;
 
+        .jph_no1Pic{
+        @include bp768 {
+          position: absolute;
+          top: 0;
+          right: -10px;
+        };
+        }
+
         .brand_jph--pic01{
           width: 530px;
+
+        @include bp768 {
+          width: 150%;
+        };
         }
         .brand_jph--pic02{
           width: 440px;
