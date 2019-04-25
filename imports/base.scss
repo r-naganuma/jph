@@ -8549,6 +8549,7 @@ button.slick-prev, button.slick-next {
     justify-content: space-between;
     width: 810px;
     margin: 0 auto;
+    flex-wrap: wrap;
 
   @include bp768 {
     display: block;
@@ -8556,6 +8557,45 @@ button.slick-prev, button.slick-next {
     padding: 0 10px;
     box-sizing: border-box;
   };
+
+
+  .dvLoginNotice{
+    color:#FF4040;
+    background: #FFECEE;
+    margin: 0 auto 30px;
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+
+    
+  @include bp768{
+
+  };
+
+    h4{
+
+      @include bp768{
+
+      };
+    }
+    p{
+
+      @include bp768{
+
+      };
+
+    }
+    &_btn{
+
+      @include bp768{
+
+      };
+    }
+
+  }
+
+
+
 
     #dvLoginWrap{
       width: 300px;

@@ -9404,6 +9404,8 @@ button.slick-prev, button.slick-next {
   justify-content: space-between;
   width: 810px;
   margin: 0 auto;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
@@ -9414,6 +9416,15 @@ button.slick-prev, button.slick-next {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
+}
+
+#signIn #dvLogin .dvLoginNotice {
+  color: #FF4040;
+  background: #FFECEE;
+  margin: 0 auto 30px;
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
 }
 
 #signIn #dvLogin #dvLoginWrap {
