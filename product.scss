@@ -510,7 +510,8 @@ h3 {
             };
 	    			}
 	    			span.price_tax{
-				        font-size: 12px;
+                font-size: 12px;
+                margin-left: 5px;
       
               @include bp768 {
                 font-size: 9px;
