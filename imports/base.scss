@@ -4969,7 +4969,7 @@ a.ag {
       &--pic{
         position: relative;
 
-        .jph_no1Pic{
+        &.jph_no1Pic{
         @include bp768 {
           position: absolute;
           top: 0;

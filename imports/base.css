@@ -5602,7 +5602,7 @@ a.ag:active {
 }
 
 @media (max-width: 768px) {
-  .brandWrap_inner--box--pic .jph_no1Pic {
+  .brandWrap_inner--box--pic.jph_no1Pic {
     position: absolute;
     top: 0;
     right: -10px;
