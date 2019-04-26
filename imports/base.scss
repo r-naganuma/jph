@@ -6363,14 +6363,15 @@ a.ag {
 
   @include bp768 {
         width: 100%;
-        padding: 0 10px;
-        box-sizing: border-box;
+
   };
 
   .eventGiftAbout{
     text-align: center;
     @include bp768 {
-
+        text-align: left;
+        padding: 0 10px;
+        box-sizing: border-box;
     };
 
     h3{
@@ -6382,7 +6383,7 @@ a.ag {
         font-weight: 500;
 
       @include bp768 {
-
+            font-size: 25px;
       };
 
       span{
@@ -6410,7 +6411,10 @@ a.ag {
       letter-spacing: 1px;
 
       @include bp768 {
-
+            font-size:12px;
+            text-align: left;
+            margin-bottom: 25px;
+            line-height: 1.8;
       };
 
     }
@@ -6422,6 +6426,8 @@ a.ag {
 
       @include bp768 {
             width:100%;
+            padding: 30px  25px;
+            box-sizing: border-box;
       };
 
       h4{
@@ -6431,9 +6437,9 @@ a.ag {
         font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
 
         @include bp768 {
-
+            font-size: 14px;
+            line-height: 1.8;
         };
-
       }
       p{
         text-align: center;
@@ -6442,7 +6448,9 @@ a.ag {
         margin-bottom: 30px;
 
         @include bp768 {
-
+          font-size: 12px;
+          text-align: left;
+          line-height: 1.8;
         };
 
       }
@@ -6464,7 +6472,7 @@ a.ag {
           margin: 0 auto;
 
           @include bp768 {
-
+              width: 100%;
           };
 
 
