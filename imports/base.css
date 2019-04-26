@@ -7297,8 +7297,8 @@ a.ag:active {
 
 @media (max-width: 768px) {
   .mypageBox_menu {
-    width: 100%;
-    margin-top: 20px;
+    width: 85%;
+    margin: 20px auto 0;
   }
 }
 
@@ -7348,7 +7348,7 @@ a.ag:active {
 @media (max-width: 768px) {
   .mypageBox_cts h3 {
     font-size: 20px;
-    margin: 0 0 30px;
+    margin: 40px 0 30px;
     padding: 0 10px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
