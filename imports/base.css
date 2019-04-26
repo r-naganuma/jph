@@ -10052,6 +10052,17 @@ button.slick-prev, button.slick-next {
   background: #fff;
 }
 
+@media (max-width: 768px) {
+  #psRemind #dvPasswordReminderInput dl dd .input_widthB {
+    width: 20%;
+    font-size: 16px;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+}
+
 #psRemind #dvPasswordReminderInput dl dd .input_widthE {
   width: 397px;
   height: 40px;
@@ -10063,8 +10074,27 @@ button.slick-prev, button.slick-next {
   background: #fff;
 }
 
+@media (max-width: 768px) {
+  #psRemind #dvPasswordReminderInput dl dd .input_widthE {
+    width: 93.75%;
+    font-size: 16px;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+}
+
 #psRemind #dvPasswordReminderInput.psRemind_modify {
   padding-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  #psRemind #dvPasswordReminderInput.psRemind_modify {
+    padding: 40px 25px 50px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 }
 
 #psRemind #dvPasswordReminderInput.psRemind_modify dl {
@@ -10072,8 +10102,21 @@ button.slick-prev, button.slick-next {
   margin-bottom: 50px;
 }
 
+@media (max-width: 768px) {
+  #psRemind #dvPasswordReminderInput.psRemind_modify dl {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
 #psRemind #dvPasswordReminderInput.psRemind_modify dl dd {
   margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  #psRemind #dvPasswordReminderInput.psRemind_modify dl dd {
+    font-size: 14px;
+  }
 }
 
 #psRemind #dvPasswordReminderInput.psRemind_modify dl dd .mrgB10 {
