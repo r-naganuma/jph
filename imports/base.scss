@@ -6384,6 +6384,7 @@ a.ag {
 
       @include bp768 {
             font-size: 25px;
+            margin-bottom: 15px;
       };
 
       span{
@@ -6426,7 +6427,7 @@ a.ag {
 
       @include bp768 {
             width:100%;
-            padding: 30px  25px;
+            padding: 25px  25px;
             box-sizing: border-box;
       };
 
@@ -6439,6 +6440,7 @@ a.ag {
         @include bp768 {
             font-size: 14px;
             line-height: 1.8;
+            margin-bottom: 15px;
         };
       }
       p{

@@ -7152,6 +7152,7 @@ a.ag:active {
 @media (max-width: 768px) {
   .eventTop .eventGiftAbout h3 {
     font-size: 25px;
+    margin-bottom: 15px;
   }
 }
 
@@ -7192,7 +7193,7 @@ a.ag:active {
 @media (max-width: 768px) {
   .eventTop .eventGiftAbout__box {
     width: 100%;
-    padding: 30px  25px;
+    padding: 25px  25px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
@@ -7209,6 +7210,7 @@ a.ag:active {
   .eventTop .eventGiftAbout__box h4 {
     font-size: 14px;
     line-height: 1.8;
+    margin-bottom: 15px;
   }
 }
 
