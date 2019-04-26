@@ -10519,6 +10519,18 @@ button.slick-prev, button.slick-next {
   margin-left: 10px;
 }
 
+@media (max-width: 768px) {
+  .UserRegistArea .UserRegistBox_left dd .notes {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .UserRegistArea .UserRegistBox_left dd.agreementBtn {
+    line-height: 1.5;
+  }
+}
+
 .UserRegistArea .UserRegistBox_left dd.agreementBtn a {
   color: #081D5C;
   text-decoration: underline;
@@ -10683,11 +10695,26 @@ button.slick-prev, button.slick-next {
   margin: 80px 0 30px;
 }
 
+@media (max-width: 768px) {
+  .UserRegistArea_completeTxt {
+    font-size: 12px;
+    text-align: center;
+    margin: 30px 0 20px;
+  }
+}
+
 .UserRegistArea_completeTxt span {
   display: block;
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 28px;
+}
+
+@media (max-width: 768px) {
+  .UserRegistArea_completeTxt span {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
 }
 
 .UserRegistArea_completeContact {
@@ -10700,16 +10727,40 @@ button.slick-prev, button.slick-next {
   margin: 0 auto 40px;
 }
 
+@media (max-width: 768px) {
+  .UserRegistArea_completeContact {
+    width: 90%;
+    height: auto;
+    line-height: 1.8;
+    font-size: 14px;
+    margin: 0 auto 20px;
+    padding: 20px 13px;
+  }
+}
+
 .UserRegistArea_completeContact a {
   font-size: 13px;
   color: #2177AD;
   text-decoration: underline;
 }
 
+@media (max-width: 768px) {
+  .UserRegistArea_completeContact a {
+    font-size: 14px;
+  }
+}
+
 .UserRegistArea_completeBtn {
   width: 300px;
   height: 50px;
   margin: 0 auto 200px;
+}
+
+@media (max-width: 768px) {
+  .UserRegistArea_completeBtn {
+    width: 73%;
+    margin: 0 auto;
+  }
 }
 
 .UserRegistArea_completeBtn a {
@@ -10733,11 +10784,32 @@ button.slick-prev, button.slick-next {
   left: 60px;
 }
 
+@media (max-width: 768px) {
+  .UserRegistArea_imgTxt {
+    width: 50%;
+    top: 65px;
+    left: 60px;
+    z-index: 2;
+  }
+}
+
 .UserRegistArea_imgIllust {
   width: 300px;
   position: absolute;
   top: 30px;
   left: -20px;
+}
+
+@media (max-width: 768px) {
+  .UserRegistArea_imgIllust {
+    width: 65%;
+    position: inherit;
+    top: inherit;
+    left: inherit;
+    display: block;
+    margin-bottom: 15px;
+    padding-left: 10px;
+  }
 }
 
 .UserRegistArea_catch {

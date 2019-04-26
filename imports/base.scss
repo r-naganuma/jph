@@ -9485,6 +9485,16 @@ button.slick-prev, button.slick-next {
           font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
           font-size: 13px;
           margin-left: 10px;
+
+        @include bp768 {
+          display: none;
+        };
+        }
+
+        &.agreementBtn{
+        @include bp768 {
+          line-height: 1.5;
+        };
         }
 
         &.agreementBtn a{
@@ -9642,11 +9652,22 @@ button.slick-prev, button.slick-next {
     text-align: center;
     margin: 80px 0 30px;
 
+  @include bp768 {
+    font-size: 12px;
+    text-align: center;
+    margin: 30px 0 20px;
+  };
+
     span{
       display: block;
       font-size: 20px;
       font-weight: bold;
       margin-bottom: 28px;
+
+    @include bp768 {
+      font-size: 15px;
+      margin-bottom: 10px;
+    };
     }
   }
 
@@ -9659,10 +9680,23 @@ button.slick-prev, button.slick-next {
     background: #fff;
     margin: 0 auto 40px;
 
+  @include bp768 {
+    width: 90%;
+    height: auto;
+    line-height: 1.8;
+    font-size: 14px;
+    margin: 0 auto 20px;
+    padding: 20px 13px;
+  };
+
     a{
       font-size: 13px;
       color: #2177AD;
       text-decoration: underline;
+
+    @include bp768 {
+      font-size: 14px;
+    };
     }
   }
 
@@ -9670,6 +9704,11 @@ button.slick-prev, button.slick-next {
     width: 300px;
     height: 50px;
     margin: 0 auto 200px;
+
+  @include bp768 {
+    width: 73%;
+    margin: 0 auto;
+  };
 
     a{
       display: block;
@@ -9691,6 +9730,13 @@ button.slick-prev, button.slick-next {
     position: absolute;
     top: -80px;
     left: 60px;
+
+  @include bp768 {
+    width: 50%;
+    top: 65px;
+    left: 60px;
+    z-index: 2;
+  };
   }
 
   &_imgIllust{
@@ -9698,6 +9744,16 @@ button.slick-prev, button.slick-next {
     position: absolute;
     top: 30px;
     left: -20px;
+
+  @include bp768 {
+    width: 65%;
+    position: inherit;
+    top: inherit;
+    left: inherit;
+    display: block;
+    margin-bottom: 15px;
+    padding-left: 10px;
+  };
   }
 
   &_catch{
