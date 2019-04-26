@@ -7471,6 +7471,7 @@ a.ag:active {
     background: #072056;
     font-weight: normal;
     text-align: center;
+    margin-top: 15px;
   }
 }
 
@@ -7894,7 +7895,7 @@ a.ag:active {
 
 @media (max-width: 768px) {
   .mypageBox_cts .dvOrderHistoryShipping {
-    width: 85%;
+    width: 75%;
     padding: 20px;
     margin: 0 auto 20px;
   }
@@ -7963,13 +7964,37 @@ a.ag:active {
   margin: 0 0 30px auto;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderHistoryProduct {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 .mypageBox_cts .dvOrderHistoryProduct table tr {
   border-bottom: 1px solid #CCCCCC;
   display: block;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderHistoryProduct table tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border-bottom: none;
+  }
+}
+
 .mypageBox_cts .dvOrderHistoryProduct table tr:first-child {
   border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderHistoryProduct table tr:first-child {
+    display: none;
+  }
 }
 
 .mypageBox_cts .dvOrderHistoryProduct table tr th {
@@ -7992,6 +8017,14 @@ a.ag:active {
   padding: 40px 0;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderHistoryProduct table .productImg {
+    width: 25vw;
+    padding: 20px 0 20px 10px;
+    margin-right: 20px;
+  }
+}
+
 .mypageBox_cts .dvOrderHistoryProduct table .productImg img {
   width: 100%;
 }
@@ -8001,13 +8034,41 @@ a.ag:active {
   padding: 40px 0;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderHistoryProduct table .productName {
+    width: 64vw;
+    padding: 20px 10px 20px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderHistoryProduct table .productName .sp_on {
+    font-size: 10px;
+    line-height: 1;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+}
+
 .mypageBox_cts .dvOrderHistoryProduct table .productName a {
   font-size: 12px;
   font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderHistoryProduct table .productName a {
+    font-size: 11px;
+  }
+}
+
 .mypageBox_cts .dvOrderHistoryProduct table .productName p {
   font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderHistoryProduct table .productName p {
+    font-size: 11px;
+  }
 }
 
 .mypageBox_cts .dvOrderHistoryProduct table .productPrice {
@@ -8017,10 +8078,33 @@ a.ag:active {
   padding: 40px 0;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderHistoryProduct table .productPrice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 49.3vw;
+    border-top: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    border-left: none;
+    padding: 0;
+  }
+}
+
 .mypageBox_cts .dvOrderHistoryProduct table .productPrice p {
   text-align: center;
   font-size: 14px;
   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderHistoryProduct table .productPrice p {
+    font-size: 13px;
+  }
 }
 
 .mypageBox_cts .dvOrderHistoryProduct table .orderCount {
@@ -8028,10 +8112,25 @@ a.ag:active {
   padding: 40px 0;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderHistoryProduct table .orderCount {
+    width: 49.3vw;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    padding: 0;
+  }
+}
+
 .mypageBox_cts .dvOrderHistoryProduct table .orderCount p {
   text-align: center;
   font-size: 14px;
   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderHistoryProduct table .orderCount p {
+    font-size: 13px;
+  }
 }
 
 .mypageBox_cts .dvOrderSumWrap {

@@ -6688,6 +6688,7 @@ a.ag {
         background: #072056;
         font-weight: normal;
         text-align: center;
+        margin-top: 15px;
       };
       }
     }
@@ -7058,7 +7059,7 @@ a.ag {
       margin: 0 auto 20px;
     
     @include bp768 {
-      width: 85%;
+      width: 75%;
       padding: 20px;
       margin: 0 auto 20px;
     };
@@ -7117,14 +7118,29 @@ a.ag {
     .dvOrderHistoryProduct{
       width: 665px;
       margin: 0 0 30px auto;
+    
+    @include bp768 {
+      width: 100%;
+      margin: 0;
+    };
 
       table{
         tr{
           border-bottom: 1px solid #CCCCCC;
           display: block;
 
+          @include bp768 {
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom: none;
+          };
+
           &:first-child{
             border-bottom: none;
+
+            @include bp768 {
+              display: none;
+            };
           }
 
           th{
@@ -7148,6 +7164,12 @@ a.ag {
           margin-right: 80px;
           padding: 40px 0;
 
+        @include bp768 {
+          width: 25vw;
+          padding: 20px 0 20px 10px;
+          margin-right: 20px;
+        };
+
           img{
             width: 100%;
           }
@@ -7156,13 +7178,35 @@ a.ag {
           width: 300px;
           padding: 40px 0;
 
+        @include bp768 {
+          width: 64vw;
+          padding: 20px 10px 20px 20px;
+        };
+
+          .sp_on{
+            @include bp768 {
+              font-size: 10px;
+              line-height: 1;
+              margin-bottom: 10px;
+              font-weight: 600;
+            };
+          }
+
           a{
             font-size: 12px;
             font-weight: 600;
+
+          @include bp768 {
+            font-size: 11px;
+          };
           }
 
           p{
             font-size: 12px;
+
+          @include bp768 {
+            font-size: 11px;
+          };
           }
         }
         .productPrice{
@@ -7171,20 +7215,46 @@ a.ag {
           border-right: 1px solid #CCCCCC;
           padding: 40px 0;
 
+        @include bp768 {
+          display: flex;
+          align-items: center;
+          width: 49.3vw;
+          border-top: 1px solid #CCC;
+          border-right: 1px solid #CCC;
+          border-bottom: 1px solid #CCC;
+          border-left: none;
+          padding: 0;
+        };
+
           p{
             text-align: center;
             font-size: 14px;
             font-weight: 500;
+
+          @include bp768 {
+            font-size: 13px;
+          };
           }
         }
         .orderCount{
           width: 210px;
           padding: 40px 0;
 
+        @include bp768 {
+          width: 49.3vw;
+          border-top: 1px solid #CCC;
+          border-bottom: 1px solid #CCC;
+          padding: 0;
+        };
+
           p{
             text-align: center;
             font-size: 14px;
             font-weight: 500;
+
+          @include bp768 {
+            font-size: 13px;
+          };
           }
         }
       }
