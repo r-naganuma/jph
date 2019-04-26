@@ -7813,7 +7813,7 @@ a.ag:active {
 
 @media (max-width: 768px) {
   .mypageBox_cts .orderContents_link {
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
     font-size: 14px;
   }
