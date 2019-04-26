@@ -10034,6 +10034,10 @@ button.slick-prev, button.slick-next {
   #psRemind #dvPasswordReminderInput dl dd .input_widthA {
     width: 96%;
     font-size: 16px;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
 }
 

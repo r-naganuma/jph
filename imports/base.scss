@@ -9079,6 +9079,8 @@ button.slick-prev, button.slick-next {
         @include bp768 {
           width: 96%;
           font-size: 16px;
+          border-radius: 0;
+          appearance: none;
         };
         }
 
