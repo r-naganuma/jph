@@ -6405,6 +6405,7 @@ a.ag {
       text-align: center;
       margin-bottom: 40px;
       line-height: 30px;
+      letter-spacing: 1px;
 
       @include bp768 {
 
@@ -6436,6 +6437,7 @@ a.ag {
         text-align: center;
         font-size: 14px;
         line-height: 30px;
+        margin-bottom: 30px;
 
 
 
@@ -6452,13 +6454,15 @@ a.ag {
         };
 
         a{
-          width:300px;
+          width: 300px;
           height: 50px;
           line-height: 50px;
           text-align: center;
-          color:#fff;
-          font-size:13px;
+          color: #fff;
+          font-size: 13px;
           background: #081D5C;
+          display: block;
+          margin: 0 auto;
 
 
           @include bp768 {

@@ -7149,6 +7149,7 @@ a.ag:active {
   text-align: center;
   margin-bottom: 40px;
   line-height: 30px;
+  letter-spacing: 1px;
 }
 
 .eventTop .eventGiftAbout__box {
@@ -7169,6 +7170,7 @@ a.ag:active {
   text-align: center;
   font-size: 14px;
   line-height: 30px;
+  margin-bottom: 30px;
 }
 
 .eventTop .eventGiftAbout__box .contact_btn a {
@@ -7179,6 +7181,8 @@ a.ag:active {
   color: #fff;
   font-size: 13px;
   background: #081D5C;
+  display: block;
+  margin: 0 auto;
 }
 
 /* ---------- TOP */
