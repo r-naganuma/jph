@@ -1288,6 +1288,7 @@ h3 {
   background: inherit;
   cursor: pointer;
   outline: none;
+  font-size: 14px;
 }
 
 @media (max-width: 768px) {
