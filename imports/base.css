@@ -7117,7 +7117,8 @@ a.ag:active {
 /* ---------- TOP */
 /* イベントギフト */
 .eventTop {
-  width: 110pxl;
+  width: 1100px;
+  margin: 0 auto;
 }
 
 .eventTop .eventGiftAbout {
@@ -7145,12 +7146,20 @@ a.ag:active {
 
 .eventTop .eventGiftAbout__catch {
   font-size: 14px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .eventTop .eventGiftAbout__box {
   width: 860px;
   margin: 0 auto;
   background: #fff;
+  padding: 40px 0;
+}
+
+.eventTop .eventGiftAbout__box h4 {
+  font-size: 16px;
+  font-weight: bold;
 }
 
 /* ---------- TOP */

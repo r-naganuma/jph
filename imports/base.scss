@@ -6358,8 +6358,9 @@ a.ag {
 
 /* イベントギフト */
 .eventTop{
-  width: 110pxl;
-  
+  width: 1100px;
+  margin: 0 auto;
+
   @include bp768 {
 
   };
@@ -6401,8 +6402,8 @@ a.ag {
     }
     &__catch{
       font-size:14px;
-      
-
+      text-align: center;
+      margin-bottom: 40px;
 
       @include bp768 {
 
@@ -6413,12 +6414,15 @@ a.ag {
         width: 860px;
         margin: 0 auto;
         background: #fff;
+        padding: 40px 0;
 
       @include bp768 {
 
       };
 
       h4{
+        font-size: 16px;
+        font-weight: bold;
 
         @include bp768 {
 
