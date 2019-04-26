@@ -7441,6 +7441,14 @@ a.ag:active {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .mypage_catch {
+    padding: 15px 10px;
+    margin: 0 auto 20px;
+    width: 87%;
+  }
+}
+
 .mypageBox_cts .mypage_catch::after {
   content: "";
   position: absolute;
@@ -7448,6 +7456,13 @@ a.ag:active {
   bottom: -20px;
   border-bottom: 2px solid #081D5C;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .mypage_catch::after {
+    width: 100vw;
+    margin-left: -24px;
+  }
 }
 
 .mypageBox_cts #dvUpSell {
@@ -7532,6 +7547,13 @@ a.ag:active {
   display: block;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .glbPlist.column4 .favo_del {
+    width: 25px;
+    height: 25px;
+  }
+}
+
 .mypageBox_cts .glbPlist.column4 .favo_del::before {
   content: "";
   position: absolute;
@@ -7550,6 +7572,14 @@ a.ag:active {
   transform: rotate(45deg);
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .glbPlist.column4 .favo_del::before {
+    top: 13px;
+    left: 5px;
+    width: 15px;
+  }
+}
+
 .mypageBox_cts .glbPlist.column4 .favo_del::after {
   content: "";
   position: absolute;
@@ -7566,6 +7596,14 @@ a.ag:active {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .glbPlist.column4 .favo_del::after {
+    top: 13px;
+    left: 5px;
+    width: 15px;
+  }
 }
 
 .mypageBox_cts--inner {
