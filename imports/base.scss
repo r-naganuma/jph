@@ -6708,6 +6708,7 @@ a.ag {
       padding: 15px 10px;
       margin: 0 auto 40px;
       width: 87%;
+      line-height: 1.5;
     };
 
       &::after{
@@ -6879,6 +6880,11 @@ a.ag {
       border-bottom: 1px solid #C7C7C7;
       padding-bottom: 10px;
       margin-bottom: 10px;
+    
+    @include bp768 {
+      padding-bottom: 20px;
+      flex-wrap: wrap;
+    };
 
       .itemArea{
         display: flex;
@@ -6887,6 +6893,11 @@ a.ag {
         .itemImage{
           width: 195px;
           margin-right: 10px;
+    
+        @include bp768 {
+          width: 50%;
+          margin-right: 15px;
+        };
 
           img{
             width: 100%;
@@ -6895,9 +6906,17 @@ a.ag {
 
         .itemTitle{
           width: 235px;
+    
+        @include bp768 {
+          width: 50%;
+        };
 
           p{
             font-size: 13px;
+    
+          @include bp768 {
+            font-size: 12px;
+          };
           }
         }
       }
@@ -6907,6 +6926,12 @@ a.ag {
         background: #F7F7F7;
         padding: 20px;
         position: relative;
+    
+      @include bp768 {
+        width: 75%;
+        margin: 0 auto;
+        padding: 20px 20px 70px 20px;
+      };
 
         dl{
           dt{
@@ -6918,6 +6943,11 @@ a.ag {
             line-height: 1;
             color: #333;
             width: 65px;
+    
+          @include bp768 {
+            margin: 0 30px 17px 0;
+            width: 25%;
+          };
           }
 
           dd{
@@ -6928,6 +6958,11 @@ a.ag {
             line-height: 1;
             color: #333;
             width: 280px;
+    
+          @include bp768 {
+            margin: 0 0 17px 0;
+            width: 60%;
+          };
           }
         }
       }
@@ -6945,6 +6980,12 @@ a.ag {
         position: absolute;
         bottom: 0;
         right: 0;
+    
+      @include bp768 {
+        width: 75%;
+        margin: 0 auto;
+        font-size: 14px;
+      };
       }
 
     }
