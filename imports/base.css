@@ -7968,6 +7968,8 @@ a.ag:active {
   .mypageBox_cts .dvOrderHistoryProduct {
     width: 100%;
     margin: 0;
+    border-top: 1px solid #CCCCCC;
+    padding-top: 10px;
   }
 }
 
@@ -8036,8 +8038,8 @@ a.ag:active {
 
 @media (max-width: 768px) {
   .mypageBox_cts .dvOrderHistoryProduct table .productName {
-    width: 64vw;
-    padding: 20px 10px 20px 20px;
+    width: 100vw;
+    padding: 20px 30px;
   }
 }
 
@@ -8107,6 +8109,16 @@ a.ag:active {
   }
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderHistoryProduct table .productPrice .sp_on {
+    font-size: 10px;
+    line-height: 1;
+    margin-right: 10px;
+    margin-left: 40px;
+    font-weight: 600;
+  }
+}
+
 .mypageBox_cts .dvOrderHistoryProduct table .orderCount {
   width: 210px;
   padding: 40px 0;
@@ -8118,6 +8130,23 @@ a.ag:active {
     border-top: 1px solid #CCC;
     border-bottom: 1px solid #CCC;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderHistoryProduct table .orderCount .sp_on {
+    font-size: 10px;
+    line-height: 1;
+    margin-right: 10px;
+    font-weight: 600;
+    margin-left: 54px;
+    padding: 18px 0;
   }
 }
 
@@ -8138,10 +8167,25 @@ a.ag:active {
   margin: 0 0 30px auto;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderSumWrap {
+    width: 85%;
+    margin: 20px auto;
+  }
+}
+
 .mypageBox_cts .dvOrderSumWrap .orderSum {
   padding: 0 20px 10px;
   margin-bottom: 22px;
   border-bottom: 1px solid #CCCCCC;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderSumWrap .orderSum {
+    padding: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+  }
 }
 
 .mypageBox_cts .dvOrderSumWrap .orderSum dt {
@@ -8152,6 +8196,15 @@ a.ag:active {
   margin: 0 0 10px 0;
   line-height: 1;
   color: #333;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderSumWrap .orderSum dt {
+    font-size: 14px;
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 90px;
+    border-bottom: 1px solid #888888;
+  }
 }
 
 .mypageBox_cts .dvOrderSumWrap .orderSum dd {
@@ -8165,9 +8218,26 @@ a.ag:active {
   color: #333;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderSumWrap .orderSum dd {
+    width: 19%;
+    font-size: 14px;
+    margin: 0 0 20px -5px;
+    padding: 0 10px 20px 0;
+    border-bottom: 1px solid #888888;
+  }
+}
+
 .mypageBox_cts .dvOrderSumWrap .orderTotal {
   padding: 0 20px 20px;
   border-bottom: 1px solid #CCCCCC;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderSumWrap .orderTotal {
+    padding: 0;
+    border-bottom: none;
+  }
 }
 
 .mypageBox_cts .dvOrderSumWrap .orderTotal dt {
@@ -8180,6 +8250,15 @@ a.ag:active {
   font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderSumWrap .orderTotal dt {
+    font-size: 14px;
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 90px;
+    border-bottom: 1px solid #888888;
+  }
+}
+
 .mypageBox_cts .dvOrderSumWrap .orderTotal dd {
   display: inline-block;
   width: 49%;
@@ -8189,6 +8268,16 @@ a.ag:active {
   line-height: 1;
   color: #333;
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderSumWrap .orderTotal dd {
+    width: 19%;
+    font-size: 14px;
+    margin: 0 0 20px -5px;
+    padding: 0 10px 20px 0;
+    border-bottom: 1px solid #888888;
+  }
 }
 
 .mypageBox_cts .dvUserBtnBox a {
@@ -8203,6 +8292,14 @@ a.ag:active {
   font-weight: 600;
   text-align: center;
   margin: 0 0 0 auto;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .dvUserBtnBox a {
+    width: 85%;
+    font-size: 13px;
+    margin: 0 auto;
+  }
 }
 
 .mypageBox_cts .mypageMail {
@@ -8395,6 +8492,13 @@ a.ag:active {
   width: 280px;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .dvUserBtnBox.historyBtnBox {
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
 .mypageBox_cts .mypage_userShippingBtn {

@@ -7122,6 +7122,8 @@ a.ag {
     @include bp768 {
       width: 100%;
       margin: 0;
+      border-top: 1px solid #CCCCCC;
+      padding-top: 10px;
     };
 
       table{
@@ -7179,8 +7181,8 @@ a.ag {
           padding: 40px 0;
 
         @include bp768 {
-          width: 64vw;
-          padding: 20px 10px 20px 20px;
+          width: 100vw;
+          padding: 20px 30px;
         };
 
           .sp_on{
@@ -7235,6 +7237,16 @@ a.ag {
             font-size: 13px;
           };
           }
+
+          .sp_on{
+            @include bp768 {
+              font-size: 10px;
+              line-height: 1;
+              margin-right: 10px;
+              margin-left: 40px;
+              font-weight: 600;
+            };
+          }
         }
         .orderCount{
           width: 210px;
@@ -7245,7 +7257,20 @@ a.ag {
           border-top: 1px solid #CCC;
           border-bottom: 1px solid #CCC;
           padding: 0;
+          display: flex;
+          align-items: center;
         };
+
+        .sp_on{
+          @include bp768 {
+            font-size: 10px;
+            line-height: 1;
+            margin-right: 10px;
+            font-weight: 600;
+            margin-left: 54px;
+            padding: 18px 0;
+          };
+        }
 
           p{
             text-align: center;
@@ -7264,10 +7289,21 @@ a.ag {
       width: 280px;
       margin: 0 0 30px auto;
 
+    @include bp768 {
+      width: 85%;
+      margin: 20px auto;
+    };
+
       .orderSum{
         padding: 0 20px 10px;
         margin-bottom: 22px;
         border-bottom: 1px solid #CCCCCC;
+
+      @include bp768 {
+        padding: 0;
+        margin-bottom: 0;
+        border-bottom: none;
+      };
 
         dt{
           display: inline-block;
@@ -7277,6 +7313,13 @@ a.ag {
           margin: 0 0 10px 0;
           line-height: 1;
           color: #333;
+
+        @include bp768 {
+          font-size: 14px;
+          margin: 0 0 20px 0;
+          padding: 0 0 20px 90px;
+          border-bottom: 1px solid #888888;
+        };
         }
 
         dd{
@@ -7288,6 +7331,14 @@ a.ag {
           margin: 0 0 10px 0;
           line-height: 1;
           color: #333;
+
+        @include bp768 {
+          width: 19%;
+          font-size: 14px;
+          margin: 0 0 20px -5px;
+          padding: 0 10px 20px 0;
+          border-bottom: 1px solid #888888;
+        };
         }
       }
 
@@ -7295,6 +7346,11 @@ a.ag {
         padding: 0 20px 20px;
         border-bottom: 1px solid #CCCCCC;
 
+      @include bp768 {
+        padding: 0;
+        border-bottom: none;
+      };
+
         dt{
           display: inline-block;
           width: 49%;
@@ -7303,6 +7359,13 @@ a.ag {
           line-height: 1;
           color: #333;
           font-weight: 600;
+
+        @include bp768 {
+          font-size: 14px;
+          margin: 0 0 20px 0;
+          padding: 0 0 20px 90px;
+          border-bottom: 1px solid #888888;
+        };
         }
 
         dd{
@@ -7314,6 +7377,14 @@ a.ag {
           line-height: 1;
           color: #333;
           font-weight: 600;
+
+        @include bp768 {
+          width: 19%;
+          font-size: 14px;
+          margin: 0 0 20px -5px;
+          padding: 0 10px 20px 0;
+          border-bottom: 1px solid #888888;
+        };
         }
       }
     }
@@ -7331,6 +7402,12 @@ a.ag {
         font-weight: 600;
         text-align: center;
         margin: 0 0 0 auto;
+
+      @include bp768 {
+        width: 85%;
+        font-size: 13px;
+        margin: 0 auto;
+      };
       }
     }
 
@@ -7517,6 +7594,11 @@ a.ag {
         width: 280px;
         -webkit-box-shadow: none;
         box-shadow: none;
+
+      @include bp768 {
+        margin: 0 auto;
+        width: 100%;
+      };
       }
     }
 
