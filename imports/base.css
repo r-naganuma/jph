@@ -12957,13 +12957,13 @@ button.slick-prev, button.slick-next {
 
 #OrderShippingSelectBox .OrderShippingSelectBox_box--right .order_priceList dl dt {
   font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1;
 }
 
 #OrderShippingSelectBox .OrderShippingSelectBox_box--right .order_priceList dl dd {
   font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1;
 }
 
@@ -13010,7 +13010,7 @@ button.slick-prev, button.slick-next {
 }
 
 #OrderShippingSelectBox .OrderShippingSelectBox_box--right .order_priceList dl.result dd {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
