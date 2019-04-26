@@ -6358,8 +6358,9 @@ a.ag {
 
 /* イベントギフト */
 .eventTop{
-  width: 110pxl;
-  
+  width: 1100px;
+  margin: 0 auto;
+
   @include bp768 {
 
   };
@@ -6372,7 +6373,7 @@ a.ag {
 
     h3{
         font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
-        font-size: 28px;
+        font-size: 40px;
         line-height: 1;
         letter-spacing: 0.01em;
         margin-bottom: 30px;
@@ -6386,7 +6387,7 @@ a.ag {
         color: #888888;
         margin-top: 10px;
         display: block;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 1;
         letter-spacing: 0;
         font-weight: normal;
@@ -6401,8 +6402,10 @@ a.ag {
     }
     &__catch{
       font-size:14px;
-      
-
+      text-align: center;
+      margin-bottom: 40px;
+      line-height: 30px;
+      letter-spacing: 1px;
 
       @include bp768 {
 
@@ -6413,12 +6416,17 @@ a.ag {
         width: 860px;
         margin: 0 auto;
         background: #fff;
+        padding: 40px 0;
 
       @include bp768 {
 
       };
 
       h4{
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 35px;
+        font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
 
         @include bp768 {
 
@@ -6426,6 +6434,13 @@ a.ag {
 
       }
       p{
+        text-align: center;
+        font-size: 14px;
+        line-height: 30px;
+        margin-bottom: 30px;
+
+
+
 
         @include bp768 {
 
@@ -6438,8 +6453,17 @@ a.ag {
 
         };
 
-
         a{
+          width: 300px;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          color: #fff;
+          font-size: 13px;
+          background: #081D5C;
+          display: block;
+          margin: 0 auto;
+
 
           @include bp768 {
 
@@ -6541,8 +6565,8 @@ a.ag {
     margin-top: 90px;
     
   @include bp768 {
-    width: 80%;
-    margin: 20px auto 0;
+    width: 100%;
+    margin-top: 20px;
   };
 
     ul{
@@ -6654,7 +6678,6 @@ a.ag {
         background: #072056;
         font-weight: normal;
         text-align: center;
-        margin-top: 15px;
       };
       }
     }
@@ -6712,7 +6735,7 @@ a.ag {
     
       @include bp768 {
         font-size: 25px;
-        margin: 40px 0 30px;
+        margin: 0 0 30px;
         text-align: center;
       };
 
@@ -6744,19 +6767,10 @@ a.ag {
     }
     .glbPlist.column4{
       width: 216px;
-    
-    @include bp768 {
-      width: 49.7%;
-    };
 
       li{
         &.thumb{
           width: 198px;
-    
-        @include bp768 {
-          width: 100%;
-          margin: 0 auto 5px;
-        };
         }
         &.toBag, &.detailTxt{
           display: none;

@@ -7117,7 +7117,8 @@ a.ag:active {
 /* ---------- TOP */
 /* イベントギフト */
 .eventTop {
-  width: 110pxl;
+  width: 1100px;
+  margin: 0 auto;
 }
 
 .eventTop .eventGiftAbout {
@@ -7126,7 +7127,7 @@ a.ag:active {
 
 .eventTop .eventGiftAbout h3 {
   font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
-  font-size: 28px;
+  font-size: 40px;
   line-height: 1;
   letter-spacing: 0.01em;
   margin-bottom: 30px;
@@ -7137,7 +7138,7 @@ a.ag:active {
   color: #888888;
   margin-top: 10px;
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1;
   letter-spacing: 0;
   font-weight: normal;
@@ -7145,12 +7146,43 @@ a.ag:active {
 
 .eventTop .eventGiftAbout__catch {
   font-size: 14px;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 30px;
+  letter-spacing: 1px;
 }
 
 .eventTop .eventGiftAbout__box {
   width: 860px;
   margin: 0 auto;
   background: #fff;
+  padding: 40px 0;
+}
+
+.eventTop .eventGiftAbout__box h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 35px;
+  font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
+}
+
+.eventTop .eventGiftAbout__box p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.eventTop .eventGiftAbout__box .contact_btn a {
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  background: #081D5C;
+  display: block;
+  margin: 0 auto;
 }
 
 /* ---------- TOP */
@@ -7250,8 +7282,8 @@ a.ag:active {
 
 @media (max-width: 768px) {
   .mypageBox_menu {
-    width: 80%;
-    margin: 20px auto 0;
+    width: 100%;
+    margin-top: 20px;
   }
 }
 
@@ -7377,7 +7409,6 @@ a.ag:active {
     background: #072056;
     font-weight: normal;
     text-align: center;
-    margin-top: 15px;
   }
 }
 
@@ -7443,7 +7474,7 @@ a.ag:active {
 @media (max-width: 768px) {
   .mypageBox_cts #dvUpSell h3 {
     font-size: 25px;
-    margin: 40px 0 30px;
+    margin: 0 0 30px;
     text-align: center;
   }
 }
@@ -7480,21 +7511,8 @@ a.ag:active {
   width: 216px;
 }
 
-@media (max-width: 768px) {
-  .mypageBox_cts .glbPlist.column4 {
-    width: 49.7%;
-  }
-}
-
 .mypageBox_cts .glbPlist.column4 li.thumb {
   width: 198px;
-}
-
-@media (max-width: 768px) {
-  .mypageBox_cts .glbPlist.column4 li.thumb {
-    width: 100%;
-    margin: 0 auto 5px;
-  }
 }
 
 .mypageBox_cts .glbPlist.column4 li.toBag, .mypageBox_cts .glbPlist.column4 li.detailTxt {
