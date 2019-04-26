@@ -6671,6 +6671,12 @@ a.ag {
       background: #CCCCCC;
       border-bottom: none;
       position: relative;
+    
+    @include bp768 {
+      padding: 15px 10px;
+      margin: 0 auto 20px;
+      width: 87%;
+    };
 
       &::after{
         content: "";
@@ -6679,6 +6685,11 @@ a.ag {
         bottom: -20px;
         border-bottom: 2px solid #081D5C;
         width: 100%;
+    
+      @include bp768 {
+        width: 100vw;
+        margin-left: -24px;
+      };
       }
     }
 
@@ -6763,6 +6774,11 @@ a.ag {
         color: #fff;
         border-radius: 50%;
         display: block;
+    
+      @include bp768 {
+        width: 25px;
+        height: 25px;
+      };
 
         &::before{
           content:"";
@@ -6779,6 +6795,12 @@ a.ag {
           -moz-transform:rotate(45deg);
           -webkit-transform:rotate(45deg);
           transform:rotate(45deg);
+    
+        @include bp768 {
+          top:13px;
+          left:5px;
+          width:15px;
+        };
         }
 
         &::after{
@@ -6796,6 +6818,12 @@ a.ag {
           -moz-transform:rotate(-45deg);
           -webkit-transform:rotate(-45deg);
           transform:rotate(-45deg);
+    
+        @include bp768 {
+          top:13px;
+          left:5px;
+          width:15px;
+        };
         }
       }
     }
