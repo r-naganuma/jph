@@ -7115,6 +7115,45 @@ a.ag:active {
 }
 
 /* ---------- TOP */
+/* イベントギフト */
+.eventTop {
+  width: 110pxl;
+}
+
+.eventTop .eventGiftAbout {
+  text-align: center;
+}
+
+.eventTop .eventGiftAbout h3 {
+  font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.eventTop .eventGiftAbout h3 span {
+  color: #888888;
+  margin-top: 10px;
+  display: block;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-weight: normal;
+}
+
+.eventTop .eventGiftAbout__catch {
+  font-size: 14px;
+}
+
+.eventTop .eventGiftAbout__box {
+  width: 860px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* ---------- TOP */
 /* 領収書ダウンロード */
 .receiptWrap {
   width: 1100px;
