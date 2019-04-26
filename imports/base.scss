@@ -6697,7 +6697,7 @@ a.ag {
     
     @include bp768 {
       padding: 15px 10px;
-      margin: 0 auto 20px;
+      margin: 0 auto 40px;
       width: 87%;
     };
 
@@ -6768,9 +6768,18 @@ a.ag {
     .glbPlist.column4{
       width: 216px;
 
+    @include bp768 {
+      width: 49.7%;
+    };
+
       li{
         &.thumb{
           width: 198px;
+
+        @include bp768 {
+          width: 100%;
+          margin: 0 auto 5px;
+        };
         }
         &.toBag, &.detailTxt{
           display: none;
@@ -6844,6 +6853,10 @@ a.ag {
 
     &--inner{
       margin: 0 0 100px 20px;
+    
+    @include bp768 {
+      margin: 0;
+    };
     }
     #dvOrderHistoryList{
       .mypageBox_cts--inner{
