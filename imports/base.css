@@ -7469,7 +7469,7 @@ a.ag:active {
 @media (max-width: 768px) {
   .mypageBox_cts .mypage_catch {
     padding: 15px 10px;
-    margin: 0 auto 20px;
+    margin: 0 auto 40px;
     width: 87%;
   }
 }
@@ -7551,8 +7551,21 @@ a.ag:active {
   width: 216px;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .glbPlist.column4 {
+    width: 49.7%;
+  }
+}
+
 .mypageBox_cts .glbPlist.column4 li.thumb {
   width: 198px;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .glbPlist.column4 li.thumb {
+    width: 100%;
+    margin: 0 auto 5px;
+  }
 }
 
 .mypageBox_cts .glbPlist.column4 li.toBag, .mypageBox_cts .glbPlist.column4 li.detailTxt {
@@ -7633,6 +7646,12 @@ a.ag:active {
 
 .mypageBox_cts--inner {
   margin: 0 0 100px 20px;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts--inner {
+    margin: 0;
+  }
 }
 
 .mypageBox_cts #dvOrderHistoryList .mypageBox_cts--inner {
