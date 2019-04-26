@@ -6545,8 +6545,8 @@ a.ag {
     margin-top: 90px;
     
   @include bp768 {
-    width: 100%;
-    margin-top: 20px;
+    width: 80%;
+    margin: 20px auto 0;
   };
 
     ul{
@@ -6658,6 +6658,7 @@ a.ag {
         background: #072056;
         font-weight: normal;
         text-align: center;
+        margin-top: 15px;
       };
       }
     }
@@ -6704,7 +6705,7 @@ a.ag {
     
       @include bp768 {
         font-size: 25px;
-        margin: 0 0 30px;
+        margin: 40px 0 30px;
         text-align: center;
       };
 
@@ -6736,10 +6737,19 @@ a.ag {
     }
     .glbPlist.column4{
       width: 216px;
+    
+    @include bp768 {
+      width: 49.7%;
+    };
 
       li{
         &.thumb{
           width: 198px;
+    
+        @include bp768 {
+          width: 100%;
+          margin: 0 auto 5px;
+        };
         }
         &.toBag, &.detailTxt{
           display: none;

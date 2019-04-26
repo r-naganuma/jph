@@ -7259,8 +7259,8 @@ a.ag:active {
 
 @media (max-width: 768px) {
   .mypageBox_menu {
-    width: 100%;
-    margin-top: 20px;
+    width: 80%;
+    margin: 20px auto 0;
   }
 }
 
@@ -7386,6 +7386,7 @@ a.ag:active {
     background: #072056;
     font-weight: normal;
     text-align: center;
+    margin-top: 15px;
   }
 }
 
@@ -7436,7 +7437,7 @@ a.ag:active {
 @media (max-width: 768px) {
   .mypageBox_cts #dvUpSell h3 {
     font-size: 25px;
-    margin: 0 0 30px;
+    margin: 40px 0 30px;
     text-align: center;
   }
 }
@@ -7473,8 +7474,21 @@ a.ag:active {
   width: 216px;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .glbPlist.column4 {
+    width: 49.7%;
+  }
+}
+
 .mypageBox_cts .glbPlist.column4 li.thumb {
   width: 198px;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .glbPlist.column4 li.thumb {
+    width: 100%;
+    margin: 0 auto 5px;
+  }
 }
 
 .mypageBox_cts .glbPlist.column4 li.toBag, .mypageBox_cts .glbPlist.column4 li.detailTxt {
