@@ -6424,10 +6424,20 @@ a.ag {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+    
+@include bp768 {
+  width: 100%;
+  display: block;
+};
 
   &_menu{
     width: 180px;
     margin-top: 90px;
+    
+  @include bp768 {
+    width: 100%;
+    margin-top: 20px;
+  };
 
     ul{
       li{
@@ -6439,6 +6449,10 @@ a.ag {
           font-size: 13px;
           line-height: 1;
           display: block;
+    
+        @include bp768 {
+          font-size: 14px;
+        };
 
           &.on{
             font-weight: 600;
@@ -6450,6 +6464,10 @@ a.ag {
 
   &_cts{
     width: 890px;
+    
+  @include bp768 {
+    width: 100%;
+  };
 
     h3{
       font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
@@ -6460,6 +6478,13 @@ a.ag {
       line-height: 1;
       color: #333;
       text-align: left;
+    
+    @include bp768 {
+      font-size: 20px;
+      margin: 0 0 30px;
+      padding: 0 10px;
+      box-sizing: border-box;
+    };
     }
 
     h4{
@@ -6473,6 +6498,13 @@ a.ag {
       text-align: left;
       border-bottom: 2px solid #081D5C;
       position: relative;
+    
+    @include bp768 {
+      font-size: 14px;
+      margin: 0;
+      padding: 0 25px 20px;
+      box-sizing: border-box;
+    };
 
       .bonjour{
         font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
@@ -6481,6 +6513,11 @@ a.ag {
         font-weight: 500;
         line-height: 1;
         color: #333;
+    
+      @include bp768 {
+        font-size: 14px;
+        margin: 0 10px 0 0;
+      };
       }
 
       .lastDate{
@@ -6497,6 +6534,21 @@ a.ag {
         background: #072056;
         font-weight: normal;
         text-align: center;
+    
+      @include bp768 {
+        font-size: 12px;
+        line-height: 35px;
+        color: #fff;
+        display: block;
+        width: 100%;
+        height: 35px;
+        position: inherit;
+        top: inherit;
+        right: inherit;
+        background: #072056;
+        font-weight: normal;
+        text-align: center;
+      };
       }
     }
 
@@ -6525,6 +6577,10 @@ a.ag {
 
     #dvUpSell{
       margin: 0 0 0 20px;
+    
+    @include bp768 {
+      margin: 0;
+    };
 
       h3{
         font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
@@ -6535,6 +6591,12 @@ a.ag {
         line-height: 1;
         color: #081D5C;
         text-align: left;
+    
+      @include bp768 {
+        font-size: 25px;
+        margin: 0 0 30px;
+        text-align: center;
+      };
 
         span{
           font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
@@ -6546,6 +6608,12 @@ a.ag {
           color: #333;
           text-align: left;
           display: block;
+    
+        @include bp768 {
+          font-size: 12px;
+          margin: 5px 0 0;
+          text-align: center;
+        };
         }
       }
     }
