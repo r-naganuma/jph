@@ -7124,9 +7124,6 @@ a.ag:active {
 @media (max-width: 768px) {
   .eventTop {
     width: 100%;
-    padding: 0 10px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
   }
 }
 
@@ -7137,6 +7134,9 @@ a.ag:active {
 @media (max-width: 768px) {
   .eventTop .eventGiftAbout {
     text-align: left;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
 }
 
@@ -7175,8 +7175,10 @@ a.ag:active {
 
 @media (max-width: 768px) {
   .eventTop .eventGiftAbout__catch {
-    font-size: 14px;
+    font-size: 12px;
     text-align: left;
+    margin-bottom: 25px;
+    line-height: 1.8;
   }
 }
 
@@ -7203,6 +7205,13 @@ a.ag:active {
   font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
 }
 
+@media (max-width: 768px) {
+  .eventTop .eventGiftAbout__box h4 {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+
 .eventTop .eventGiftAbout__box p {
   text-align: center;
   font-size: 14px;
@@ -7214,6 +7223,7 @@ a.ag:active {
   .eventTop .eventGiftAbout__box p {
     font-size: 12px;
     text-align: left;
+    line-height: 1.8;
   }
 }
 
