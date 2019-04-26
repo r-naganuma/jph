@@ -6370,7 +6370,7 @@ a.ag {
   .eventGiftAbout{
     text-align: center;
     @include bp768 {
-
+        text-align: left;
     };
 
     h3{
@@ -6382,7 +6382,7 @@ a.ag {
         font-weight: 500;
 
       @include bp768 {
-
+            font-size: 25px;
       };
 
       span{
@@ -6410,7 +6410,8 @@ a.ag {
       letter-spacing: 1px;
 
       @include bp768 {
-
+            font-size:14px;
+            text-align: left;
       };
 
     }
