@@ -10304,7 +10304,7 @@ button.slick-prev, button.slick-next {
 
 @media (max-width: 768px) {
   .UserRegistArea .UserRegistBox_left dd .input_widthA {
-    width: 124px;
+    width: 118px;
     font-size: 16px;
     border-radius: 0;
     -webkit-appearance: none;
@@ -10430,7 +10430,7 @@ button.slick-prev, button.slick-next {
 
 @media (max-width: 768px) {
   .UserRegistArea .UserRegistBox_left dd .input_widthC {
-    width: 76px;
+    width: 74px;
     font-size: 16px;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -10729,7 +10729,7 @@ button.slick-prev, button.slick-next {
 
 @media (max-width: 768px) {
   .UserRegistArea_completeContact {
-    width: 90%;
+    width: 80%;
     height: auto;
     line-height: 1.8;
     font-size: 14px;
@@ -10786,9 +10786,10 @@ button.slick-prev, button.slick-next {
 
 @media (max-width: 768px) {
   .UserRegistArea_imgTxt {
-    width: 50%;
-    top: 65px;
-    left: 60px;
+    width: 48%;
+    top: 127px;
+    left: inherit;
+    right: 27px;
     z-index: 2;
   }
 }
@@ -11363,7 +11364,7 @@ button.slick-prev, button.slick-next {
 
 @media (max-width: 768px) {
   #OrderShippingBox .OrderShippingBox_box--left--top dd .input_widthA {
-    width: 124px;
+    width: 118px;
     font-size: 16px;
     border-radius: 0;
     -webkit-appearance: none;
@@ -11489,7 +11490,7 @@ button.slick-prev, button.slick-next {
 
 @media (max-width: 768px) {
   #OrderShippingBox .OrderShippingBox_box--left--top dd .input_widthC {
-    width: 76px;
+    width: 74px;
     font-size: 16px;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -12748,7 +12749,7 @@ button.slick-prev, button.slick-next {
 
 @media (max-width: 768px) {
   #OrderShippingSelectBox .OrderShippingSelectBox_box--inner--right dd .input_widthA {
-    width: 124px;
+    width: 118px;
     font-size: 16px;
     border-radius: 0;
     -webkit-appearance: none;
@@ -12814,7 +12815,7 @@ button.slick-prev, button.slick-next {
 
 @media (max-width: 768px) {
   #OrderShippingSelectBox .OrderShippingSelectBox_box--inner--right dd .input_widthC {
-    width: 76px;
+    width: 74px;
     font-size: 16px;
     -webkit-appearance: none;
     -moz-appearance: none;

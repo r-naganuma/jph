@@ -9305,7 +9305,7 @@ button.slick-prev, button.slick-next {
           background: #fff;
 
         @include bp768 {
-          width: 124px;
+          width: 118px;
           font-size: 16px;
           border-radius: 0;
           appearance: none;
@@ -9412,7 +9412,7 @@ button.slick-prev, button.slick-next {
           background: #fff;
 
         @include bp768 {
-          width: 76px;
+          width: 74px;
           font-size: 16px;
           appearance: none;
           border-radius: 0;
@@ -9681,7 +9681,7 @@ button.slick-prev, button.slick-next {
     margin: 0 auto 40px;
 
   @include bp768 {
-    width: 90%;
+    width: 80%;
     height: auto;
     line-height: 1.8;
     font-size: 14px;
@@ -9732,9 +9732,10 @@ button.slick-prev, button.slick-next {
     left: 60px;
 
   @include bp768 {
-    width: 50%;
-    top: 65px;
-    left: 60px;
+    width: 48%;
+    top: 127px;
+    left: inherit;
+    right: 27px;
     z-index: 2;
   };
   }
@@ -10238,7 +10239,7 @@ button.slick-prev, button.slick-next {
             background: #fff;
 
           @include bp768 {
-            width: 124px;
+            width: 118px;
             font-size: 16px;
             border-radius: 0;
             appearance: none;
@@ -10345,7 +10346,7 @@ button.slick-prev, button.slick-next {
             background: #fff;
 
           @include bp768 {
-            width: 76px;
+            width: 74px;
             font-size: 16px;
             appearance: none;
             border-radius: 0;
@@ -11430,7 +11431,7 @@ button.slick-prev, button.slick-next {
             background: #fff;
 
           @include bp768 {
-            width: 124px;
+            width: 118px;
             font-size: 16px;
             border-radius: 0;
             appearance: none;
@@ -11484,7 +11485,7 @@ button.slick-prev, button.slick-next {
             background: #fff;
 
           @include bp768 {
-            width: 76px;
+            width: 74px;
             font-size: 16px;
             appearance: none;
             border-radius: 0;
