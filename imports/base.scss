@@ -6363,17 +6363,14 @@ a.ag {
 
   @include bp768 {
         width: 100%;
-
+        padding: 0 10px;
         box-sizing: border-box;
   };
 
   .eventGiftAbout{
     text-align: center;
-
-
     @include bp768 {
-        padding: 0 10px;
-        text-align: left;
+
     };
 
     h3{
@@ -6385,7 +6382,7 @@ a.ag {
         font-weight: 500;
 
       @include bp768 {
-          font-size: 25px;
+
       };
 
       span{
@@ -6399,7 +6396,7 @@ a.ag {
 
 
         @include bp768 {
-          font-size: 12px;
+
         };
 
       }
@@ -6413,8 +6410,7 @@ a.ag {
       letter-spacing: 1px;
 
       @include bp768 {
-           text-align: left;
-           font-size:12px;
+
       };
 
     }
@@ -6571,8 +6567,8 @@ a.ag {
     margin-top: 90px;
     
   @include bp768 {
-    width: 100%;
-    margin-top: 20px;
+    width: 85%;
+    margin: 20px auto 0;
   };
 
     ul{
@@ -6741,7 +6737,7 @@ a.ag {
     
       @include bp768 {
         font-size: 25px;
-        margin: 0 0 30px;
+        margin: 40px 0 30px;
         text-align: center;
       };
 
