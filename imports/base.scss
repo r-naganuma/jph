@@ -6404,6 +6404,7 @@ a.ag {
       font-size:14px;
       text-align: center;
       margin-bottom: 40px;
+      line-height: 30px;
 
       @include bp768 {
 
@@ -6423,6 +6424,8 @@ a.ag {
       h4{
         font-size: 16px;
         font-weight: bold;
+        margin-bottom: 35px;
+        font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
 
         @include bp768 {
 
@@ -6431,6 +6434,12 @@ a.ag {
       }
       p{
         text-align: center;
+        font-size: 14px;
+        line-height: 30px;
+
+
+
+
         @include bp768 {
 
         };
@@ -6442,7 +6451,6 @@ a.ag {
 
         };
 
-
         a{
           width:300px;
           height: 50px;
@@ -6450,6 +6458,7 @@ a.ag {
           text-align: center;
           color:#fff;
           font-size:13px;
+          background: #081D5C;
 
 
           @include bp768 {
