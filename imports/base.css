@@ -7710,6 +7710,12 @@ a.ag:active {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .orderContents .itemArea {
+    margin-bottom: 20px;
+  }
+}
+
 .mypageBox_cts .orderContents .itemArea .itemImage {
   width: 195px;
   margin-right: 10px;
@@ -7824,6 +7830,13 @@ a.ag:active {
   margin: 0 auto 30px;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .mypageDetail {
+    width: 85%;
+    margin: 0 auto 20px;
+  }
+}
+
 .mypageBox_cts .mypageDetail tr {
   border-bottom: 1px #888888 solid;
   margin-bottom: 20px;
@@ -7841,8 +7854,23 @@ a.ag:active {
   padding: 0 0 20px 10px;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .mypageDetail tr th {
+    font-size: 14px;
+    margin: 0 55px 0 0;
+    width: 125px;
+    padding: 0 0 20px 10px;
+  }
+}
+
 .mypageBox_cts .mypageDetail tr th.orderTotal span {
   font-size: 10px;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .mypageDetail tr th.orderTotal span {
+    font-size: 11px;
+  }
 }
 
 .mypageBox_cts .mypageDetail tr td {
@@ -7864,6 +7892,14 @@ a.ag:active {
   margin: 0 auto 20px;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderHistoryShipping {
+    width: 85%;
+    padding: 20px;
+    margin: 0 auto 20px;
+  }
+}
+
 .mypageBox_cts .dvOrderHistoryShipping_ttl {
   font-size: 16px;
   font-weight: 600;
@@ -7871,10 +7907,24 @@ a.ag:active {
   margin-bottom: 30px;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderHistoryShipping_ttl {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+}
+
 .mypageBox_cts .dvOrderHistoryShipping dl {
   display: inline-block;
   width: 365px;
   vertical-align: top;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderHistoryShipping dl {
+    display: block;
+    width: 100%;
+  }
 }
 
 .mypageBox_cts .dvOrderHistoryShipping dl dt {
@@ -7886,12 +7936,26 @@ a.ag:active {
   color: #333;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderHistoryShipping dl dt {
+    font-size: 13px;
+    margin: 0 0 10px 0;
+  }
+}
+
 .mypageBox_cts .dvOrderHistoryShipping dl dd {
   font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
   font-size: 14px;
   margin: 0 0 30px 0;
   color: #333;
   line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .dvOrderHistoryShipping dl dd {
+    font-size: 13px;
+    margin: 0 0 20px 0;
+  }
 }
 
 .mypageBox_cts .dvOrderHistoryProduct {

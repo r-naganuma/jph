@@ -6889,6 +6889,10 @@ a.ag {
       .itemArea{
         display: flex;
         align-items: center;
+    
+      @include bp768 {
+        margin-bottom: 20px;
+      };
 
         .itemImage{
           width: 195px;
@@ -6993,6 +6997,11 @@ a.ag {
     .mypageDetail{
       width: 860px;
       margin: 0 auto 30px;
+    
+    @include bp768 {
+      width: 85%;
+      margin: 0 auto 20px;
+    };
 
       tr{
         border-bottom: 1px #888888 solid;
@@ -7008,10 +7017,21 @@ a.ag {
           color: #333;
           width: 125px;
           padding: 0 0 20px 10px;
+    
+        @include bp768 {
+          font-size: 14px;
+          margin: 0 55px 0 0;
+          width: 125px;
+          padding: 0 0 20px 10px;
+        };
 
           &.orderTotal{
             span{
               font-size: 10px;
+    
+            @include bp768 {
+              font-size: 11px;
+            };
             }
           }
         }
@@ -7035,18 +7055,34 @@ a.ag {
       padding: 20px 20px 40px;
       background: #F7F7F7;
       margin: 0 auto 20px;
+    
+    @include bp768 {
+      width: 85%;
+      padding: 20px;
+      margin: 0 auto 20px;
+    };
 
       &_ttl{
         font-size: 16px;
         font-weight: 600;
         line-height: 1;
         margin-bottom: 30px;
+    
+      @include bp768 {
+        font-size: 15px;
+        margin-bottom: 20px;
+      };
       }
 
       dl{
         display: inline-block;
         width: 365px;
         vertical-align: top;
+    
+      @include bp768 {
+        display: block;
+        width: 100%;
+      };
 
         dt{
           font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
@@ -7055,6 +7091,11 @@ a.ag {
           font-weight: 600;
           line-height: 1;
           color: #333;
+    
+        @include bp768 {
+          font-size: 13px;
+          margin: 0 0 10px 0;
+        };
         }
 
         dd{
@@ -7063,6 +7104,11 @@ a.ag {
           margin: 0 0 30px 0;
           color: #333;
           line-height: 1.8;
+    
+        @include bp768 {
+          font-size: 13px;
+          margin: 0 0 20px 0;
+        };
         }
       }
     }
