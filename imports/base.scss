@@ -9077,7 +9077,7 @@ button.slick-prev, button.slick-next {
           background: #fff;
 
         @include bp768 {
-          width: 96%;
+          width: 93.75%;
           font-size: 16px;
           border-radius: 0;
           appearance: none;
@@ -9135,10 +9135,19 @@ button.slick-prev, button.slick-next {
     background: #F7F7F7;
     padding: 40px 0 50px;
 
+  @include bp768 {
+    width: 95%;
+  };
+
     p{
       text-align: center;
       font-size: 13px;
       margin-bottom: 40px;
+
+    @include bp768 {
+      font-size: 12px;
+      margin-bottom: 30px;
+    };
     }
   }
 

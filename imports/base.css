@@ -10032,7 +10032,7 @@ button.slick-prev, button.slick-next {
 
 @media (max-width: 768px) {
   #psRemind #dvPasswordReminderInput dl dd .input_widthA {
-    width: 96%;
+    width: 93.75%;
     font-size: 16px;
     border-radius: 0;
     -webkit-appearance: none;
@@ -10091,10 +10091,23 @@ button.slick-prev, button.slick-next {
   padding: 40px 0 50px;
 }
 
+@media (max-width: 768px) {
+  #psRemind .psRemind_complete {
+    width: 95%;
+  }
+}
+
 #psRemind .psRemind_complete p {
   text-align: center;
   font-size: 13px;
   margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  #psRemind .psRemind_complete p {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
 }
 
 #psRemind .dvUserBtnBox a {
