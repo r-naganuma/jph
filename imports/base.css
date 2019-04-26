@@ -1961,7 +1961,7 @@ address {
     border-bottom: 1px solid #C7C7C7;
     width: 95%;
     margin: 0 auto 23px;
-    padding: 30px 10px 15px;
+    padding: 0 10px 15px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     z-index: 1001;
@@ -9943,11 +9943,28 @@ button.slick-prev, button.slick-next {
   margin-bottom: 40px;
 }
 
+@media (max-width: 768px) {
+  #psRemind h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
 #psRemind #dvPasswordReminderInput {
   width: 790px;
   margin: 0 auto;
   padding: 40px 0 60px;
   background: #F7F7F7;
+}
+
+@media (max-width: 768px) {
+  #psRemind #dvPasswordReminderInput {
+    width: 95%;
+    padding: 40px 0 50px;
+  }
 }
 
 #psRemind #dvPasswordReminderInput p {
@@ -9956,9 +9973,22 @@ button.slick-prev, button.slick-next {
   margin-bottom: 30px;
 }
 
+@media (max-width: 768px) {
+  #psRemind #dvPasswordReminderInput p {
+    font-size: 12px;
+  }
+}
+
 #psRemind #dvPasswordReminderInput dl {
   width: 300px;
   margin: 0 auto 30px;
+}
+
+@media (max-width: 768px) {
+  #psRemind #dvPasswordReminderInput dl {
+    width: 85%;
+    margin: 0 auto 20px;
+  }
 }
 
 #psRemind #dvPasswordReminderInput dl dt {
@@ -9967,6 +9997,12 @@ button.slick-prev, button.slick-next {
   color: #333;
   margin-bottom: 10px;
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #psRemind #dvPasswordReminderInput dl dt {
+    font-size: 12px;
+  }
 }
 
 #psRemind #dvPasswordReminderInput dl dd {
@@ -9992,6 +10028,13 @@ button.slick-prev, button.slick-next {
   font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
   border: #888 1px solid;
   background: #fff;
+}
+
+@media (max-width: 768px) {
+  #psRemind #dvPasswordReminderInput dl dd .input_widthA {
+    width: 96%;
+    font-size: 16px;
+  }
 }
 
 #psRemind #dvPasswordReminderInput dl dd .input_widthB {
@@ -10059,6 +10102,12 @@ button.slick-prev, button.slick-next {
   line-height: 50px;
   color: #fff;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  #psRemind .dvUserBtnBox a {
+    width: 85%;
+  }
 }
 
 .UserRegistArea {
@@ -13806,7 +13855,7 @@ div.btmbtn.below ul {
 }
 
 .clearFix:after {
-  content: ".";
+  content: "";
   display: block;
   height: 0px;
   clear: both;

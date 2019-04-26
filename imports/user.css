@@ -1458,7 +1458,7 @@ input.nameShipping{width:208px;} /* 配送先名 */
 .clearFix {min-height:1%;}
 .clearFix:after {
 	/*for modern browser*/
-		content:".";
+		content:"";
 		display: block;
 		height:0px;
 		clear:both;
