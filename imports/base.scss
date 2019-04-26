@@ -6426,6 +6426,8 @@ a.ag {
 
       @include bp768 {
             width:100%;
+            padding: 30px  25px;
+            box-sizing: border-box;
       };
 
       h4{
@@ -6446,7 +6448,8 @@ a.ag {
         margin-bottom: 30px;
 
         @include bp768 {
-
+          font-size: 12px;
+          text-align: left;
         };
 
       }
@@ -6468,7 +6471,7 @@ a.ag {
           margin: 0 auto;
 
           @include bp768 {
-
+              width: 100%;
           };
 
 

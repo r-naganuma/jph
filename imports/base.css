@@ -7196,6 +7196,9 @@ a.ag:active {
 @media (max-width: 768px) {
   .eventTop .eventGiftAbout__box {
     width: 100%;
+    padding: 30px  25px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
 }
 
@@ -7213,6 +7216,13 @@ a.ag:active {
   margin-bottom: 30px;
 }
 
+@media (max-width: 768px) {
+  .eventTop .eventGiftAbout__box p {
+    font-size: 12px;
+    text-align: left;
+  }
+}
+
 .eventTop .eventGiftAbout__box .contact_btn a {
   width: 300px;
   height: 50px;
@@ -7223,6 +7233,12 @@ a.ag:active {
   background: #081D5C;
   display: block;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .eventTop .eventGiftAbout__box .contact_btn a {
+    width: 100%;
+  }
 }
 
 /* ---------- TOP */
