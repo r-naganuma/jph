@@ -17,6 +17,30 @@ $bp768: 768px;  // スマホ
     @content;
   }
 }
+
+$bp1280: 1280px;  // メインビジュアル
+
+@mixin bp1280 {
+  @media (max-width: ($bp1280)) {
+    @content;
+  }
+}
+
+$bp1100: 1100px;  // レスポンシブ第1段階
+
+@mixin bp1100 {
+  @media (max-width: ($bp1100)) {
+    @content;
+  }
+}
+
+$bp920: 920px;  // レスポンシブ第2段階
+
+@mixin bp920 {
+  @media (max-width: ($bp920)) {
+    @content;
+  }
+}
 .pc_on{
   display: block !important;
 
@@ -124,7 +148,7 @@ body {
   /* for IE Quirks Mode */
   *font: x-small;
 
-@include bp768 {
+@include bp1100 {
   overflow-x: hidden;
 };
 
@@ -476,6 +500,10 @@ a {
     width: 1080px;
     margin: 0px auto;
 
+  @include bp1100 {
+    width: 95%;
+  };
+
   @include bp768 {
     width: 100%;
   };
@@ -561,27 +589,80 @@ a {
         &:nth-child(1){
           width: 530px;
           margin-bottom: 30px;
+
+        @include bp1100 {
+          width: 49%;
+        };
+
+        @include bp920 {
+          width: 100%;
+        };
         }
         &:nth-child(2){
           width: 255px;
           margin-bottom: 30px;
+
+        @include bp1100 {
+          width: 24%;
+        };
+
+        @include bp920 {
+          width: 49%;
+        };
         }
         &:nth-child(3){
           width: 255px;
           margin-bottom: 30px;
+
+        @include bp1100 {
+          width: 24%;
+        };
+
+        @include bp920 {
+          width: 49%;
+        };
         }
         &:nth-child(4){
           width: 1080px;
           margin-bottom: 30px;
+
+        @include bp1100 {
+          width: 100%;
+        };
         }
         &:nth-child(5){
           width: 530px;
+
+        @include bp1100 {
+          width: 49%;
+        };
+
+        @include bp920 {
+          width: 100%;
+          margin-bottom: 30px;
+        };
         }
         &:nth-child(6){
           width: 255px;
+
+        @include bp1100 {
+          width: 24%;
+        };
+
+        @include bp920 {
+          width: 49%;
+        };
         }
         &:nth-child(7){
           width: 255px;
+
+        @include bp1100 {
+          width: 24%;
+        };
+
+        @include bp920 {
+          width: 49%;
+        };
 
           a{
             letter-spacing: 0.05em;
@@ -710,8 +791,11 @@ address {
     padding-bottom: 47.6px;
     position: relative;
 
-  @include bp768 {
+  @include bp1100 {
     width: 100%;
+  };
+
+  @include bp768 {
     padding-bottom: 0;
   };
   }
@@ -914,10 +998,19 @@ address {
   width: 890px;
   padding: 15px 0 0;
 
+@include bp1100 {
+  width: 80%;
+};
+
+@include bp920 {
+  white-space: nowrap;
+};
+
 @include bp768 {
   float: none;
   width: 100%;
   padding: 0;
+  white-space: inherit;
 };
 
   .head_top{
@@ -2658,6 +2751,14 @@ a.ag {
     width: 1100px;
     margin: 0 auto;
 
+  @include bp1100 {
+    width: 100%;
+  };
+
+  @include bp920 {
+    width: 920px;
+  };
+
   @include bp768 {
     width: 100%;
   };
@@ -2682,6 +2783,10 @@ a.ag {
           width: 340px;
           border-bottom: 1px solid #C7C7C7;
           padding-bottom: 30px;
+
+        @include bp1100 {
+          width: 32%;
+        };
 
         @include bp768 {
           width: 100vw;
@@ -2888,8 +2993,11 @@ a.ag {
             width: 1060px;
             margin: 0 auto;
 
-          @include bp768 {
+          @include bp1100 {
             width: 100%;
+          };
+
+          @include bp768 {
             padding: 0 20px 0 10px;
             box-sizing: border-box;
           };
@@ -3518,6 +3626,10 @@ a.ag {
     width: 1080px;
     margin: 0 auto;
 
+  @include bp1100 {
+    width: 100%;
+  };
+
   @include bp768 {
     width: 100vw;
     margin: 0;
@@ -3534,13 +3646,35 @@ a.ag {
         padding-bottom: 10px;
         margin-bottom: 20px;
 
+      @include bp1100 {
+        width: 24%;
+      };
+
+      @include bp920 {
+        width: 49%;
+      };
+
       @include bp768 {
         width: 95%;
         margin: 0 auto 10px;
       };
 
-        &:nth-last-child(-n + 5){
+        &:nth-last-child(-n + 4){
           margin-bottom: 0;
+
+        @include bp920 {
+          margin-bottom: 20px;
+        };
+
+        @include bp768 {
+          margin-bottom: 10px;
+        };
+        }
+
+        &:nth-last-child(-n + 2){
+        @include bp920 {
+          margin-bottom: 0;
+        };
 
         @include bp768 {
           margin-bottom: 10px;
@@ -3626,6 +3760,14 @@ a.ag {
       width: 1100px;
       margin: 0 auto;
 
+    @include bp1100 {
+      width: 100%;
+    };
+
+    @include bp920 {
+      width: 920px;
+    };
+
     @include bp768 {
       width: 100%;
     };
@@ -3640,6 +3782,10 @@ a.ag {
       width: 255px;
       padding-bottom: 20px;
       border-bottom: 1px solid #C7C7C7;
+
+    @include bp1100 {
+      width: 24%;
+    };
 
       img{
         width: 100%;
@@ -4288,11 +4434,11 @@ a.ag {
     .amazonList {
       margin-top: 20px;
       padding: 30px;
-      background-color: #FFFFFF;
+      background-color: #F7F7F7;
       box-shadow:0px 2px 10px -5px #000000;
 
     @include bp768 {
-      margin-top: 0;
+      margin-top: -1px;
       padding: 0 0 30px;
       box-shadow:none;
     };
@@ -4366,7 +4512,7 @@ a.ag {
         width: 48% !important;
         margin: 0 auto 30px !important;
       };
-        &:nth-last-child(-n + 3){
+        &:nth-last-child(-n + 2){
         @include bp768 {
           margin-bottom: 0 !important;
         };
@@ -4388,6 +4534,7 @@ a.ag {
             @include bp768 {
               font-size: 12px !important;
               line-height: 1.5 !important;
+              word-break: keep-all;
             };
 
               span{
@@ -4416,6 +4563,14 @@ a.ag {
   &_box{
     width: 1100px;
     margin: 0 auto;
+
+  @include bp1100 {
+    width: 100%;
+  };
+
+  @include bp920 {
+    width: 920px;
+  };
 
   @include bp768 {
     width: 100%;
@@ -4456,6 +4611,10 @@ a.ag {
     margin-bottom: 52px;
     display: none;
 
+  @include bp1100 {
+    width: 95%;
+  };
+
   @include bp768 {
     width: 100vw;
     margin-left: 0;
@@ -4468,6 +4627,10 @@ a.ag {
       position: relative;
       border-bottom: 1px solid #C7C7C7;
       padding-bottom: 20px;
+
+    @include bp1100 {
+      width: 42%;
+    };
     
     @include bp768 {
       width: 80%;
@@ -4569,6 +4732,10 @@ a.ag {
 
     &--pic{
       width: 570px;
+
+    @include bp1100 {
+      width: 55%;
+    };
     
     @include bp768 {
       width: 100vw;
@@ -4813,6 +4980,14 @@ a.ag {
     padding: 78px 0 100px;
     position: relative;
     z-index: 2;
+
+  @include bp1100 {
+    width: 100%;
+  };
+
+  @include bp920 {
+    width: 920px;
+  };
 
   @include bp768 {
     width: 100%;
@@ -5368,6 +5543,14 @@ a.ag {
   width: 1100px;
   margin: 0 auto;
 
+@include bp1100 {
+  width: 100%;
+};
+
+@include bp920 {
+  width: 920px;
+};
+
 @include bp768 {
   width: 100%;
   padding: 0 10px;
@@ -5382,6 +5565,10 @@ a.ag {
     li{
       width: 360px;
       margin-bottom: 30px;
+
+    @include bp1100 {
+      width: 32%;
+    };
 
     @include bp768 {
       width: 49%;
@@ -7092,6 +7279,14 @@ a.ag {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+
+@include bp1100 {
+  width: 100%;
+};
+
+@include bp920 {
+  width: 920px;
+};
     
 @include bp768 {
   width: 100%;
@@ -7308,6 +7503,10 @@ a.ag {
     .glbPlist.column4{
       width: 216px;
 
+    @include bp1100 {
+      width: 24.8%;
+    };
+
     @include bp768 {
       width: 49.7%;
     };
@@ -7316,8 +7515,11 @@ a.ag {
         &.thumb{
           width: 198px;
 
-        @include bp768 {
+        @include bp1100 {
           width: 100%;
+        };
+
+        @include bp768 {
           margin: 0 auto 5px;
         };
         }
@@ -7411,6 +7613,10 @@ a.ag {
       padding-bottom: 10px;
       margin-bottom: 10px;
     
+    @include bp1100 {
+      width: 100%;
+    };
+    
     @include bp768 {
       padding-bottom: 20px;
       flex-wrap: wrap;
@@ -7428,6 +7634,10 @@ a.ag {
           width: 195px;
           margin-right: 10px;
     
+        @include bp1100 {
+          width: 40%;
+        };
+    
         @include bp768 {
           width: 50%;
           margin-right: 15px;
@@ -7440,6 +7650,10 @@ a.ag {
 
         .itemTitle{
           width: 235px;
+    
+        @include bp1100 {
+          width: 45%;
+        };
     
         @include bp768 {
           width: 50%;
@@ -7460,6 +7674,10 @@ a.ag {
         background: #F7F7F7;
         padding: 20px;
         position: relative;
+    
+      @include bp1100 {
+        width: 45%;
+      };
     
       @include bp768 {
         width: 75%;
@@ -7519,6 +7737,16 @@ a.ag {
         width: 100%;
         margin: 0 auto;
         font-size: 14px;
+      };
+      }
+
+
+      &_list{
+      @include bp1100 {
+        width: 45%;
+      };
+      @include bp768 {
+        width: 100%;
       };
       }
 
@@ -8466,6 +8694,14 @@ a.ag {
   width: 1280px;
   margin: 0 auto 98px;
 
+@include bp1280 {
+  width: 100%;
+};
+
+@include bp920 {
+  width: 920px;
+};
+
 @include bp768 {
   width: 100%;
   margin: 0 auto 75px;
@@ -8489,6 +8725,15 @@ a.ag {
   position: absolute;
   top: 90px;
   left: 30px;
+
+@include bp1280 {
+  left: 65px;
+};
+
+@include bp1100 {
+  width: 25%;
+  left: 30px;
+};
 
 @include bp768 {
   width: 27%;
@@ -8520,6 +8765,10 @@ a.ag {
     line-height: 1;
     margin-bottom: 5px;
     text-align: center;
+
+  @include bp1100 {
+    font-size: 50px;
+  };
 
   @include bp768 {
     font-size: 67px;
@@ -8581,6 +8830,11 @@ a.ag {
       padding-bottom: 30px;
       margin: 0 auto 102px;
   
+    @include bp1280 {
+      width: 25%;
+      margin: 20px auto;
+    };
+  
     @include bp768 {
       width: 95%;
       padding: 0 0 15px;
@@ -8602,6 +8856,10 @@ a.ag {
 
     &--pic{
       width: 980px;
+
+    @include bp1280 {
+      width: 70%;
+    };
   
     @include bp768 {
       width: 100%;
@@ -8778,7 +9036,7 @@ a.ag {
     transform: rotate(-135deg);
     z-index: 3;
   
-  @include bp768 {
+  @include bp1280 {
     display: none !important;
   };
 }
@@ -8805,6 +9063,10 @@ a.ag {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     z-index: 3;
+  
+  @include bp1280 {
+    bottom: inherit;
+  };
   
   @include bp768 {
     display: none !important;
@@ -8870,6 +9132,10 @@ button.slick-prev, button.slick-next {
     list-style: none;
 
     text-align: center;
+  
+  @include bp1280 {
+    bottom: inherit;
+  };
   
   @include bp768 {
     left: 0;
@@ -8955,14 +9221,21 @@ button.slick-prev, button.slick-next {
   width: 1063px;
   margin: 0 auto 80px;
 
-@include bp768 {
+@include bp1100 {
   width: 100%;
+};
+
+@include bp768 {
   margin: 0 auto 50px;
 };
 
   &_list{
     &:first-child{
       width: 692px;
+
+    @include bp1100 {
+      width: 63%;
+    };
 
     @include bp768 {
       width: 100%;
@@ -9293,6 +9566,10 @@ button.slick-prev, button.slick-next {
   &.column4 {
     width: 273.75px;
 
+  @include bp1100 {
+    width: 24.8%;
+  };
+
   @include bp768 {
     width: 49.7%;
   };
@@ -9326,8 +9603,11 @@ button.slick-prev, button.slick-next {
         width: 255px;
         margin: 0 auto 20px;
 
-      @include bp768 {
+      @include bp1100 {
         width: 100%;
+      };
+
+      @include bp768 {
         margin: 0 auto 5px;
       };
 
@@ -14141,6 +14421,49 @@ div {
 /*==============================================================================================
 　フェード
 ==============================================================================================*/
+.fade_in{
+    opacity: 0;
+}
+.fade_in--1.on{
+    -webkit-animation: fade_in 1.5s ease .2s forwards;
+    -moz-animation: fade_in 1.5s ease .2s forwards;
+    animation: fade_in 1.5s ease .2s forwards;
+}
+.fade_in--2.on{
+    -webkit-animation: fade_in 1.5s ease .3s forwards;
+    -moz-animation: fade_in 1.5s ease .3s forwards;
+    animation: fade_in 1.5s ease .3s forwards;
+}
+.fade_in--3.on{
+    -webkit-animation: fade_in 1.5s ease .4s forwards;
+    -moz-animation: fade_in 1.5s ease .4s forwards;
+    animation: fade_in 1.5s ease .4s forwards;
+}
+.fade_in--4.on{
+    -webkit-animation: fade_in 1.5s ease .5s forwards;
+    -moz-animation: fade_in 1.5s ease .5s forwards;
+    animation: fade_in 1.5s ease .5s forwards;
+}
+.fade_in--5.on{
+    -webkit-animation: fade_in 1.5s ease .6s forwards;
+    -moz-animation: fade_in 1.5s ease .6s forwards;
+    animation: fade_in 1.5s ease .6s forwards;
+}
+.fade_in--6.on{
+    -webkit-animation: fade_in 1.5s ease .7s forwards;
+    -moz-animation: fade_in 1.5s ease .7s forwards;
+    animation: fade_in 1.5s ease .7s forwards;
+}
+.fade_in--7.on{
+    -webkit-animation: fade_in 1.5s ease .8s forwards;
+    -moz-animation: fade_in 1.5s ease .8s forwards;
+    animation: fade_in 1.5s ease .8s forwards;
+}
+.fade_in--8.on{
+    -webkit-animation: fade_in 1.5s ease .9s forwards;
+    -moz-animation: fade_in 1.5s ease .9s forwards;
+    animation: fade_in 1.5s ease .9s forwards;
+}
 .fade_bottom{
     opacity: 0;
     transform: translate3d(0, 50px, 0);

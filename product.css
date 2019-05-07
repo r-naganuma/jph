@@ -446,6 +446,12 @@ h3 {
   width: 273.75px;
 }
 
+@media (max-width: 1100px) {
+  .listProduct ul.productListBox li.productList {
+    width: 24.8%;
+  }
+}
+
 @media (max-width: 768px) {
   .listProduct ul.productListBox li.productList {
     border-left: none;
@@ -499,9 +505,14 @@ h3 {
   margin: 0 auto 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
   .listProduct ul.productListBox li.productList ul.productListBox_inner ul li.plPhoto {
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .listProduct ul.productListBox li.productList ul.productListBox_inner ul li.plPhoto {
     margin: 0 auto 5px;
   }
 }
@@ -785,6 +796,18 @@ h3 {
   width: 550px;
 }
 
+@media (max-width: 1100px) {
+  #dvProductDetailArea #detailImage {
+    width: 42%;
+  }
+}
+
+@media (max-width: 920px) {
+  #dvProductDetailArea #detailImage {
+    width: 404px;
+  }
+}
+
 @media (max-width: 768px) {
   #dvProductDetailArea #detailImage {
     width: 100%;
@@ -801,10 +824,15 @@ h3 {
   /*border: 1px solid #ccc;*/
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
   #dvProductDetailArea #detailImage .mainImage #zoomPicture {
     width: 100%;
     height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #dvProductDetailArea #detailImage .mainImage #zoomPicture {
     margin-bottom: 10px;
   }
 }
@@ -888,6 +916,18 @@ h3 {
   padding-top: 10px;
   border-left: 1px solid #C7C7C7;
   padding-left: 20px;
+}
+
+@media (max-width: 1100px) {
+  #dvProductDetailArea #detailOne {
+    width: 52%;
+  }
+}
+
+@media (max-width: 920px) {
+  #dvProductDetailArea #detailOne {
+    width: 515px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1140,6 +1180,12 @@ h3 {
   padding: 22.5px 16px 22.5px 0;
 }
 
+@media (max-width: 1100px) {
+  .detail_setBox--list {
+    width: 31%;
+  }
+}
+
 @media (max-width: 768px) {
   .detail_setBox--list {
     padding: 11.5px 10px 11.5px 0;
@@ -1179,7 +1225,7 @@ h3 {
   width: 350px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
   .detail_setBox--list ul {
     width: 100%;
   }
@@ -1215,6 +1261,12 @@ h3 {
   width: 180px;
 }
 
+@media (max-width: 1100px) {
+  .detail_setBox--list ul li:first-child {
+    width: 40%;
+  }
+}
+
 @media (max-width: 768px) {
   .detail_setBox--list ul li:first-child {
     width: 25%;
@@ -1227,6 +1279,12 @@ h3 {
 
 .detail_setBox--list ul li:last-child {
   width: 160px;
+}
+
+@media (max-width: 1100px) {
+  .detail_setBox--list ul li:last-child {
+    width: 60%;
+  }
 }
 
 @media (max-width: 768px) {

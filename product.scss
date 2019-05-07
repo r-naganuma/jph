@@ -8,6 +8,22 @@ $bp768: 768px;  // スマホ
   }
 }
 
+$bp1100: 1100px;  // レスポンシブ第1段階
+
+@mixin bp1100 {
+  @media (max-width: ($bp1100)) {
+    @content;
+  }
+}
+
+$bp920: 920px;  // レスポンシブ第2段階
+
+@mixin bp920 {
+  @media (max-width: ($bp920)) {
+    @content;
+  }
+}
+
 /*==============================================================================================
  商品系コンテンツラッパー
 ==============================================================================================*/
@@ -444,6 +460,10 @@ h3 {
 		position: relative;
 		width: 273.75px;
 
+  @include bp1100 {
+    width: 24.8%;
+  };
+
   @include bp768 {
     border-left: none;
     border-right: 1px solid #C7C7C7;
@@ -490,8 +510,11 @@ h3 {
 			        width: 255px;
 			        margin: 0 auto 20px;
       
-            @include bp768 {
+            @include bp1100 {
               width: 100%;
+            };
+      
+            @include bp768 {
               margin: 0 auto 5px;
             };
 			      img {
@@ -750,6 +773,14 @@ h3 {
   #detailImage {
     width: 550px;
       
+  @include bp1100 {
+    width: 42%;
+  };
+      
+  @include bp920 {
+    width: 404px;
+  };
+      
   @include bp768 {
     width: 100%;
     padding: 0 10px;
@@ -763,9 +794,12 @@ h3 {
         margin-bottom: 20px;
         /*border: 1px solid #ccc;*/
       
-      @include bp768 {
+      @include bp1100 {
         width: 100%;
         height: 100%;
+      };
+      
+      @include bp768 {
         margin-bottom: 10px;
       };
       }
@@ -842,6 +876,14 @@ h3 {
     padding-top: 10px;
     border-left: 1px solid #C7C7C7;
     padding-left: 20px;
+      
+  @include bp1100 {
+    width: 52%;
+  };
+      
+  @include bp920 {
+    width: 515px;
+  };
       
   @include bp768 {
     width: 100%;
@@ -1060,6 +1102,10 @@ h3 {
       border-bottom: 1px solid #C7C7C7;
       padding: 22.5px 16px 22.5px 0;
       
+    @include bp1100 {
+      width: 31%;
+    };
+      
     @include bp768 {
       padding: 11.5px 10px 11.5px 0;
     };
@@ -1086,7 +1132,7 @@ h3 {
         align-items: center;
         width: 350px;
       
-      @include bp768 {
+      @include bp1100 {
         width: 100%;
       };
 
@@ -1116,6 +1162,10 @@ h3 {
           &:first-child{
             width: 180px;
       
+          @include bp1100 {
+            width: 40%;
+          };
+      
           @include bp768 {
             width: 25%;
           };
@@ -1127,6 +1177,10 @@ h3 {
 
           &:last-child{
             width: 160px;
+      
+          @include bp1100 {
+            width: 60%;
+          };
       
           @include bp768 {
             width: 75%;
