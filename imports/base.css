@@ -6229,11 +6229,27 @@ a.ag:active {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .newsWrap {
+    width: 100%;
+  }
+}
+
 .newsWrap_date {
   font-size: 13px;
   color: #555555;
   margin: 40px 0 10px;
   line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .newsWrap_date {
+    font-size: 11px;
+    margin: 30px 0 10px;
+    padding: 0 25px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 }
 
 .newsWrap_box {
@@ -6245,8 +6261,23 @@ a.ag:active {
   justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+  .newsWrap_box {
+    display: block;
+    padding: 0 25px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
 .newsWrap_box--cts {
   width: 800px;
+}
+
+@media (max-width: 768px) {
+  .newsWrap_box--cts {
+    width: 100%;
+  }
 }
 
 .newsWrap_box--cts h3 {
@@ -6261,13 +6292,36 @@ a.ag:active {
   border-bottom: 1px solid #888888;
 }
 
+@media (max-width: 768px) {
+  .newsWrap_box--cts h3 {
+    font-size: 15px;
+    margin: 0 0 20px;
+    padding-bottom: 10px;
+  }
+}
+
 .newsWrap_box--cts p {
   font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .newsWrap_box--cts p {
+    font-size: 13px;
+  }
 }
 
 .newsWrap_box--archive {
   width: 260px;
   margin-top: 9px;
+}
+
+@media (max-width: 768px) {
+  .newsWrap_box--archive {
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 40px;
+    border-top: 1px #888888 solid;
+  }
 }
 
 .newsWrap_box--archive h4 {
@@ -6282,10 +6336,24 @@ a.ag:active {
   border-bottom: 1px solid #888888;
 }
 
+@media (max-width: 768px) {
+  .newsWrap_box--archive h4 {
+    font-size: 13px;
+    padding-bottom: 10px;
+  }
+}
+
 .newsWrap_box--archive ul li {
   margin-bottom: 20px;
   padding-bottom: 15px;
   border-bottom: 1px solid #888888;
+}
+
+@media (max-width: 768px) {
+  .newsWrap_box--archive ul li {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 .newsWrap_box--archive ul li p span {
@@ -6295,6 +6363,12 @@ a.ag:active {
   line-height: 1;
   font-size: 12px;
   color: #555555;
+}
+
+@media (max-width: 768px) {
+  .newsWrap_box--archive ul li p span {
+    font-size: 11px;
+  }
 }
 
 .newsWrap_box--archive ul li p a {
@@ -6312,6 +6386,12 @@ a.ag:active {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .guideWrap {
+    width: 100%;
+  }
+}
+
 .guideWrap_box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6322,8 +6402,25 @@ a.ag:active {
   margin-top: 40px;
 }
 
+@media (max-width: 768px) {
+  .guideWrap_box {
+    width: 100%;
+    padding: 0 25px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 50px;
+  }
+}
+
 .guideWrap_box--menu {
   width: 180px;
+}
+
+@media (max-width: 768px) {
+  .guideWrap_box--menu {
+    display: none;
+  }
 }
 
 .guideWrap_box--menu h4 {
@@ -6352,6 +6449,12 @@ a.ag:active {
   width: 890px;
 }
 
+@media (max-width: 768px) {
+  .guideWrap_box--cts {
+    width: 100%;
+  }
+}
+
 .guideWrap_box--cts h3 {
   font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
   font-size: 24px;
@@ -6362,10 +6465,23 @@ a.ag:active {
   letter-spacing: 0.01em;
 }
 
+@media (max-width: 768px) {
+  .guideWrap_box--cts h3 {
+    font-size: 18px;
+    margin: 0 0 20px;
+  }
+}
+
 .guideWrap_box--cts--list {
   margin-bottom: 100px;
   margin-top: -20px;
   padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list {
+    margin-bottom: 50px;
+  }
 }
 
 .guideWrap_box--cts--list:last-child {
@@ -6383,12 +6499,70 @@ a.ag:active {
   border-bottom: 2px solid #081D5C;
 }
 
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list h4 {
+    font-size: 14px;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+  }
+}
+
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list h4::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin: auto;
+    z-index: 1;
+    display: block;
+    width: 10px;
+    height: 10px;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+  }
+}
+
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list h4.on {
+    position: relative;
+  }
+}
+
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list h4.on::after {
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    -webkit-animation: arrowRotate .5s ease 0s forwards;
+    animation: arrowRotate .5s ease 0s forwards;
+    top: 7px;
+  }
+}
+
 .guideWrap_box--cts--list--inner {
   margin: 0 20px;
 }
 
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner {
+    margin: 20px 0 0;
+    display: none;
+  }
+}
+
 .guideWrap_box--cts--list--inner p {
   font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner p {
+    font-size: 13px;
+  }
 }
 
 .guideWrap_box--cts--list--inner .guideMain {
@@ -6397,6 +6571,12 @@ a.ag:active {
   margin-bottom: 20px;
   color: #333;
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .guideMain {
+    font-size: 14px;
+  }
 }
 
 .guideWrap_box--cts--list--inner .mrgB20 {
@@ -6411,8 +6591,20 @@ a.ag:active {
   margin-bottom: 40px;
 }
 
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .mrgB40 {
+    margin-bottom: 30px;
+  }
+}
+
 .guideWrap_box--cts--list--inner .fontS {
   font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .fontS {
+    font-size: 12px;
+  }
 }
 
 .guideWrap_box--cts--list--inner .fwBold {
@@ -6429,6 +6621,14 @@ a.ag:active {
   width: 232px;
 }
 
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .bgWhite {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
 .guideWrap_box--cts--list--inner .lh2 {
   line-height: 2;
 }
@@ -6443,6 +6643,16 @@ a.ag:active {
   color: #333;
 }
 
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .guideSub {
+    font-size: 13px;
+  }
+}
+
+.guideWrap_box--cts--list--inner .fw500 {
+  font-weight: 500;
+}
+
 .guideWrap_box--cts--list--inner .guideGift {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6455,6 +6665,13 @@ a.ag:active {
   margin-bottom: 70px;
   width: 792px;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .guideGift {
+    margin-bottom: 50px;
+    width: 100%;
+  }
 }
 
 .guideWrap_box--cts--list--inner .guideGift::after {
@@ -6472,18 +6689,47 @@ a.ag:active {
   /*線の色*/
 }
 
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .guideGift::after {
+    left: 0;
+    bottom: -30px;
+    /*線の上下位置*/
+    width: 100%;
+    /*線の長さ*/
+  }
+}
+
 .guideWrap_box--cts--list--inner .guideGift li {
   width: 151px;
   margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .guideGift li {
+    width: 48%;
+    margin-bottom: 20px;
+  }
 }
 
 .guideWrap_box--cts--list--inner .guideGift li img {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .guideGift li img {
+    margin-bottom: 10px;
+  }
+}
+
 .guideWrap_box--cts--list--inner .guideGift li p {
   text-align: center;
   font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .guideGift li p {
+    font-size: 11px;
+  }
 }
 
 .guideWrap_box--cts--list--inner .guideGift li p span {
@@ -6495,6 +6741,13 @@ a.ag:active {
   margin-bottom: 5px;
 }
 
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .guideGift li p span {
+    font-size: 13px;
+    margin-bottom: 3.5px;
+  }
+}
+
 .guideWrap_box--cts--list--inner .guideGift li:last-child {
   margin-bottom: 0;
 }
@@ -6504,14 +6757,34 @@ a.ag:active {
   margin-bottom: 10px;
 }
 
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .pic_message {
+    width: 100%;
+  }
+}
+
 .guideWrap_box--cts--list--inner .pic_card {
   width: 560px;
   margin-bottom: 38px;
 }
 
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .pic_card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
 .guideWrap_box--cts--list--inner .pic_amazon {
   width: 90px;
   margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .pic_amazon {
+    width: 25%;
+    margin-bottom: 30px;
+  }
 }
 
 .guideWrap_box--cts--list--inner .bagBox {
@@ -6523,9 +6796,22 @@ a.ag:active {
   align-items: flex-end;
 }
 
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .bagBox {
+    display: block;
+  }
+}
+
 .guideWrap_box--cts--list--inner .bagBox_pic {
   width: 500px;
   margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .bagBox_pic {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
 }
 
 .guideWrap_box--cts--list--inner .bagBox_pic img {
@@ -6536,10 +6822,23 @@ a.ag:active {
   width: 230px;
 }
 
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .bagBox_cts {
+    width: 100%;
+  }
+}
+
 .guideWrap_box--cts--list--inner .bagBox_cts--size li {
   padding: 0 20px 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid #888888;
+}
+
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .bagBox_cts--size li {
+    padding: 0 10px 20px;
+    margin-bottom: 10px;
+  }
 }
 
 .guideWrap_box--cts--list--inner .bagBox_cts--size li:last-child {
@@ -6553,6 +6852,13 @@ a.ag:active {
   margin-bottom: 10px;
 }
 
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .bagBox_cts--size li .bagttl {
+    font-size: 19px;
+    margin-bottom: 5px;
+  }
+}
+
 .guideWrap_box--cts--list--inner .payBox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6562,18 +6868,43 @@ a.ag:active {
   justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .payBox {
+    display: block;
+  }
+}
+
 .guideWrap_box--cts--list--inner .payBox_txt {
   width: 520px;
+}
+
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .payBox_txt {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .guideWrap_box--cts--list--inner .payBox_price {
   width: 260px;
 }
 
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .payBox_price {
+    width: 210px;
+  }
+}
+
 .guideWrap_box--cts--list--inner .payBox_price--list--column {
   padding: 0 10px 15px;
   margin-bottom: 15px;
   border-bottom: 1px solid #888888;
+}
+
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .payBox_price--list--column {
+    padding: 0 5px 15px;
+  }
 }
 
 .guideWrap_box--cts--list--inner .payBox_price--list--column:first-child {
@@ -6602,14 +6933,33 @@ a.ag:active {
   justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .postageBox {
+    display: block;
+  }
+}
+
 .guideWrap_box--cts--list--inner .postageBox_price {
   width: 570px;
+}
+
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .postageBox_price {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .guideWrap_box--cts--list--inner .postageBox_price--list--column {
   padding: 0 25px 18px 10px;
   margin-bottom: 18px;
   border-bottom: 1px solid #888888;
+}
+
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .postageBox_price--list--column {
+    padding: 0 5px 15px;
+  }
 }
 
 .guideWrap_box--cts--list--inner .postageBox_price--list--column:first-child {
@@ -6630,12 +6980,30 @@ a.ag:active {
   width: 90px;
 }
 
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .postageBox_price--list ul li:nth-child(3n + 1) {
+    width: 18%;
+  }
+}
+
 .guideWrap_box--cts--list--inner .postageBox_price--list ul li:nth-child(3n + 2) {
   width: 395px;
 }
 
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .postageBox_price--list ul li:nth-child(3n + 2) {
+    width: 64%;
+  }
+}
+
 .guideWrap_box--cts--list--inner .postageBox_price--list ul li:nth-child(3n) {
   width: 55px;
+}
+
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .postageBox_price--list ul li:nth-child(3n) {
+    width: 18%;
+  }
 }
 
 .guideWrap_box--cts--list--inner .postageBox_price--list ul li:nth-child(3n) p {
@@ -6646,11 +7014,23 @@ a.ag:active {
   width: 260px;
 }
 
+@media (max-width: 768px) {
+  .guideWrap_box--cts--list--inner .postageBox_txt {
+    width: 100%;
+  }
+}
+
 /* ---------- TOP */
 /* 会社概要 */
 .companyTop {
   width: 1100px;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .companyTop {
+    width: 100%;
+  }
 }
 
 .companyTop h3 {
@@ -6731,9 +7111,25 @@ a.ag:active {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .companyAbout {
+    width: 100%;
+  }
+}
+
 .companyAbout_company {
   width: 850px;
   margin: 0 auto 100px;
+}
+
+@media (max-width: 768px) {
+  .companyAbout_company {
+    width: 100%;
+    margin: 0 auto 50px;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 }
 
 .companyAbout_company h3 {
@@ -6747,6 +7143,14 @@ a.ag:active {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .companyAbout_company h3 {
+    font-size: 25px;
+    margin: 20px 0 30px;
+    text-align: left;
+  }
+}
+
 .companyAbout_company h3 span {
   font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
   font-size: 14px;
@@ -6756,6 +7160,14 @@ a.ag:active {
   display: block;
   font-weight: normal;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .companyAbout_company h3 span {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: left;
+  }
 }
 
 .companyAbout_company ul {
@@ -6770,11 +7182,26 @@ a.ag:active {
   font-size: 14px;
 }
 
+@media (max-width: 768px) {
+  .companyAbout_company ul li p {
+    font-size: 13px;
+  }
+}
+
 .companyAbout_company ul li:nth-child(odd) {
   width: 130px;
   border-bottom: 2px #081D5C solid;
   padding: 0 20px 10px;
   margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .companyAbout_company ul li:nth-child(odd) {
+    width: 100%;
+    border-bottom: none;
+    padding: 0;
+    margin-bottom: 3px;
+  }
 }
 
 .companyAbout_company ul li:nth-child(odd) p {
@@ -6788,13 +7215,54 @@ a.ag:active {
   margin-bottom: 41px;
 }
 
+@media (max-width: 768px) {
+  .companyAbout_company ul li:nth-child(even) {
+    width: 100%;
+    padding: 0 0 10px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+}
+
+@media (max-width: 768px) {
+  .companyAbout_company ul li:nth-child(even)::after {
+    content: "";
+    width: 30%;
+    border-bottom: 2px #081D5C solid;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+  }
+}
+
 .companyAbout_company ul li:nth-last-child(-n + 2) {
   margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .companyAbout_company ul li:nth-last-child(-n + 2) {
+    margin-bottom: 7px;
+  }
+}
+
+@media (max-width: 768px) {
+  .companyAbout_company ul li:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .companyAbout_history {
   width: 850px;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .companyAbout_history {
+    width: 100%;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 }
 
 .companyAbout_history h3 {
@@ -6808,6 +7276,14 @@ a.ag:active {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .companyAbout_history h3 {
+    font-size: 25px;
+    margin: 20px 0 30px;
+    text-align: left;
+  }
+}
+
 .companyAbout_history h3 span {
   font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
   font-size: 14px;
@@ -6817,6 +7293,14 @@ a.ag:active {
   display: block;
   font-weight: normal;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .companyAbout_history h3 span {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: left;
+  }
 }
 
 .companyAbout_history--box {
@@ -6835,6 +7319,12 @@ a.ag:active {
   font-size: 14px;
 }
 
+@media (max-width: 768px) {
+  .companyAbout_history--box--list p {
+    font-size: 12px;
+  }
+}
+
 .companyAbout_history--box--list:nth-child(odd) {
   width: 170px;
   margin-right: 20px;
@@ -6842,6 +7332,13 @@ a.ag:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 768px) {
+  .companyAbout_history--box--list:nth-child(odd) {
+    width: 30%;
+    margin-right: 10px;
+  }
 }
 
 .companyAbout_history--box--list:nth-child(odd)::after {
@@ -6864,8 +7361,20 @@ a.ag:active {
   margin: auto;
 }
 
+@media (max-width: 768px) {
+  .companyAbout_history--box--list:nth-child(odd) p {
+    font-size: 13px;
+  }
+}
+
 .companyAbout_history--box--list:nth-child(even) {
   width: 660px;
+}
+
+@media (max-width: 768px) {
+  .companyAbout_history--box--list:nth-child(even) {
+    width: 67%;
+  }
 }
 
 .companyAbout_history--box--list:nth-child(even) ul {
@@ -6883,12 +7392,26 @@ a.ag:active {
   margin-right: 30px;
 }
 
+@media (max-width: 768px) {
+  .companyAbout_history--box--list:nth-child(even) ul li:nth-child(odd) {
+    width: 25px;
+    padding-right: 10px;
+    margin-right: 10px;
+  }
+}
+
 .companyAbout_history--box--list:nth-child(even) ul li:nth-child(odd) p {
   text-align: right;
 }
 
 .companyAbout_history--box--list:nth-child(even) ul li:nth-child(even) {
   width: 569px;
+}
+
+@media (max-width: 768px) {
+  .companyAbout_history--box--list:nth-child(even) ul li:nth-child(even) {
+    width: 190px;
+  }
 }
 
 .companyAbout_history--box--list:nth-child(even) ul li:nth-child(-n + 2) {
@@ -6906,6 +7429,12 @@ a.ag:active {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .lawWrap {
+    width: 100%;
+  }
+}
+
 .lawWrap h3 {
   font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
   font-size: 24px;
@@ -6915,6 +7444,13 @@ a.ag:active {
   line-height: 1;
   color: #333;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .lawWrap h3 {
+    font-size: 18px;
+    margin: 40px 0;
+  }
 }
 
 .lawWrap_box {
@@ -6927,8 +7463,23 @@ a.ag:active {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .lawWrap_box {
+    width: 100%;
+    padding: 0 25px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
 .lawWrap_box li p {
   font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .lawWrap_box li p {
+    font-size: 13px;
+  }
 }
 
 .lawWrap_box li p.fontS {
@@ -6942,6 +7493,15 @@ a.ag:active {
   margin-bottom: 40px;
 }
 
+@media (max-width: 768px) {
+  .lawWrap_box li:nth-child(odd) {
+    width: 100%;
+    border-bottom: none;
+    padding: 0;
+    margin-bottom: 3px;
+  }
+}
+
 .lawWrap_box li:nth-child(odd) p {
   font-weight: 600;
 }
@@ -6953,8 +7513,40 @@ a.ag:active {
   margin-bottom: 41px;
 }
 
+@media (max-width: 768px) {
+  .lawWrap_box li:nth-child(even) {
+    width: 100%;
+    padding: 0 0 10px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+}
+
+@media (max-width: 768px) {
+  .lawWrap_box li:nth-child(even)::after {
+    content: "";
+    width: 30%;
+    border-bottom: 2px #081D5C solid;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+  }
+}
+
 .lawWrap_box li:nth-last-child(-n + 2) {
   margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .lawWrap_box li:nth-last-child(-n + 2) {
+    margin-bottom: 7px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lawWrap_box li:last-child {
+    margin-bottom: 0;
+  }
 }
 
 /* ---------- TOP */
@@ -6962,6 +7554,15 @@ a.ag:active {
 .recruitWrap {
   width: 1100px;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .recruitWrap {
+    width: 100%;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 }
 
 .recruitWrap h3 {
@@ -6975,6 +7576,14 @@ a.ag:active {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .recruitWrap h3 {
+    font-size: 25px;
+    margin: 10px 0 20px;
+    text-align: left;
+  }
+}
+
 .recruitWrap h3 span {
   font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
   font-size: 14px;
@@ -6986,10 +7595,26 @@ a.ag:active {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .recruitWrap h3 span {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: left;
+  }
+}
+
 .recruitWrap_catch {
   font-size: 14px;
   margin-bottom: 40px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .recruitWrap_catch {
+    font-size: 12px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
 }
 
 .recruitWrap_box {
@@ -6997,6 +7622,15 @@ a.ag:active {
   background: #FDFDFD;
   padding: 30px 0 40px;
   margin-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+  .recruitWrap_box {
+    padding: 15px 15px 20px;
+    margin-bottom: 50px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 }
 
 .recruitWrap_box h4 {
@@ -7013,6 +7647,15 @@ a.ag:active {
   width: 1060px;
 }
 
+@media (max-width: 768px) {
+  .recruitWrap_box h4 {
+    font-size: 20px;
+    margin: 0 auto 20px;
+    padding-bottom: 14px;
+    width: 100%;
+  }
+}
+
 .recruitWrap_box h4 span {
   font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
   font-size: 12px;
@@ -7025,6 +7668,13 @@ a.ag:active {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .recruitWrap_box h4 span {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+}
+
 .recruitWrap_box h5 {
   font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
   font-size: 20px;
@@ -7035,10 +7685,25 @@ a.ag:active {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .recruitWrap_box h5 {
+    font-size: 15px;
+    margin: 0 0 15px;
+  }
+}
+
 .recruitWrap_box--txt {
   font-size: 14px;
   text-align: center;
   margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .recruitWrap_box--txt {
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 38px;
+  }
 }
 
 .recruitWrap_box--txt a {
@@ -7047,10 +7712,26 @@ a.ag:active {
   text-decoration: underline;
 }
 
+@media (max-width: 768px) {
+  .recruitWrap_box--txt a {
+    text-align: left;
+  }
+}
+
 .recruitWrap_box--btn {
   width: 195px;
   margin: -20px auto 0;
   display: block;
+}
+
+@media (max-width: 768px) {
+  .recruitWrap_box--btn {
+    width: 100%;
+    padding: 0 77.5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: -23px auto 0;
+  }
 }
 
 .recruitWrap_box--btn img {
@@ -7068,6 +7749,13 @@ a.ag:active {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .recruitWrap_career h4 {
+    font-size: 20px;
+    margin: 0 auto 20px;
+  }
+}
+
 .recruitWrap_career h4 span {
   font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
   font-size: 12px;
@@ -7080,6 +7768,13 @@ a.ag:active {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .recruitWrap_career h4 span {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+}
+
 .recruitWrap_career ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7089,8 +7784,22 @@ a.ag:active {
   justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+  .recruitWrap_career ul {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
 .recruitWrap_career ul li {
   width: 260px;
+}
+
+@media (max-width: 768px) {
+  .recruitWrap_career ul li {
+    width: 48.5%;
+    margin-bottom: 20px;
+  }
 }
 
 .recruitWrap_career ul li img {
@@ -7105,6 +7814,12 @@ a.ag:active {
   font-weight: 500;
 }
 
+@media (max-width: 768px) {
+  .recruitWrap_career ul li p {
+    font-size: 18px;
+  }
+}
+
 .recruitWrap_career ul li p span {
   display: block;
   font-size: 14px;
@@ -7112,6 +7827,19 @@ a.ag:active {
   line-height: 1;
   margin-top: 10px;
   font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  .recruitWrap_career ul li p span {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .recruitWrap_career ul li:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
 }
 
 /* ---------- TOP */
@@ -8313,12 +9041,30 @@ a.ag:active {
   border-top: 1px solid #C7C7C7;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .mypageMail tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 0 20px;
+    position: relative;
+  }
+}
+
 .mypageBox_cts .mypageMail tr:last-child {
   border-bottom: 1px solid #C7C7C7;
 }
 
 .mypageBox_cts .mypageMail_pic {
   width: 195px;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .mypageMail_pic {
+    width: 49%;
+  }
 }
 
 .mypageBox_cts .mypageMail_pic img {
@@ -8330,11 +9076,32 @@ a.ag:active {
   margin-right: 30px;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .mypageMail_name {
+    width: 49%;
+    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
 .mypageBox_cts .mypageMail_box {
   width: 333px;
   margin-right: 20px;
   background: #F7F7F7;
   padding: 30px 20px;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .mypageMail_box {
+    width: 75%;
+    margin: 10px auto 0;
+    padding: 20px 20px 5px 20px;
+  }
 }
 
 .mypageBox_cts .mypageMail_box dt {
@@ -8346,12 +9113,24 @@ a.ag:active {
   margin-bottom: 10px;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .mypageMail_box dt {
+    margin-bottom: 10px;
+  }
+}
+
 .mypageBox_cts .mypageMail_box dd {
   font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
   font-size: 13px;
   line-height: 1;
   color: #333;
   margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .mypageMail_box dd {
+    margin-bottom: 15px;
+  }
 }
 
 .mypageBox_cts .mypageMail_box dd input:focus {
@@ -8373,6 +9152,16 @@ a.ag:active {
   background: #fff;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .mypageMail_box dd input.input_widthA {
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+  }
+}
+
 .mypageBox_cts .mypageMail_box dd input.input_widthB {
   width: 27px;
   height: 40px;
@@ -8384,8 +9173,27 @@ a.ag:active {
   background: #fff;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .mypageMail_box dd input.input_widthB {
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+  }
+}
+
 .mypageBox_cts .mypageMail_delete {
   width: 78px;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .mypageMail_delete {
+    width: 40px;
+    position: absolute;
+    bottom: 80px;
+    right: 45px;
+  }
 }
 
 .mypageBox_cts .mypageMail_delete a {
@@ -8398,6 +9206,13 @@ a.ag:active {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .mypageMail_delete a {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .mypageBox_cts .mypageMail_delete a::before, .mypageBox_cts .mypageMail_delete a::after {
   content: '';
   display: block;
@@ -8405,6 +9220,12 @@ a.ag:active {
   height: 1px;
   background: #ffffff;
   position: absolute;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .mypageMail_delete a::before, .mypageBox_cts .mypageMail_delete a::after {
+    width: 20px;
+  }
 }
 
 .mypageBox_cts .mypageMail_delete a::before {
@@ -8415,6 +9236,13 @@ a.ag:active {
   left: 8px;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .mypageMail_delete a::before {
+    top: 20px;
+    left: 10px;
+  }
+}
+
 .mypageBox_cts .mypageMail_delete a::after {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
@@ -8423,14 +9251,34 @@ a.ag:active {
   left: 8px;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .mypageMail_delete a::after {
+    bottom: 19px;
+    left: 10px;
+  }
+}
+
 .mypageBox_cts .mypageMail_btn a {
   width: 300px;
   font-size: 13px;
   margin-bottom: 30px;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .mypageMail_btn a {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
 .mypageBox_cts #OrderShippingBox {
   width: 740px;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts #OrderShippingBox {
+    width: 100%;
+  }
 }
 
 .mypageBox_cts #OrderShippingBox .mrgB10 {
@@ -8441,6 +9289,12 @@ a.ag:active {
   margin-left: 10px;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts #OrderShippingBox .notes {
+    display: none;
+  }
+}
+
 .mypageBox_cts #OrderShippingBox .mypageLogin_ttl {
   font-size: 16px;
   font-weight: 600;
@@ -8449,10 +9303,28 @@ a.ag:active {
   letter-spacing: 0.01em;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts #OrderShippingBox .mypageLogin_ttl {
+    font-size: 13px;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
 .mypageBox_cts #OrderShippingBox .mypageLogin_catch {
   font-size: 13px;
   margin-bottom: 30px;
   line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts #OrderShippingBox .mypageLogin_catch {
+    margin-bottom: 20px;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 }
 
 .mypageBox_cts .dvUserBtnBox {
@@ -8464,6 +9336,17 @@ a.ag:active {
   box-shadow: 0px 2px 10px -5px #000000;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .dvUserBtnBox {
+    width: 100%;
+    padding: 30px 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
 .mypageBox_cts .dvUserBtnBox ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8473,16 +9356,73 @@ a.ag:active {
   justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .dvUserBtnBox ul {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
 .mypageBox_cts .dvUserBtnBox ul li:nth-child(2) a {
   background: #081D5C;
   color: #fff;
   font-size: 13px;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .dvUserBtnBox ul li:nth-child(2) a {
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .dvUserBtnBox ul li:nth-child(2) {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    width: 100%;
+  }
+}
+
 .mypageBox_cts .dvUserBtnBox ul li:last-child a {
   background: #081D5C;
   color: #fff;
   font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .dvUserBtnBox ul li:last-child a {
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .dvUserBtnBox ul li:last-child {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .dvUserBtnBox ul li:first-child {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .dvUserBtnBox ul li:first-child a {
+    width: 100%;
+  }
 }
 
 .mypageBox_cts .dvUserBtnBox.historyBtnBox {
@@ -8501,6 +9441,13 @@ a.ag:active {
   }
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts .messageList {
+    margin: 0 auto;
+    width: 85%;
+  }
+}
+
 .mypageBox_cts .mypage_userShippingBtn {
   width: 280px;
   height: 50px;
@@ -8512,6 +9459,15 @@ a.ag:active {
   color: #fff;
   margin-top: 30px;
   display: block;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts .mypage_userShippingBtn {
+    margin: 30px auto 0;
+    width: 93.75%;
+    height: 60px;
+    line-height: 60px;
+  }
 }
 
 .mypageBox_cts .lh {
@@ -8538,6 +9494,16 @@ a.ag:active {
   border-bottom: 1px solid #888888;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts #dvUserShippingList table tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
 .mypageBox_cts #dvUserShippingList table td {
   vertical-align: top;
 }
@@ -8546,16 +9512,43 @@ a.ag:active {
   width: 174px;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts #dvUserShippingList table td.shippingName {
+    width: 100%;
+  }
+}
+
 .mypageBox_cts #dvUserShippingList table td.shippingHuman {
   width: 201px;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts #dvUserShippingList table td.shippingHuman {
+    width: 100%;
+  }
 }
 
 .mypageBox_cts #dvUserShippingList table td.shippingAddr {
   width: 384px;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts #dvUserShippingList table td.shippingAddr {
+    width: 100%;
+  }
+}
+
 .mypageBox_cts #dvUserShippingList table td.updatedelete {
   width: 91px;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts #dvUserShippingList table td.updatedelete {
+    width: 100%;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 }
 
 .mypageBox_cts #dvUserShippingList table td.updatedelete a {
@@ -8567,10 +9560,25 @@ a.ag:active {
   font-size: 13px;
 }
 
+@media (max-width: 768px) {
+  .mypageBox_cts #dvUserShippingList table td.updatedelete a {
+    width: 95px;
+    height: 35px;
+    line-height: 35px;
+    display: inline-block;
+  }
+}
+
 .mypageBox_cts #dvUserShippingList table td.updatedelete a:first-child {
   background: #fff;
   border: 1px solid #888888;
   margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts #dvUserShippingList table td.updatedelete a:first-child {
+    margin: 0 10px 0 0;
+  }
 }
 
 .mypageBox_cts #dvUserShippingList table td.updatedelete a:last-child {
@@ -8580,11 +9588,27 @@ a.ag:active {
 }
 
 .mypageBox_cts #dvUserShippingList table td dd {
-  font-size: 14px;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts #dvUserShippingList table td dd {
+    border-bottom: none;
+  }
 }
 
 .mypageBox .toTop {
   font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .mypageBox .toTop {
+    margin: 0 auto 70px;
+    width: 93.75%;
+    height: 60px;
+    line-height: 60px;
+    display: block;
+  }
 }
 
 .mypageBox .dvWithdrawInfo_box {
@@ -8593,8 +9617,23 @@ a.ag:active {
   margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+  .mypageBox .dvWithdrawInfo_box {
+    padding: 15px 10px;
+    margin: 0 auto 20px;
+    width: 80%;
+    line-height: 1.5;
+  }
+}
+
 .mypageBox .dvWithdrawInfo_box p {
   font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .mypageBox .dvWithdrawInfo_box p {
+    line-height: 1.5;
+  }
 }
 
 .mypageBox .dvWithdrawInfo_btn a {
@@ -8609,10 +9648,17 @@ a.ag:active {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .mypageBox .dvWithdrawInfo_btn a {
+    width: 93.75%;
+    margin: 0 auto;
+  }
+}
+
 /* ---------- TOP */
 /* スライド */
 #maincontents {
-  width: 1240px;
+  width: 1280px;
   margin: 0 auto 98px;
 }
 
@@ -8641,7 +9687,7 @@ a.ag:active {
   margin: 0 auto;
   position: absolute;
   top: 90px;
-  left: -10px;
+  left: 30px;
 }
 
 @media (max-width: 768px) {
@@ -8761,7 +9807,7 @@ a.ag:active {
   width: 230px;
   border-bottom: 1px #333 solid;
   padding-bottom: 30px;
-  margin-bottom: 102px;
+  margin: 0 auto 102px;
 }
 
 @media (max-width: 768px) {
@@ -8933,7 +9979,7 @@ a.ag:active {
   line-height: 0;
   position: absolute;
   bottom: 34px;
-  left: 3px;
+  left: 40px;
   width: 10px;
   height: 10px;
   padding: 0;
@@ -8963,7 +10009,7 @@ a.ag:active {
   line-height: 0;
   position: absolute;
   bottom: 34px;
-  left: 222px;
+  left: 252px;
   width: 10px;
   height: 10px;
   padding: 0;
@@ -9032,7 +10078,7 @@ button.slick-prev, button.slick-next {
 .slick-dots {
   position: absolute;
   bottom: 33px;
-  left: 3.7%;
+  left: 6%;
   display: block;
   width: 145px;
   padding: 0;
@@ -9157,6 +10203,12 @@ button.slick-prev, button.slick-next {
   opacity: 1;
 }
 
+.bannerarea_list:last-child a:hover img {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
 @media (max-width: 768px) {
   .bannerarea_list--sp {
     width: 50%;
@@ -9185,19 +10237,39 @@ button.slick-prev, button.slick-next {
   }
 }
 
-.bannerarea_list--inner img {
+.bannerarea_list--inner .circleArea {
   width: 150px;
+  height: 150px;
   margin: 0 auto 34px;
-  display: block;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
-  .bannerarea_list--inner img {
-    width: 100%;
-    padding: 0 42px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  .bannerarea_list--inner .circleArea {
+    width: 105px;
+    height: 105px;
     margin: 0 auto 19px;
+  }
+}
+
+.bannerarea_list--inner .circleArea img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  display: block;
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  -o-transition: transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
+}
+
+@media (max-width: 768px) {
+  .bannerarea_list--inner .circleArea img {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -10943,7 +12015,7 @@ button.slick-prev, button.slick-next {
 
 @media (max-width: 768px) {
   .UserRegistArea .UserRegistBox_left dd .input_widthB {
-    width: 84px;
+    width: 83px;
     font-size: 16px;
   }
 }
@@ -11116,7 +12188,7 @@ button.slick-prev, button.slick-next {
 
 @media (max-width: 768px) {
   .UserRegistArea .UserRegistBox_left dd .input_widthG {
-    width: 93.75%;
+    width: 100%;
     font-size: 16px;
   }
 }
@@ -11260,6 +12332,15 @@ button.slick-prev, button.slick-next {
   padding: 0;
 }
 
+@media (max-width: 768px) {
+  .UserRegistArea .UserRegistBox .text-xs-center {
+    position: inherit;
+    top: inherit;
+    right: inherit;
+    margin-bottom: 15px;
+  }
+}
+
 .UserRegistArea .InquiryCompleteBox {
   width: 790px;
   margin: 0 auto;
@@ -11267,10 +12348,28 @@ button.slick-prev, button.slick-next {
   background: #F7F7F7;
 }
 
+@media (max-width: 768px) {
+  .UserRegistArea .InquiryCompleteBox {
+    width: 100%;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background: none;
+  }
+}
+
 .UserRegistArea .InquiryCompleteBox_txt1 {
   font-size: 13px;
   margin-bottom: 30px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .UserRegistArea .InquiryCompleteBox_txt1 {
+    font-size: 14px;
+    text-align: left;
+  }
 }
 
 .UserRegistArea .InquiryCompleteBox_txt2 {
@@ -11281,11 +12380,27 @@ button.slick-prev, button.slick-next {
   margin-bottom: 13px;
 }
 
+@media (max-width: 768px) {
+  .UserRegistArea .InquiryCompleteBox_txt2 {
+    text-align: left;
+    margin-bottom: 15px;
+    line-height: 1.8;
+  }
+}
+
 .UserRegistArea .InquiryCompleteBox_txt3 {
   font-size: 13px;
   font-weight: 600;
   text-align: center;
   margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .UserRegistArea .InquiryCompleteBox_txt3 {
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
 }
 
 .UserRegistArea .InquiryCompleteBox_txt4 {
@@ -11294,12 +12409,40 @@ button.slick-prev, button.slick-next {
   margin-bottom: 40px;
 }
 
+@media (max-width: 768px) {
+  .UserRegistArea .InquiryCompleteBox_txt4 {
+    font-size: 13px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+}
+
 .UserRegistArea .InquiryCompleteBox .UserRegistArea_completeBtn {
   margin-bottom: 0;
 }
 
+@media (max-width: 768px) {
+  .UserRegistArea .InquiryCompleteBox .UserRegistArea_completeBtn {
+    font-size: 13px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .UserRegistArea .InquiryCompleteBox .UserRegistArea_completeBtn a {
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
 .UserRegistArea #dvUserInquiryInput .is-fixed-done {
   top: 903px;
+}
+
+@media (max-width: 768px) {
+  .UserRegistArea #dvUserInquiryInput .is-fixed-done {
+    top: inherit;
+  }
 }
 
 .UserRegistArea_completeTxt {
@@ -11390,6 +12533,12 @@ button.slick-prev, button.slick-next {
   margin: 60px 0 0;
 }
 
+@media (max-width: 768px) {
+  .UserRegistArea_completeBtn.mailmagazineComplete {
+    margin: 35px auto 0;
+  }
+}
+
 .UserRegistArea_imgTxt {
   width: 284px;
   position: absolute;
@@ -11431,6 +12580,16 @@ button.slick-prev, button.slick-next {
   margin-bottom: 30px;
 }
 
+@media (max-width: 768px) {
+  .UserRegistArea_catch {
+    font-size: 13px;
+    margin-bottom: 40px;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
 .UserRegistArea_notice {
   font-size: 12px;
   color: #555555;
@@ -11440,6 +12599,10 @@ button.slick-prev, button.slick-next {
 .rakutenPayment {
   padding: 10px 10px 10px 20px;
   border: #AAAAAA solid 1px;
+}
+
+.talignCenter {
+  text-align: center;
 }
 
 .pointBox {
@@ -12003,7 +13166,7 @@ button.slick-prev, button.slick-next {
 
 @media (max-width: 768px) {
   #OrderShippingBox .OrderShippingBox_box--left--top dd .input_widthB {
-    width: 84px;
+    width: 83px;
     font-size: 16px;
   }
 }
@@ -13107,15 +14270,16 @@ button.slick-prev, button.slick-next {
 
 #OrderShippingSelectBox .OrderShippingSelectBox_box--left .orderColumn {
   margin-bottom: 80px;
-  /*&.orderColumn_payment:nth-child(n + 2){
-          display: none;
-        }*/
 }
 
 @media (max-width: 768px) {
   #OrderShippingSelectBox .OrderShippingSelectBox_box--left .orderColumn {
     margin-bottom: 50px;
   }
+}
+
+#OrderShippingSelectBox .OrderShippingSelectBox_box--left .orderColumn.orderColumn_payment:nth-child(n + 2) {
+  display: none;
 }
 
 #OrderShippingSelectBox .OrderShippingSelectBox_box--left--bottom {
@@ -13388,7 +14552,7 @@ button.slick-prev, button.slick-next {
 
 @media (max-width: 768px) {
   #OrderShippingSelectBox .OrderShippingSelectBox_box--inner--right dd .input_widthB {
-    width: 84px;
+    width: 83px;
     font-size: 16px;
   }
 }
@@ -13992,6 +15156,11 @@ button.slick-prev, button.slick-next {
     line-height: 1;
     padding-right: 0;
   }
+}
+
+#OrderShippingSelectBox .OrderShippingSelectBox_box--right .order_priceList dl.result.bor0 {
+  border: none;
+  padding: 0;
 }
 
 #OrderShippingSelectBox .OrderShippingSelectBox_box--right.confirmSubmit {

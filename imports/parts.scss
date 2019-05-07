@@ -148,13 +148,28 @@ $bp768: 768px;  // スマホ
       
       h3 {
         font-size: 12px;
-        font-weight: bold;
         color: #000;
 
         img{
           width: 16px;
           margin-left: 10px;
           vertical-align: text-top;
+        }
+
+        span{
+          &.sortSpan{
+            display: none;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 10px;
+          }
+          &.on{
+            display: inline;
+
+          @include bp768 {
+            display: none;
+          };
+          }
         }
       }
 
@@ -202,6 +217,20 @@ $bp768: 768px;  // スマホ
           top: 7px;
         }
       }
+
+      &.list-3{
+        width: 200px;
+
+      @include bp768 {
+        width: 26vw;
+      };
+
+        &.on{
+          &::before{
+            animation: borderSearch220 .5s ease 0s forwards;
+          }
+        }
+      }
     }
   }
 }
@@ -217,6 +246,26 @@ $bp768: 768px;  // スマホ
 
 @include bp768 {
   @keyframes borderSearch {
+      0%{
+          width: 0%;
+      }
+      100%{
+          width: 28vw;
+      }
+  }
+};
+
+@keyframes borderSearch220 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 220px;
+    }
+}
+
+@include bp768 {
+  @keyframes borderSearch220 {
       0%{
           width: 0%;
       }
@@ -959,7 +1008,7 @@ $bp768: 768px;  // スマホ
   h3 {
     font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 24px;
     letter-spacing: 0.01em;
     line-height: 1;
     text-align: left;
