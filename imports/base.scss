@@ -5684,6 +5684,14 @@ a.ag {
   width: 1100px;
   margin: 0 auto;
 
+@include bp1100 {
+  width: 100%;
+};
+
+@include bp920 {
+  width: 920px;
+};
+
 @include bp768 {
   width: 100%;
 };
@@ -5821,6 +5829,14 @@ a.ag {
   width: 1100px;
   margin: 0 auto;
 
+@include bp1100 {
+  width: 100%;
+};
+
+@include bp920 {
+  width: 920px;
+};
+
 @include bp768 {
   width: 100%;
 };
@@ -5872,6 +5888,10 @@ a.ag {
 
     &--cts{
       width: 890px;
+
+    @include bp1100 {
+      width: 85%;
+    };
 
     @include bp768 {
       width: 100%;
@@ -6351,6 +6371,14 @@ a.ag {
   width: 1100px;
   margin: 0 auto;
 
+@include bp1100 {
+  width: 100%;
+};
+
+@include bp920 {
+  width: 920px;
+};
+
 @include bp768 {
   width: 100%;
 };
@@ -6430,6 +6458,14 @@ a.ag {
 .companyAbout{
   width: 1100px;
   margin: 0 auto;
+
+@include bp1100 {
+  width: 100%;
+};
+
+@include bp920 {
+  width: 920px;
+};
 
 @include bp768 {
   width: 100%;
@@ -6706,6 +6742,14 @@ a.ag {
   width: 1100px;
   margin: 0 auto;
 
+@include bp1100 {
+  width: 100%;
+};
+
+@include bp920 {
+  width: 920px;
+};
+
 @include bp768 {
   width: 100%;
 };
@@ -6819,6 +6863,14 @@ a.ag {
 .recruitWrap{
   width: 1100px;
   margin: 0 auto;
+
+@include bp1100 {
+  width: 100%;
+};
+
+@include bp920 {
+  width: 920px;
+};
 
 @include bp768 {
   width: 100%;
@@ -7076,6 +7128,14 @@ a.ag {
   width: 1100px;
   margin: 0 auto;
 
+@include bp1100 {
+  width: 100%;
+};
+
+@include bp920 {
+  width: 920px;
+};
+
   @include bp768 {
         width: 100%;
 
@@ -7214,6 +7274,14 @@ a.ag {
 .receiptWrap{
   width: 1100px;
   margin: 0 auto;
+
+@include bp1100 {
+  width: 100%;
+};
+
+@include bp920 {
+  width: 920px;
+};
     
 @include bp768 {
   width: 100%;
@@ -7323,6 +7391,16 @@ a.ag {
         }
       }
     }
+  }
+
+  #ctl00_ContentPlaceHolder1_upUpdatePanel{
+    @include bp1100 {
+      width: 85%;
+    };
+    
+    @include bp768 {
+      width: 100%;
+    };
   }
 
   &_cts{
@@ -14333,8 +14411,6 @@ div {
     border-right: 1px solid #CCC;
   }
   #dvErrorInfo {
-    padding: 20px;
-    border: 1px solid #CCC;
     h6 {
       margin: 0px 0px 10px 0px;
       font-size: 18px;

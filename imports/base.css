@@ -6470,6 +6470,18 @@ a.ag:active {
   margin: 0 auto;
 }
 
+@media (max-width: 1100px) {
+  .newsWrap {
+    width: 100%;
+  }
+}
+
+@media (max-width: 920px) {
+  .newsWrap {
+    width: 920px;
+  }
+}
+
 @media (max-width: 768px) {
   .newsWrap {
     width: 100%;
@@ -6627,6 +6639,18 @@ a.ag:active {
   margin: 0 auto;
 }
 
+@media (max-width: 1100px) {
+  .guideWrap {
+    width: 100%;
+  }
+}
+
+@media (max-width: 920px) {
+  .guideWrap {
+    width: 920px;
+  }
+}
+
 @media (max-width: 768px) {
   .guideWrap {
     width: 100%;
@@ -6688,6 +6712,12 @@ a.ag:active {
 
 .guideWrap_box--cts {
   width: 890px;
+}
+
+@media (max-width: 1100px) {
+  .guideWrap_box--cts {
+    width: 85%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -7268,6 +7298,18 @@ a.ag:active {
   margin: 0 auto;
 }
 
+@media (max-width: 1100px) {
+  .companyTop {
+    width: 100%;
+  }
+}
+
+@media (max-width: 920px) {
+  .companyTop {
+    width: 920px;
+  }
+}
+
 @media (max-width: 768px) {
   .companyTop {
     width: 100%;
@@ -7350,6 +7392,18 @@ a.ag:active {
 .companyAbout {
   width: 1100px;
   margin: 0 auto;
+}
+
+@media (max-width: 1100px) {
+  .companyAbout {
+    width: 100%;
+  }
+}
+
+@media (max-width: 920px) {
+  .companyAbout {
+    width: 920px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -7670,6 +7724,18 @@ a.ag:active {
   margin: 0 auto;
 }
 
+@media (max-width: 1100px) {
+  .lawWrap {
+    width: 100%;
+  }
+}
+
+@media (max-width: 920px) {
+  .lawWrap {
+    width: 920px;
+  }
+}
+
 @media (max-width: 768px) {
   .lawWrap {
     width: 100%;
@@ -7795,6 +7861,18 @@ a.ag:active {
 .recruitWrap {
   width: 1100px;
   margin: 0 auto;
+}
+
+@media (max-width: 1100px) {
+  .recruitWrap {
+    width: 100%;
+  }
+}
+
+@media (max-width: 920px) {
+  .recruitWrap {
+    width: 920px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -8090,6 +8168,18 @@ a.ag:active {
   margin: 0 auto;
 }
 
+@media (max-width: 1100px) {
+  .eventTop {
+    width: 100%;
+  }
+}
+
+@media (max-width: 920px) {
+  .eventTop {
+    width: 920px;
+  }
+}
+
 @media (max-width: 768px) {
   .eventTop {
     width: 100%;
@@ -8223,6 +8313,18 @@ a.ag:active {
   margin: 0 auto;
 }
 
+@media (max-width: 1100px) {
+  .receiptWrap {
+    width: 100%;
+  }
+}
+
+@media (max-width: 920px) {
+  .receiptWrap {
+    width: 920px;
+  }
+}
+
 @media (max-width: 768px) {
   .receiptWrap {
     width: 100%;
@@ -8350,6 +8452,18 @@ a.ag:active {
 
 .mypageBox_menu ul li a.on {
   font-weight: 600;
+}
+
+@media (max-width: 1100px) {
+  .mypageBox #ctl00_ContentPlaceHolder1_upUpdatePanel {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mypageBox #ctl00_ContentPlaceHolder1_upUpdatePanel {
+    width: 100%;
+  }
 }
 
 .mypageBox_cts {
@@ -16347,11 +16461,6 @@ div.btmbtn.below ul {
   border-top: 4px solid #333;
   border-left: 1px solid #CCC;
   border-right: 1px solid #CCC;
-}
-
-#dvErrorInfoBox #dvErrorInfo {
-  padding: 20px;
-  border: 1px solid #CCC;
 }
 
 #dvErrorInfoBox #dvErrorInfo h6 {
