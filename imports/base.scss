@@ -5323,7 +5323,6 @@ a.ag {
         }
         .brand_fabrication--pic02{
           width: 675px;
-          margin-top: -30px;
 
         @include bp768 {
           width: 80%;
@@ -5416,7 +5415,7 @@ a.ag {
 
       li{
         &:nth-child(1){
-          width: 210px;
+          width: 221px;
           margin-right: 100px;
 
         @include bp768 {
@@ -5553,7 +5552,7 @@ a.ag {
 
             @include bp768 {
               margin-right: 20px;
-              width: 15%;
+              width: 16%;
               text-align: right;
             };
             }
@@ -5564,7 +5563,7 @@ a.ag {
               width: 777px;
 
             @include bp768 {
-              width: 85%;
+              width: 84%;
               margin-right: 20px;
             };
             }
@@ -10351,7 +10350,7 @@ button.slick-prev, button.slick-next {
     border-radius: 50%;
     font-size: 14px;
 
-    &:first-child{
+    &.prev, &.next{
       display: none;
     }
   }
@@ -10368,7 +10367,7 @@ button.slick-prev, button.slick-next {
     border-radius: 50%;
     font-size: 14px;
 
-    &:last-child{
+    &.prev, &.next{
       display: none;
     }
   }

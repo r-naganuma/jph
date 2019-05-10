@@ -6058,7 +6058,6 @@ a.ag:active {
 
 .brandWrap_inner--box--pic .brand_fabrication--pic02 {
   width: 675px;
-  margin-top: -30px;
 }
 
 @media (max-width: 768px) {
@@ -6177,7 +6176,7 @@ a.ag:active {
 }
 
 .brandWrap_inner--flex li:nth-child(1) {
-  width: 210px;
+  width: 221px;
   margin-right: 100px;
 }
 
@@ -6343,7 +6342,7 @@ a.ag:active {
 @media (max-width: 768px) {
   .brandWrap2 dl dd ul li:first-child {
     margin-right: 20px;
-    width: 15%;
+    width: 16%;
     text-align: right;
   }
 }
@@ -6356,7 +6355,7 @@ a.ag:active {
 
 @media (max-width: 768px) {
   .brandWrap2 dl dd ul li:last-child {
-    width: 85%;
+    width: 84%;
     margin-right: 20px;
   }
 }
@@ -11843,7 +11842,7 @@ button.slick-prev, button.slick-next {
   font-size: 14px;
 }
 
-#pagination_journal span:first-child {
+#pagination_journal span.prev, #pagination_journal span.next {
   display: none;
 }
 
@@ -11860,7 +11859,7 @@ button.slick-prev, button.slick-next {
   font-size: 14px;
 }
 
-#pagination_journal a:last-child {
+#pagination_journal a.prev, #pagination_journal a.next {
   display: none;
 }
 
