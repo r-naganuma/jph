@@ -12,5 +12,10 @@
 	color:#d44747 !important;
 	padding: 1px !important;	/* for IE */
 	display:block!important;
-	margin-top: 8px;
+	/*margin-top: 8px;*/
+}
+@media (max-width: 768px) {
+	.error_inline--mrgT {
+		margin-top: 8px;
+	}
 }

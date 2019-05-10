@@ -1270,7 +1270,7 @@ address {
 
         &--hover{
           width: 338px;
-          transform: translate(-999px);
+          transform: translate(-1999px);
           transition: all 1s;
           z-index: 998;
           background-color: #000C31;
@@ -3926,6 +3926,10 @@ a.ag {
 
     .list{
       width: 741px;
+  
+    @include bp1100 {
+      width: 100%;
+    };
 
     @include bp768 {
       width: 100vw;
@@ -3940,6 +3944,10 @@ a.ag {
           &:nth-child(4n+1){
             width: 150px;
 
+          @include bp1100 {
+            width: 15vw;
+          };
+
           @include bp768 {
             width: 25vw;
             padding: 20px 0 20px 10px;
@@ -3952,6 +3960,10 @@ a.ag {
           &:nth-child(4n+2){
             width: 283px;
 
+          @include bp1100 {
+            width: 25vw;
+          };
+
           @include bp768 {
             width: auto;
           };
@@ -3961,12 +3973,20 @@ a.ag {
             border-right: 1px solid #CCC;
             border-left: 1px solid #CCC;
 
+          @include bp1100 {
+            width: 10vw;
+          };
+
           @include bp768 {
             width: auto;
           };
           }
           &:nth-child(4n){
             width: 172px;
+
+          @include bp1100 {
+            width: 10vw;
+          };
 
           @include bp768 {
             width: auto;
@@ -3993,6 +4013,11 @@ a.ag {
           &.name{
             width: 253px;
             padding: 18px 0 18px 30px;
+
+          @include bp1100 {
+            width: 25vw;
+            padding: 18px 0;
+          };
 
           @include bp768 {
             width: 64vw;
@@ -4031,6 +4056,10 @@ a.ag {
             display: flex;
             align-items: center;
 
+          @include bp1100 {
+            width: 10vw;
+          };
+
           @include bp768 {
             width: 49.7vw;
             border-top: 1px solid #CCC;
@@ -4063,6 +4092,10 @@ a.ag {
 
           &.quantity{
 
+          @include bp1100 {
+            width: 10vw;
+          };
+
           @include bp768 {
             width: 49.7vw;
             border-top: 1px solid #CCC;
@@ -4092,12 +4125,13 @@ a.ag {
               padding: 12px 0;
 
             @include bp768 {
-              width: 60px;
+              width: 70px;
               margin: 0 20px 0 0;
               padding: 7px 0;
               appearance: none;
               border-radius: 0;
               font-size: 16px;
+              transform: scale(0.8);
             };
             }
 
@@ -4635,7 +4669,7 @@ a.ag {
     @include bp768 {
       width: 80%;
       border-bottom: none;
-      padding: 20px 20px 80px 20px;
+      padding: 20px;
       background: #fff;
       margin: -30px 0 20px;
       order: 2;
@@ -7120,6 +7154,320 @@ a.ag {
 }
 
 
+/* ---------- TOP */
+
+/* JOURNAL */
+
+.journalTop{
+  width: 1100px;
+  margin: 0 auto;
+
+@include bp1100 {
+  width: 100%;
+};
+
+@include bp920 {
+  width: 920px;
+};
+
+@include bp768 {
+  width: 100%;
+};
+}
+
+.journalWrap{
+  width: 1240px;
+  margin: 0 auto 80px;
+  background: #fff;
+  box-shadow:0px 2px 10px -5px #000000;
+  padding: 40px 70px 100px;
+
+  &_inner{
+    width: 1100px;
+    margin: 0 auto;
+
+    &--box{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 37px;
+    }
+
+    &--date{
+      width: 33px;
+
+      .ttlTxt{
+        writing-mode: vertical-rl;
+        text-orientation: sideways;
+        -webkit-text-orientation: sideways;
+        -ms-text-orientation: sideways;
+        color: #333;
+        font-family: 'Lora', dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
+        font-style: italic;
+        font-size: 18px;
+        text-align: center;
+        display: block;
+        margin-bottom: 30px;
+        line-height: 33px;
+        height: max-content;
+      }
+
+      .dayTxt{
+        color: #333;
+        font-family: 'Lora', dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
+        font-size: 28px;
+        text-align: center;
+        display: block;
+        letter-spacing: 0.05em;
+        margin-bottom: 10px;
+        line-height: 1;
+      }
+
+      .month-yearTxt{
+        color: #333;
+        font-family: 'Lora', dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
+        font-size: 11px;
+        text-align: center;
+        display: block;
+        letter-spacing: 0.05em;
+      }
+    }
+
+    &--pic{
+      width: 1000px;
+
+      img{
+        width: 100%;
+      }
+    }
+
+    &--cts{
+      width: 1000px;
+      margin-left: auto;
+
+      h3{
+        color: #333;
+        font-family: 'Lora', dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
+        font-size: 40px;
+        font-style: italic;
+        text-align: center;
+        letter-spacing: 0.01em;
+        margin-bottom: 48px;
+
+        span{
+          color: #333;
+          font-family: 'Lora', dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
+          font-size: 14px;
+          font-style: normal;
+          text-align: center;
+          letter-spacing: 0;
+          margin-top: 10px;
+          display: block;
+        }
+      }
+
+      .ctsTxt{
+        width: 920px;
+        font-size: 14px;
+        margin: 0 auto 60px;
+      }
+
+      .productArea{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 60px;
+
+        &:last-child{
+          margin-bottom: 0;
+        }
+
+        &_pic{
+          width: 500px;
+          margin-right: 58px;
+
+          img{
+            width: 100%;
+          }
+        }
+
+        &_cts{
+          width: 365px;
+
+          &--nameFr{
+            font-family: 'Lora', dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
+            font-size: 22px;
+            font-style: italic;
+            margin-bottom: 5px;
+            letter-spacing: 0.05em;
+          }
+
+          &--nameJp{
+            font-size: 14px;
+            margin-bottom: 35px;
+          }
+
+          &--ttl{
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+          }
+
+          &--txt{
+            font-size: 13px;
+            margin-bottom: 35px;
+          }
+
+          &--btn{
+            font-size: 13px;
+            margin-top: 35px;
+            width: 280px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            color: #fff;
+            font-weight: 600;
+            display: block;
+            background: #081D5C;
+          }
+        }
+      }
+    }
+  }
+}
+
+.journalArchive{
+  width: 1060px;
+  margin: 0 auto;
+
+@include bp1100 {
+  width: 100%;
+};
+
+@include bp920 {
+  width: 920px;
+};
+
+@include bp768 {
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+};
+
+  h3{
+    font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
+    font-size: 40px;
+    letter-spacing: 0.01em;
+    margin: 0 0 60px;
+    font-weight: 500;
+    line-height: 1;
+    color: #333;
+    text-align: center;
+
+  @include bp768 {
+    font-size: 25px;
+    margin: 20px 0 30px;
+    text-align: left;
+  };
+
+    span{
+      font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
+      font-size: 14px;
+      margin-top: 10px;
+      line-height: 1;
+      color: #333;
+      display: block;
+      font-weight: normal;
+      text-align: center;
+
+    @include bp768 {
+      font-size: 12px;
+      margin-top: 5px;
+      text-align: left;
+    };
+    }
+  }
+
+  .journalBox{
+    display: flex;
+    flex-wrap: wrap;
+
+  @include bp768 {
+    justify-content: space-between;
+  };
+
+    &_list{
+      width: 340px;
+      border-bottom: 1px solid #C7C7C7;
+      padding-bottom: 30px;
+      margin: 0 20px 60px 0;
+
+    @include bp1100 {
+      width: 31.5%;
+    };
+
+    @include bp768 {
+      width: 48%;
+      margin: 0 0 30px 0;
+    };
+
+    @include bp768 {
+      width: 48%;
+      margin: 0 0 30px 0;
+    };
+
+      a{
+        display: block;
+        margin-bottom: 15px;
+
+        img{
+          width: 100%;
+        }
+      }
+
+      &--ttl{
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 14px;
+
+      @include bp768 {
+        font-size: 13px;
+      };
+      }
+
+      &--txt{
+        font-size: 12px;
+        margin-bottom: 20px;
+
+      @include bp768 {
+        font-size: 11px;
+        margin-bottom: 15px;
+      };
+      }
+
+      &--date{
+        font-size: 12px;
+
+      @include bp768 {
+        font-size: 10px;
+      };
+      }
+
+      &:nth-child(3n){
+        margin-right: 0;
+      }
+
+      &:nth-last-child(-n + 3){
+        margin-bottom: 0;
+
+      @include bp768 {
+        margin-bottom: 30px;
+      };
+      }
+    }
+  }
+}
 
 /* ---------- TOP */
 
@@ -8347,6 +8695,10 @@ a.ag {
             font-size: 16px;
             appearance: none;
             border-radius: 0;
+            transform: scale(0.8);
+            margin: 0 -10px;
+            width: 77px;
+            height: 50px;
           };
           }
 
@@ -8362,8 +8714,12 @@ a.ag {
 
           @include bp768 {
             font-size: 16px;
+            transform: scale(0.8);
+            margin: 0 -10px;
             appearance: none;
             border-radius: 0;
+            width: 47px;
+            height: 50px;
           };
           }
         }
@@ -8946,6 +9302,10 @@ a.ag {
 
       a{
         display: block;
+
+        &:hover{
+          opacity: 1;
+        }
       }
 
       img{
@@ -9335,7 +9695,7 @@ button.slick-prev, button.slick-next {
           opacity: 1;
 
           img{
-            transform: scale(1.2);
+            transform: scale(1.1);
           }
         }
       }
@@ -10398,12 +10758,15 @@ button.slick-prev, button.slick-next {
           color: #333;
 
         @include bp768 {
-          width: 100%;
+          width: 125%;
+          padding: 20px 10px;
           margin-bottom: 15px;
           box-sizing: border-box;
           appearance: none;
           border-radius: 0;
           font-size: 16px;
+          transform: scale(0.8);
+          margin: 0 -38px;
         };
 
           &:autofill{
@@ -10687,10 +11050,13 @@ button.slick-prev, button.slick-next {
           background: #fff;
 
         @include bp768 {
-          width: 93.75%;
+          width: 119%;
+          height: 50px;
+          transform: scale(0.8);
           font-size: 16px;
           border-radius: 0;
           appearance: none;
+          margin: 0 -38px;
         };
         }
 
@@ -10705,10 +11071,13 @@ button.slick-prev, button.slick-next {
           background: #fff;
 
         @include bp768 {
-          width: 24.5%;
           font-size: 16px;
           border-radius: 0;
           appearance: none;
+          width: 31.2%;
+          height: 50px;
+          transform: scale(0.8);
+          margin: 0 -10px;
         };
         }
 
@@ -10723,10 +11092,13 @@ button.slick-prev, button.slick-next {
           background: #fff;
 
         @include bp768 {
-          width: 93.75%;
           font-size: 16px;
           border-radius: 0;
           appearance: none;
+          width: 119%;
+          height: 50px;
+          transform: scale(0.8);
+          margin: 0 -38px;
         };
         }
       }
@@ -10919,10 +11291,13 @@ button.slick-prev, button.slick-next {
           background: #fff;
 
         @include bp768 {
-          width: 118px;
+          width: 138px;
           font-size: 16px;
           border-radius: 0;
           appearance: none;
+          height: 50px;
+          transform: scale(0.8);
+          margin: 0 -10px;
         };
         }
 
@@ -10939,8 +11314,11 @@ button.slick-prev, button.slick-next {
           background: #fff;
 
         @include bp768 {
-          width: 83px;
+          width: 103px;
           font-size: 16px;
+          height: 60px;
+          transform: scale(0.8);
+          margin: 0 -10px;
         };
         }
 
@@ -11010,8 +11388,11 @@ button.slick-prev, button.slick-next {
           background: #fff;
 
         @include bp768 {
-          width: 93.75%;
+          width: 117%;
           font-size: 16px;
+          height: 50px;
+          transform: scale(0.8);
+          margin: 0 -38px;
         };
         }
 
@@ -11026,11 +11407,14 @@ button.slick-prev, button.slick-next {
           background: #fff;
 
         @include bp768 {
-          width: 74px;
+          width: 94px;
           font-size: 16px;
           appearance: none;
           border-radius: 0;
           background: #fff;
+          height: 50px;
+          transform: scale(0.8);
+          margin: 0 -10px;
         };
         }
 
@@ -11045,11 +11429,14 @@ button.slick-prev, button.slick-next {
           background: #fff;
 
         @include bp768 {
-          width: 89px;
+          width: 109px;
           font-size: 16px;
           appearance: none;
           border-radius: 0;
           background: #fff;
+          height: 50px;
+          transform: scale(0.8);
+          margin: 0 -10px;
         };
         }
 
@@ -11066,9 +11453,12 @@ button.slick-prev, button.slick-next {
           background: #fff;
 
         @include bp768 {
-          width: 93.75%;
+          width: 117%;
           height: 100px;
           font-size: 16px;
+          height: 50px;
+          transform: scale(0.8);
+          margin: 0 -38px;
         };
         }
 
@@ -11085,8 +11475,11 @@ button.slick-prev, button.slick-next {
           background: #fff;
 
         @include bp768 {
-          width: 100%;
+          width: 123%;
           font-size: 16px;
+          height: 50px;
+          transform: scale(0.8);
+          margin: 0 -38px;
         };
         }
 
@@ -11922,10 +12315,13 @@ button.slick-prev, button.slick-next {
             background: #fff;
 
           @include bp768 {
-            width: 118px;
+            width: 138px;
             font-size: 16px;
             border-radius: 0;
             appearance: none;
+            height: 50px;
+            transform: scale(0.8);
+            margin: 0 -10px;
           };
           }
 
@@ -11942,8 +12338,11 @@ button.slick-prev, button.slick-next {
             background: #fff;
 
           @include bp768 {
-            width: 83px;
+            width: 103px;
             font-size: 16px;
+            height: 60px;
+            transform: scale(0.8);
+            margin: 0 -10px;
           };
           }
 
@@ -12013,8 +12412,11 @@ button.slick-prev, button.slick-next {
             background: #fff;
 
           @include bp768 {
-            width: 93.75%;
+            width: 117%;
             font-size: 16px;
+            height: 50px;
+            transform: scale(0.8);
+            margin: 0 -38px;
           };
           }
 
@@ -12029,11 +12431,14 @@ button.slick-prev, button.slick-next {
             background: #fff;
 
           @include bp768 {
-            width: 74px;
+            width: 94px;
             font-size: 16px;
             appearance: none;
             border-radius: 0;
             background: #fff;
+            height: 50px;
+            transform: scale(0.8);
+            margin: 0 -10px;
           };
           }
 
@@ -12048,11 +12453,14 @@ button.slick-prev, button.slick-next {
             background: #fff;
 
           @include bp768 {
-            width: 89px;
+            width: 109px;
             font-size: 16px;
             appearance: none;
             border-radius: 0;
             background: #fff;
+            height: 50px;
+            transform: scale(0.8);
+            margin: 0 -10px;
           };
           }
         }
@@ -12108,8 +12516,11 @@ button.slick-prev, button.slick-next {
             background: #fff;
 
           @include bp768 {
-            width: 100%;
+            width: 123%;
             font-size: 16px;
+            height: 60px;
+            transform: scale(0.8);
+            margin: 0 -38px;
           };
           }
 
@@ -12126,8 +12537,11 @@ button.slick-prev, button.slick-next {
             background: #fff;
 
           @include bp768 {
-            width: 93.75%;
+            width: 123%;
             font-size: 16px;
+            height: 50px;
+            transform: scale(0.8);
+            margin: 0 -38px;
           };
           }
         }
@@ -12250,6 +12664,27 @@ button.slick-prev, button.slick-next {
   }
 }
 
+.select_arrow--sp{
+  @include bp768 {
+  position: relative;
+  };
+
+  &::after{
+  @include bp768 {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border: 0px;
+    border-bottom: solid 1px #010101;
+    border-right: solid 1px #010101;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 15%;
+    right: 20px;
+  };
+  }
+}
+
 .OrderShippingBox_auto{
   font-size: 12px;
   width: 124px;
@@ -12289,8 +12724,11 @@ button.slick-prev, button.slick-next {
     margin-left: 20px;
 
   @include bp768 {
-    width: 132px;
+    width: 152px;
     font-size: 16px;
+    height: 60px;
+    transform: scale(0.8);
+    margin: 0 -10px;
   };
   }
 }
@@ -12299,6 +12737,9 @@ button.slick-prev, button.slick-next {
   @include bp768 {
     border: none !important;
   };
+}
+.borderT0{
+  border-top: none !important;
 }
 
 .Copyright2nd{
@@ -12381,7 +12822,6 @@ button.slick-prev, button.slick-next {
   .OrderShippingSelectBox_box{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 
   @include bp768 {
     display: block;
@@ -12389,6 +12829,10 @@ button.slick-prev, button.slick-next {
 
     &--left{
       width: 740px;
+
+    @include bp1100 {
+      width: 65%;
+    };
 
     @include bp768 {
       width: 100%;
@@ -12469,10 +12913,11 @@ button.slick-prev, button.slick-next {
           font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
           vertical-align: middle;
           position: relative;
-          padding-top: 8px;
+          padding-top: 4px;
 
         @include bp768 {
           display: table-cell;
+          padding-top: 8px;
         };
 
           &::before{
@@ -12531,7 +12976,7 @@ button.slick-prev, button.slick-next {
 
         dd{
           font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
-          font-size: 12px;
+          font-size: 13px;
           color: #333;
           line-height: 1.8;
 
@@ -12564,10 +13009,13 @@ button.slick-prev, button.slick-next {
           background: #fff;
 
         @include bp768 {
-          width: 93.75%;
+          width: 117%;
           font-size: 16px;
           border-radius: 0;
           appearance: none;
+          height: 50px;
+          transform: scale(0.8);
+          margin: 0 -38px;
         };
         }
 
@@ -12584,11 +13032,14 @@ button.slick-prev, button.slick-next {
           background: #fff;
 
         @include bp768 {
-          width: 89px;
+          width: 109px;
           font-size: 16px;
           appearance: none;
           border-radius: 0;
           background: #fff;
+          height: 50px;
+          transform: scale(0.8);
+          margin: 0 -10px;
         };
         }
 
@@ -12604,11 +13055,14 @@ button.slick-prev, button.slick-next {
           background: #fff;
 
         @include bp768 {
-          width: 89px;
+          width: 109px;
           font-size: 16px;
           appearance: none;
           border-radius: 0;
           background: #fff;
+          height: 50px;
+          transform: scale(0.8);
+          margin: 0 -10px;
         };
         }
 
@@ -12625,10 +13079,13 @@ button.slick-prev, button.slick-next {
           background: #fff;
 
         @include bp768 {
-          width: 100%;
+          width: 123%;
           font-size: 16px;
           border-radius: 0;
           appearance: none;
+          height: 50px;
+          transform: scale(0.8);
+          margin: 0 -38px;
         };
         }
 
@@ -12789,7 +13246,7 @@ button.slick-prev, button.slick-next {
             &--left{
               width: 160px;
               background: #081D5C;
-              border: 1px solid #ccc;
+              margin-left: 1px;
 
             @include bp768 {
               display: none;
@@ -13051,8 +13508,11 @@ button.slick-prev, button.slick-next {
             background: #fff;
 
           @include bp768 {
-            width: 100%;
+            width: 123%;
             font-size: 16px;
+            height: 60px;
+            transform: scale(0.8);
+            margin: 0 -38px;
           };
           }
         }
@@ -13114,10 +13574,13 @@ button.slick-prev, button.slick-next {
             background: #fff;
 
           @include bp768 {
-            width: 118px;
+            width: 138px;
             font-size: 16px;
             border-radius: 0;
             appearance: none;
+            height: 50px;
+            transform: scale(0.8);
+            margin: 0 -10px;
           };
           }
 
@@ -13134,8 +13597,11 @@ button.slick-prev, button.slick-next {
             background: #fff;
 
           @include bp768 {
-            width: 83px;
+            width: 103px;
             font-size: 16px;
+            height: 50px;
+            transform: scale(0.8);
+            margin: 0 -10px;
           };
           }
 
@@ -13152,8 +13618,11 @@ button.slick-prev, button.slick-next {
             background: #fff;
 
           @include bp768 {
-            width: 93.75%;
+            width: 117%;
             font-size: 16px;
+            height: 50px;
+            transform: scale(0.8);
+            margin: 0 -38px;
           };
           }
 
@@ -13168,11 +13637,14 @@ button.slick-prev, button.slick-next {
             background: #fff;
 
           @include bp768 {
-            width: 74px;
+            width: 94px;
             font-size: 16px;
             appearance: none;
             border-radius: 0;
             background: #fff;
+            height: 50px;
+            transform: scale(0.8);
+            margin: 0 -10px;
           };
           }
 
@@ -13187,11 +13659,14 @@ button.slick-prev, button.slick-next {
             background: #fff;
 
           @include bp768 {
-            width: 89px;
+            width: 109px;
             font-size: 16px;
             appearance: none;
             border-radius: 0;
             background: #fff;
+            height: 50px;
+            transform: scale(0.8);
+            margin: 0 -10px;
           };
           }
         }
@@ -13329,6 +13804,11 @@ button.slick-prev, button.slick-next {
 
             @include bp768 {
               background: transparent;
+              width: 123%;
+              font-size: 16px;
+              height: 60px;
+              transform: scale(0.8);
+              margin: 0 -43px;
             };
 
             option{
@@ -13390,6 +13870,7 @@ button.slick-prev, button.slick-next {
 
           @include bp768 {
             padding-bottom: 0;
+            border-bottom: none;
           };
 
             p{
@@ -13477,9 +13958,12 @@ button.slick-prev, button.slick-next {
               background: transparent;
 
             @include bp768 {
-              width: 100%;
+              width: 123%;
               font-size: 16px;
               background: #fff;
+              height: 60px;
+              transform: scale(0.8);
+              margin: 0 -20px;
             };
             }
 
@@ -13872,12 +14356,20 @@ div {
 #CartList div.productList, #CartListBox div.productList {
   width: 741px;
   
+@include bp1100 {
+  width: 100%;
+};
+  
 @include bp768 {
   width: 100%;
 };
   div {
     &.background {
       width: 741px;
+  
+    @include bp1100 {
+      width: 100%;
+    };
   
     @include bp768 {
       width: 100%;
@@ -14501,44 +14993,44 @@ div {
     opacity: 0;
 }
 .fade_in--1.on{
-    -webkit-animation: fade_in 1.5s ease .2s forwards;
-    -moz-animation: fade_in 1.5s ease .2s forwards;
-    animation: fade_in 1.5s ease .2s forwards;
+    -webkit-animation: fade_in--non 1.5s ease .2s forwards;
+    -moz-animation: fade_in--non 1.5s ease .2s forwards;
+    animation: fade_in--non 1.5s ease .2s forwards;
 }
 .fade_in--2.on{
-    -webkit-animation: fade_in 1.5s ease .3s forwards;
-    -moz-animation: fade_in 1.5s ease .3s forwards;
-    animation: fade_in 1.5s ease .3s forwards;
+    -webkit-animation: fade_in--non 1.5s ease .3s forwards;
+    -moz-animation: fade_in--non 1.5s ease .3s forwards;
+    animation: fade_in--non 1.5s ease .3s forwards;
 }
 .fade_in--3.on{
-    -webkit-animation: fade_in 1.5s ease .4s forwards;
-    -moz-animation: fade_in 1.5s ease .4s forwards;
-    animation: fade_in 1.5s ease .4s forwards;
+    -webkit-animation: fade_in--non 1.5s ease .4s forwards;
+    -moz-animation: fade_in--non 1.5s ease .4s forwards;
+    animation: fade_in--non 1.5s ease .4s forwards;
 }
 .fade_in--4.on{
-    -webkit-animation: fade_in 1.5s ease .5s forwards;
-    -moz-animation: fade_in 1.5s ease .5s forwards;
-    animation: fade_in 1.5s ease .5s forwards;
+    -webkit-animation: fade_in--non 1.5s ease .5s forwards;
+    -moz-animation: fade_in--non 1.5s ease .5s forwards;
+    animation: fade_in--non 1.5s ease .5s forwards;
 }
 .fade_in--5.on{
-    -webkit-animation: fade_in 1.5s ease .6s forwards;
-    -moz-animation: fade_in 1.5s ease .6s forwards;
-    animation: fade_in 1.5s ease .6s forwards;
+    -webkit-animation: fade_in--non 1.5s ease .6s forwards;
+    -moz-animation: fade_in--non 1.5s ease .6s forwards;
+    animation: fade_in--non 1.5s ease .6s forwards;
 }
 .fade_in--6.on{
-    -webkit-animation: fade_in 1.5s ease .7s forwards;
-    -moz-animation: fade_in 1.5s ease .7s forwards;
-    animation: fade_in 1.5s ease .7s forwards;
+    -webkit-animation: fade_in--non 1.5s ease .7s forwards;
+    -moz-animation: fade_in--non 1.5s ease .7s forwards;
+    animation: fade_in--non 1.5s ease .7s forwards;
 }
 .fade_in--7.on{
-    -webkit-animation: fade_in 1.5s ease .8s forwards;
-    -moz-animation: fade_in 1.5s ease .8s forwards;
-    animation: fade_in 1.5s ease .8s forwards;
+    -webkit-animation: fade_in--non 1.5s ease .8s forwards;
+    -moz-animation: fade_in--non 1.5s ease .8s forwards;
+    animation: fade_in--non 1.5s ease .8s forwards;
 }
 .fade_in--8.on{
-    -webkit-animation: fade_in 1.5s ease .9s forwards;
-    -moz-animation: fade_in 1.5s ease .9s forwards;
-    animation: fade_in 1.5s ease .9s forwards;
+    -webkit-animation: fade_in--non 1.5s ease .9s forwards;
+    -moz-animation: fade_in--non 1.5s ease .9s forwards;
+    animation: fade_in--non 1.5s ease .9s forwards;
 }
 .fade_bottom{
     opacity: 0;
@@ -14557,4 +15049,27 @@ div {
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
+}
+@keyframes fade_in--non {
+    0%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mrgB14{
+  margin-bottom: 14px !important;
+}
+
+.pdgB20_sp{
+  @include bp768 {
+    padding-bottom: 25px !important;
+  };
 }

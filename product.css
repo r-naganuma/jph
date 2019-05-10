@@ -500,6 +500,10 @@ h3 {
   }
 }
 
+.listProduct ul.productListBox li.productList ul.productListBox_inner li {
+  font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
+}
+
 .listProduct ul.productListBox li.productList ul.productListBox_inner ul li.plPhoto {
   width: 255px;
   margin: 0 auto 20px;
@@ -571,6 +575,7 @@ h3 {
 @media (max-width: 768px) {
   .listProduct ul.productListBox li.productList ul.productListBox_inner ul li.plProductInfo li.plPrice .productPrice {
     font-size: 14px;
+    font-weight: 500;
   }
 }
 
@@ -1188,6 +1193,7 @@ h3 {
 
 @media (max-width: 768px) {
   .detail_setBox--list {
+    width: 100%;
     padding: 11.5px 10px 11.5px 0;
   }
 }
@@ -1702,12 +1708,16 @@ h3 {
 
 @media (max-width: 768px) {
   #itemSwiper .slider .input_widthA {
-    width: 92.5%;
-    height: 12px;
+    width: 117%;
+    height: 22px;
     padding: 15px 10px;
     -webkit-appearance: none;
     border-radius: 0;
     font-size: 16px;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    margin: 10px -38px 0;
   }
 }
 
@@ -1961,7 +1971,7 @@ h3 {
 
 @media (max-width: 768px) {
   .addInfo-1::after {
-    top: 13px;
+    top: 18px;
   }
 }
 
@@ -2000,9 +2010,15 @@ h3 {
 
 @media (max-width: 768px) {
   .addInfo select {
-    height: 40px;
+    width: 123%;
     padding-left: 20px;
-    line-height: 38px;
+    line-height: 48px;
+    height: 50px;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    margin: 0 -38px;
+    font-size: 16px;
   }
 }
 
@@ -2033,10 +2049,15 @@ h3 {
 @media (max-width: 768px) {
   .addInfo input {
     margin-bottom: 20px;
-    width: 93.75%;
-    height: 40px;
+    width: 116.5%;
     padding-left: 20px;
-    line-height: 38px;
+    line-height: 48px;
+    height: 50px;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    margin: 0 -38px 12px;
+    font-size: 16px;
   }
 }
 
