@@ -11813,6 +11813,57 @@ button.slick-prev, button.slick-next {
   background: url("../../Contents/ImagesPkg/arwL.png") no-repeat left 1px;
 }
 
+#pagination_journal {
+  clear: both;
+  margin: 20px 0 0;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  #pagination_journal {
+    width: 100vw;
+    margin: 15px 15px 0 0;
+    text-align: center;
+  }
+}
+
+#pagination_journal span {
+  font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
+  color: #fff;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  background: #081D5C;
+  margin-left: 10px;
+  border: 1px solid #081D5C;
+  vertical-align: top;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+#pagination_journal span:first-child {
+  display: none;
+}
+
+#pagination_journal a {
+  color: #888888;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 10px;
+  border: 1px solid #888888;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+#pagination_journal a:last-child {
+  display: none;
+}
+
 /* 在庫が無い場合 */
 .noProduct {
   text-align: center;
