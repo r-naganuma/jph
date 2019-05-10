@@ -13738,16 +13738,16 @@ button.slick-prev, button.slick-next {
 }
 
 .priceList dl.result dt p {
-  font-weight: 500;
+  font-weight: bold;
   line-height: 60px;
-  font-size: 16px;
+  font-size: 14px;
   padding-left: 10px;
 }
 
 @media (max-width: 768px) {
   .priceList dl.result dt p {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 600;
     margin-right: 30px;
     text-align: right;
     line-height: 1;
@@ -13756,15 +13756,15 @@ button.slick-prev, button.slick-next {
 }
 
 .priceList dl.result dd p {
-  font-weight: bold;
+  font-weight: 500;
   line-height: 60px;
-  font-size: 14px;
+  font-size: 16px;
   padding-right: 10px;
 }
 
 @media (max-width: 768px) {
   .priceList dl.result dd p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     text-align: right;
     line-height: 1;
