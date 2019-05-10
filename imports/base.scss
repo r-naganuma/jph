@@ -11981,14 +11981,14 @@ button.slick-prev, button.slick-next {
   };
     dt {
       p{
-        font-weight: bold;
+        font-weight: 500;
         line-height: 60px;
-        font-size: 14px;
+        font-size: 16px;
         padding-left: 10px;
     
       @include bp768 {
-        font-size: 15px;
-        font-weight: 600;
+        font-size: 16px;
+        font-weight: 500;
         margin-right: 30px;
         text-align: right;
         line-height: 1;
