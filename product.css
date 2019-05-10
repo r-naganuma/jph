@@ -1950,6 +1950,13 @@ h3 {
 
 .addInfo-1 {
   position: relative;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .addInfo-1 {
+    margin-bottom: 0;
+  }
 }
 
 .addInfo-1::after {

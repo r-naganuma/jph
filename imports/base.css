@@ -10549,14 +10549,14 @@ a.ag:active {
 
 @media (max-width: 1280px) {
   #datearea {
-    left: 65px;
+    left: 3%;
   }
 }
 
 @media (max-width: 1100px) {
   #datearea {
     width: 25%;
-    left: 30px;
+    left: 0;
   }
 }
 
@@ -10598,7 +10598,7 @@ a.ag:active {
 
 @media (max-width: 1100px) {
   #datearea .datearea_day {
-    font-size: 50px;
+    font-size: 60px;
   }
 }
 
@@ -10632,6 +10632,13 @@ a.ag:active {
   margin-top: 25px;
 }
 
+@media (max-width: 1100px) {
+  #datearea .datearea_holiday {
+    margin-top: 8px;
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 768px) {
   #datearea .datearea_holiday {
     margin-top: 23px;
@@ -10643,6 +10650,14 @@ a.ag:active {
   left: 0;
   width: 100%;
   height: 570px;
+}
+
+@media (max-width: 1280px) {
+  #mainvisual-image #photoset-main {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
 }
 
 @media (max-width: 768px) {
@@ -10688,8 +10703,14 @@ a.ag:active {
 
 @media (max-width: 1280px) {
   #mainvisual-image #photoset-main .slide_box--txt {
-    width: 25%;
-    margin: 20px auto;
+    width: 20%;
+  }
+}
+
+@media (max-width: 1100px) {
+  #mainvisual-image #photoset-main .slide_box--txt {
+    padding-bottom: 15px;
+    margin: 0 auto 30px;
   }
 }
 
@@ -10721,7 +10742,7 @@ a.ag:active {
 
 @media (max-width: 1280px) {
   #mainvisual-image #photoset-main .slide_box--pic {
-    width: 70%;
+    width: 76%;
   }
 }
 
@@ -10891,7 +10912,14 @@ a.ag:active {
   z-index: 3;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1100px) {
+  .slick-prev {
+    bottom: 4px;
+    left: 2%;
+  }
+}
+
+@media (max-width: 768px) {
   .slick-prev {
     display: none !important;
   }
@@ -10923,7 +10951,14 @@ a.ag:active {
 
 @media (max-width: 1280px) {
   .slick-next {
-    bottom: inherit;
+    left: 20%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .slick-next {
+    bottom: 4px;
+    left: 21%;
   }
 }
 
@@ -10986,9 +11021,10 @@ button.slick-prev, button.slick-next {
   text-align: center;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1100px) {
   .slick-dots {
-    bottom: inherit;
+    bottom: 3px;
+    left: 4%;
   }
 }
 
