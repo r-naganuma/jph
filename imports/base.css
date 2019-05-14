@@ -1168,6 +1168,12 @@ address {
   line-height: 1;
 }
 
+@media screen\0 {
+  #HeadRight .head_top--list--txt {
+    padding-top: 2px;
+  }
+}
+
 #HeadRight .head_top--list .icn_heart {
   width: 20px;
 }
@@ -2960,6 +2966,12 @@ a.ag:active {
   margin-left: calc(50% - 50vw);
 }
 
+@-moz-document url-prefix() {
+  #primary {
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 768px) {
   #primary {
     padding: 50px 0;
@@ -4522,6 +4534,12 @@ a.ag:active {
   font-weight: bold;
   display: block;
   margin-bottom: 5px;
+}
+
+@media screen\0 {
+  #primary #CartListBox .list_caption li.name a {
+    padding-top: 2px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -8284,7 +8302,6 @@ a.ag:active {
   font-style: italic;
   font-size: 18px;
   text-align: center;
-  display: block;
   margin-bottom: 30px;
   line-height: 33px;
   height: -webkit-max-content;
@@ -8855,7 +8872,6 @@ a.ag:active {
 .mypageBox_menu ul li a {
   font-size: 13px;
   line-height: 1;
-  display: block;
 }
 
 @media (max-width: 768px) {
@@ -10686,11 +10702,9 @@ a.ag:active {
   }
 }
 
-@media (max-width: 768px) {
+@media screen\0  and (max-width: 1280px) {
   #mainvisual-image #photoset-main {
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
+    height: 100%;
   }
 }
 
@@ -11032,6 +11046,7 @@ a.ag:active {
 
 button.slick-prev, button.slick-next {
   z-index: 4;
+  background: transparent;
 }
 
 /* Dots */
@@ -13325,6 +13340,18 @@ button.slick-prev, button.slick-next {
   height: max-content;
 }
 
+@-moz-document url-prefix() {
+  .UserRegistArea .UserRegistBox_right {
+    height: 100%;
+  }
+}
+
+@media screen\0 {
+  .UserRegistArea .UserRegistBox_right {
+    height: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .UserRegistArea .UserRegistBox_right {
     width: 100%;
@@ -13382,6 +13409,18 @@ button.slick-prev, button.slick-next {
   width: 280px;
 }
 
+@-moz-document url-prefix() {
+  .UserRegistArea .UserRegistBox_right.is-fixed {
+    height: auto;
+  }
+}
+
+@media screen\0 {
+  .UserRegistArea .UserRegistBox_right.is-fixed {
+    height: auto;
+  }
+}
+
 @media (max-width: 768px) {
   .UserRegistArea .UserRegistBox_right.is-fixed {
     position: inherit;
@@ -13403,6 +13442,18 @@ button.slick-prev, button.slick-next {
   margin-left: 0;
   z-index: 1;
   width: 280px;
+}
+
+@-moz-document url-prefix() {
+  .UserRegistArea .UserRegistBox_right.is-fixed-done {
+    height: auto;
+  }
+}
+
+@media screen\0 {
+  .UserRegistArea .UserRegistBox_right.is-fixed-done {
+    height: auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -14614,6 +14665,18 @@ button.slick-prev, button.slick-next {
   margin-left: 210px;
   z-index: 1;
   width: 280px;
+}
+
+@-moz-document url-prefix() {
+  #OrderShippingBox .OrderShippingBox_box--right.is-fixed {
+    height: auto;
+  }
+}
+
+@media screen\0 {
+  #OrderShippingBox .OrderShippingBox_box--right.is-fixed {
+    height: auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -16238,6 +16301,18 @@ button.slick-prev, button.slick-next {
   margin-top: 26px;
 }
 
+@-moz-document url-prefix() {
+  #OrderShippingSelectBox .OrderShippingSelectBox_box--right {
+    height: 100%;
+  }
+}
+
+@media screen\0 {
+  #OrderShippingSelectBox .OrderShippingSelectBox_box--right {
+    height: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   #OrderShippingSelectBox .OrderShippingSelectBox_box--right {
     width: 100%;
@@ -16299,6 +16374,18 @@ button.slick-prev, button.slick-next {
   margin-left: 210px;
   z-index: 1;
   width: 280px;
+}
+
+@-moz-document url-prefix() {
+  #OrderShippingSelectBox .OrderShippingSelectBox_box--right.is-fixed {
+    height: auto;
+  }
+}
+
+@media screen\0 {
+  #OrderShippingSelectBox .OrderShippingSelectBox_box--right.is-fixed {
+    height: auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -17454,4 +17541,8 @@ div.btmbtn.below ul {
   .pdgB20_sp {
     padding-bottom: 25px !important;
   }
+}
+
+select::-ms-expand {
+  display: none;
 }

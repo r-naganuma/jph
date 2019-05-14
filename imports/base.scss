@@ -41,6 +41,18 @@ $bp920: 920px;  // レスポンシブ第2段階
     @content;
   }
 }
+
+@mixin firefox {
+  @-moz-document url-prefix() {
+    @content;
+  }
+}
+
+@mixin ie {
+  @media screen\0 {
+    @content;
+  }
+}
 .pc_on{
   display: block !important;
 
@@ -1048,6 +1060,10 @@ address {
         font-size: 12px;
         color: #333333;
         line-height: 1;
+
+      @include ie {
+        padding-top: 2px;
+      };
       }
 
       .icn_heart{
@@ -2742,6 +2758,10 @@ a.ag {
   padding: 100px 0;
   margin-left: calc(50% - 50vw); 
 
+@include firefox {
+  margin-left: 0; 
+};
+
 @include bp768 {
   padding: 50px 0;
   margin-left: 0; 
@@ -4041,6 +4061,10 @@ a.ag {
               font-weight: bold;
               display: block;
               margin-bottom: 5px;
+
+            @include ie {
+              padding-top: 2px;
+            };
 
             @include bp768 {
               font-size: 11px;
@@ -7209,7 +7233,6 @@ a.ag {
         font-style: italic;
         font-size: 18px;
         text-align: center;
-        display: block;
         margin-bottom: 30px;
         line-height: 33px;
         height: max-content;
@@ -7731,7 +7754,6 @@ a.ag {
         a{
           font-size: 13px;
           line-height: 1;
-          display: block;
     
         @include bp768 {
           font-size: 14px;
@@ -9279,10 +9301,10 @@ a.ag {
 
 @include bp1280 {
   height: max-content;
-};
 
-@include bp768 {
-  height: max-content;
+  @include ie {
+    height: 100%;
+  };
 };
 
   .slide_box{
@@ -9605,6 +9627,7 @@ a.ag {
 
 button.slick-prev, button.slick-next {
     z-index:4;
+    background: transparent;
 }
 
 /* Dots */
@@ -11620,6 +11643,14 @@ button.slick-prev, button.slick-next {
       box-shadow:0px 2px 10px -5px #000000;
       height: max-content;
 
+    @include firefox {
+      height: 100%;
+    };
+
+    @include ie {
+      height: 100%;
+    };
+
     @include bp768 {
       width: 100%;
       padding: 30px 10px;
@@ -11674,6 +11705,14 @@ button.slick-prev, button.slick-next {
         z-index: 1;
         width: 280px;
 
+      @include firefox {
+        height: auto;
+      };
+
+      @include ie {
+        height: auto;
+      };
+
       @include bp768 {
         position: inherit;
         top: inherit;
@@ -11693,6 +11732,14 @@ button.slick-prev, button.slick-next {
         margin-left: 0;
         z-index: 1;
         width: 280px;
+
+      @include firefox {
+        height: auto;
+      };
+
+      @include ie {
+        height: auto;
+      };
 
       @include bp768 {
         position: inherit;
@@ -12737,6 +12784,14 @@ button.slick-prev, button.slick-next {
         margin-left: 210px;
         z-index: 1;
         width: 280px;
+
+      @include firefox {
+        height: auto;
+      };
+
+      @include ie {
+        height: auto;
+      };
 
       @include bp768 {
         position: inherit;
@@ -14111,6 +14166,14 @@ button.slick-prev, button.slick-next {
       height: max-content;
       margin-top: 26px;
 
+    @include firefox {
+      height: 100%;
+    };
+
+    @include ie {
+      height: 100%;
+    };
+
     @include bp768 {
       width: 100%;
       padding: 10px 10px 30px;
@@ -14168,6 +14231,14 @@ button.slick-prev, button.slick-next {
         margin-left: 210px;
         z-index: 1;
         width: 280px;
+
+      @include firefox {
+        height: auto;
+      };
+
+      @include ie {
+        height: auto;
+      };
 
       @include bp768 {
         position: inherit;
@@ -15197,4 +15268,8 @@ div {
   @include bp768 {
     padding-bottom: 25px !important;
   };
+}
+
+select::-ms-expand {
+    display: none;
 }

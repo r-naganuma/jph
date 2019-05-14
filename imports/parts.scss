@@ -290,7 +290,7 @@ $bp768: 768px;  // スマホ
   background-color: #fff;
   display: none;
   margin-top: 10px;
-  padding: 40px 0 50px;
+  padding: 40px 100px 50px;
 
 @include bp768 {
   padding: 19px 10px 10px;
@@ -298,12 +298,8 @@ $bp768: 768px;  // スマホ
 };
 
   &Box{
-    width: 900px;
-    margin: 0 auto;
-
-  @include bp768 {
     width: 100%;
-  };
+    margin: 0 auto;
 
     h4{
       font-size: 14px;
@@ -580,6 +576,11 @@ $bp768: 768px;  // スマホ
         justify-content: space-between;
         flex-wrap: wrap;
         margin-bottom: 40px;
+        width: 900px;
+
+      @include bp768 {
+        width: 100%;
+      };
 
         &--list{
           width: 210px;
@@ -1113,10 +1114,6 @@ $bp768: 768px;  // スマホ
               width: 100%;
               height: 26px;
               line-height: 26px;
-              background-color: #000;
-              filter: alpha(opacity = 50);
-              -moz-opacity: 0.5;
-              opacity: 0.5;
             }
           }
 

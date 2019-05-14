@@ -348,7 +348,7 @@
   background-color: #fff;
   display: none;
   margin-top: 10px;
-  padding: 40px 0 50px;
+  padding: 40px 100px 50px;
 }
 
 @media (max-width: 768px) {
@@ -360,14 +360,8 @@
 }
 
 .dvProductAdvancedSearch .toogleBox {
-  width: 900px;
+  width: 100%;
   margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-  .dvProductAdvancedSearch .toogleBox {
-    width: 100%;
-  }
 }
 
 .dvProductAdvancedSearch .toogleBox h4 {
@@ -665,6 +659,13 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-bottom: 40px;
+  width: 900px;
+}
+
+@media (max-width: 768px) {
+  .dvProductAdvancedSearch .toogleBox_category--box {
+    width: 100%;
+  }
 }
 
 .dvProductAdvancedSearch .toogleBox_category--box--list {
@@ -1305,10 +1306,6 @@
   width: 100%;
   height: 26px;
   line-height: 26px;
-  background-color: #000;
-  filter: alpha(opacity=50);
-  -moz-opacity: 0.5;
-  opacity: 0.5;
 }
 
 #dvCheckList .productCheckBox .productCheckList ul li.productName a {
