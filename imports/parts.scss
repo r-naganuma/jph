@@ -642,6 +642,21 @@ $bp768: 768px;  // スマホ
 
           &.on{
             background: #E5DAD4;
+            position: relative;
+
+            &::after{
+              content: "";
+              width: 100%;
+              height: 10px;
+              background: #fff;
+              position: absolute;
+              left: 0;
+              bottom: 0;
+
+            @include bp768 {
+              height: 5px;
+            };
+            }
           }
         }
       }

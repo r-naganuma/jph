@@ -1418,9 +1418,9 @@ address {
   -webkit-transform: translate(-1999px);
   -ms-transform: translate(-1999px);
   transform: translate(-1999px);
-  -webkit-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;
   z-index: 998;
   background-color: #000C31;
   position: fixed;
@@ -3020,6 +3020,7 @@ a.ag:active {
   width: 340px;
   border-bottom: 1px solid #C7C7C7;
   padding-bottom: 30px;
+  outline: none;
 }
 
 @media (max-width: 1100px) {
@@ -8480,7 +8481,7 @@ a.ag:active {
   }
 }
 
-.journalArchive .journalBox {
+.journalArchive .journalBox ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8489,14 +8490,14 @@ a.ag:active {
 }
 
 @media (max-width: 768px) {
-  .journalArchive .journalBox {
+  .journalArchive .journalBox ul {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
 }
 
-.journalArchive .journalBox_list {
+.journalArchive .journalBox ul li {
   width: 340px;
   border-bottom: 1px solid #C7C7C7;
   padding-bottom: 30px;
@@ -8504,23 +8505,27 @@ a.ag:active {
 }
 
 @media (max-width: 1100px) {
-  .journalArchive .journalBox_list {
+  .journalArchive .journalBox ul li {
     width: 31.5%;
   }
 }
 
 @media (max-width: 768px) {
-  .journalArchive .journalBox_list {
+  .journalArchive .journalBox ul li {
     width: 48%;
     margin: 0 0 30px 0;
   }
 }
 
 @media (max-width: 768px) {
-  .journalArchive .journalBox_list {
+  .journalArchive .journalBox ul li {
     width: 48%;
     margin: 0 0 30px 0;
   }
+}
+
+.journalArchive .journalBox ul li:nth-child(3n) {
+  margin-right: 0;
 }
 
 .journalArchive .journalBox_list a {
@@ -8566,18 +8571,8 @@ a.ag:active {
   }
 }
 
-.journalArchive .journalBox_list:nth-child(3n) {
-  margin-right: 0;
-}
-
-.journalArchive .journalBox_list:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
-
-@media (max-width: 768px) {
-  .journalArchive .journalBox_list:nth-last-child(-n + 3) {
-    margin-bottom: 30px;
-  }
+.journalArchive .journalBox .pageNum {
+  display: none;
 }
 
 /* ---------- TOP */
@@ -8913,6 +8908,37 @@ a.ag:active {
     padding: 0 10px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+  }
+}
+
+.mypageBox_cts h3.creditTtl {
+  margin: 30px 0 50px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts h3.creditTtl {
+    margin: 0 0 40px;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 87%;
+    line-height: 1.5;
+  }
+}
+
+.mypageBox_cts h3.creditTtl::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  border-bottom: 2px solid #081D5C;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts h3.creditTtl::after {
+    width: 100vw;
   }
 }
 
@@ -11850,7 +11876,7 @@ button.slick-prev, button.slick-next {
 
 #pagination_journal {
   clear: both;
-  margin: 20px 0 0;
+  margin: -40px 0 0;
   text-align: right;
 }
 
@@ -11864,39 +11890,37 @@ button.slick-prev, button.slick-next {
 
 #pagination_journal span {
   font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
-  color: #fff;
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  text-align: center;
-  line-height: 35px;
-  background: #081D5C;
-  margin-left: 10px;
-  border: 1px solid #081D5C;
-  vertical-align: top;
-  border-radius: 50%;
-  font-size: 14px;
-}
-
-#pagination_journal span.prev, #pagination_journal span.next {
-  display: none;
-}
-
-#pagination_journal a {
   color: #888888;
   display: inline-block;
   width: 35px;
   height: 35px;
   text-align: center;
   line-height: 35px;
+  background: transparent;
   margin-left: 10px;
   border: 1px solid #888888;
+  vertical-align: top;
   border-radius: 50%;
   font-size: 14px;
+  cursor: pointer;
 }
 
-#pagination_journal a.prev, #pagination_journal a.next {
-  display: none;
+#pagination_journal span:first-child {
+  margin-left: 0 !important;
+}
+
+#pagination_journal span.current {
+  color: #fff;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #081D5C;
+  text-align: center;
+  line-height: 35px;
+  border: 1px solid #081D5C;
+  margin-left: 10px;
+  border-radius: 50%;
+  font-size: 14px;
 }
 
 /* 在庫が無い場合 */
@@ -14392,6 +14416,33 @@ button.slick-prev, button.slick-next {
     -ms-transform: scale(0.8);
     transform: scale(0.8);
     margin: 0 -10px;
+  }
+}
+
+#OrderShippingBox .OrderShippingBox_box--left--top dd .input_widthF {
+  width: 245px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 13px;
+  color: #333;
+  font-family: futura-pt, dnp-shuei-gothic-kin-std, "游ゴシック体", YuGothic, "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro", HiraKakuProN-W3, sans-serif;
+  border: #888 1px solid;
+  background: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+@media (max-width: 768px) {
+  #OrderShippingBox .OrderShippingBox_box--left--top dd .input_widthF {
+    width: 117%;
+    font-size: 16px;
+    height: 50px;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    margin: 0 -38px;
   }
 }
 

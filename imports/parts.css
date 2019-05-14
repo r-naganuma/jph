@@ -739,6 +739,23 @@
 
 .dvProductAdvancedSearch .toogleBox_category--box--list.on {
   background: #E5DAD4;
+  position: relative;
+}
+
+.dvProductAdvancedSearch .toogleBox_category--box--list.on::after {
+  content: "";
+  width: 100%;
+  height: 10px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .dvProductAdvancedSearch .toogleBox_category--box--list.on::after {
+    height: 5px;
+  }
 }
 
 .dvProductAdvancedSearch .toogleBox_column {
