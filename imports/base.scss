@@ -12373,13 +12373,11 @@ button.slick-prev, button.slick-next {
     top: 0;
     right: 0;
     width: 200px;
-    display:none;
 
   @include bp768 {
     top: 45px;
     right: 10px;
     width: 107px;
-    display: block;
   };
   }
 

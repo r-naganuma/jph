@@ -14166,7 +14166,6 @@ button.slick-prev, button.slick-next {
   top: 0;
   right: 0;
   width: 200px;
-  display: none;
 }
 
 @media (max-width: 768px) {
@@ -14174,7 +14173,6 @@ button.slick-prev, button.slick-next {
     top: 45px;
     right: 10px;
     width: 107px;
-    display: block;
   }
 }
 
