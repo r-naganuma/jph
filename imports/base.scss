@@ -9045,6 +9045,14 @@ a.ag {
         td{
           vertical-align: top;
 
+          &.CreditCardDetail{
+            width: 20%;
+
+          @include bp768 {
+            width: 100%;
+          };
+          }
+
           &.shippingName{
             width: 174px;
 
@@ -14397,27 +14405,42 @@ button.slick-prev, button.slick-next {
 };
 
   .complete_main{
-    width: 380.5px;
+    width: 284px;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 60px;
 
   @include bp768 {
-    width: 80%;
-    top: 300px;
+    width: 50%;
+    top: 235px;
+    left: inherit;
+    right: 20px;
+  };
+  }
+
+  .complete_main2{
+    width: 300px;
+    position: absolute;
+    top: 111px;
     left: 0;
-    margin: 0 auto;
+
+  @include bp768 {
+    width: 65%;
+    position: inherit;
+    top: inherit;
+    left: inherit;
+    margin-bottom: 30px;
   };
   }
 
   .complete_txt{
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     padding-top: 110px;
 
   @include bp768 {
     width: 100%;
-    margin-bottom: 120px;
-    padding: 40px 0 0 0;
+    margin-bottom: 30px;
+    padding: 0;
   };
 
     p{
@@ -14454,8 +14477,7 @@ button.slick-prev, button.slick-next {
     };
 
       &--inner{
-        background: url(../../Contents/ImagesPkg/user/order_complete_bg.png) no-repeat;
-        background-size: contain;
+        background: #F7F7F7;
         display: flex;
         width: 410px;
         padding: 20px 50px;
@@ -14463,8 +14485,6 @@ button.slick-prev, button.slick-next {
         margin: 0 auto 25px;
 
       @include bp768 {
-        background: url(../../Contents/ImagesPkg/user/order_complete_bg_sp.png) no-repeat;
-        background-size: cover;
         display: block;
         width: 75%;
         padding: 45px 0;

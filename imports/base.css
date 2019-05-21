@@ -10395,6 +10395,16 @@ a.ag:active {
   vertical-align: top;
 }
 
+.mypageBox_cts #dvUserShippingList table td.CreditCardDetail {
+  width: 20%;
+}
+
+@media (max-width: 768px) {
+  .mypageBox_cts #dvUserShippingList table td.CreditCardDetail {
+    width: 100%;
+  }
+}
+
 .mypageBox_cts #dvUserShippingList table td.shippingName {
   width: 174px;
 }
@@ -16572,31 +16582,48 @@ button.slick-prev, button.slick-next {
 }
 
 .completeBox .complete_main {
-  width: 380.5px;
+  width: 284px;
   position: absolute;
   top: 0;
-  right: 0;
+  left: 60px;
 }
 
 @media (max-width: 768px) {
   .completeBox .complete_main {
-    width: 80%;
-    top: 300px;
-    left: 0;
-    margin: 0 auto;
+    width: 50%;
+    top: 235px;
+    left: inherit;
+    right: 20px;
+  }
+}
+
+.completeBox .complete_main2 {
+  width: 300px;
+  position: absolute;
+  top: 111px;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .completeBox .complete_main2 {
+    width: 65%;
+    position: inherit;
+    top: inherit;
+    left: inherit;
+    margin-bottom: 30px;
   }
 }
 
 .completeBox .complete_txt {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   padding-top: 110px;
 }
 
 @media (max-width: 768px) {
   .completeBox .complete_txt {
     width: 100%;
-    margin-bottom: 120px;
-    padding: 40px 0 0 0;
+    margin-bottom: 30px;
+    padding: 0;
   }
 }
 
@@ -16638,8 +16665,7 @@ button.slick-prev, button.slick-next {
 }
 
 .completeBox .complete_cts--detail--inner {
-  background: url(../../Contents/ImagesPkg/user/order_complete_bg.png) no-repeat;
-  background-size: contain;
+  background: #F7F7F7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16653,8 +16679,6 @@ button.slick-prev, button.slick-next {
 
 @media (max-width: 768px) {
   .completeBox .complete_cts--detail--inner {
-    background: url(../../Contents/ImagesPkg/user/order_complete_bg_sp.png) no-repeat;
-    background-size: cover;
     display: block;
     width: 75%;
     padding: 45px 0;
